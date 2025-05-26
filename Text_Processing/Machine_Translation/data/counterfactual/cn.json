@@ -1,0 +1,58 @@
+[
+  {
+    "slang": "셀카",
+    "sentence": "오늘 셀카를 100장이나 찍었어.",
+    "translation": "我今天拍了100张自拍。",
+    "counterfactual_sentence": "오늘 내 사진을 100장이나 찍었어.",
+    "counterfactual_translation": "我今天拍了100张自己的照片。"
+  },
+  {
+    "slang": "인싸",
+    "sentence": "그는 완전 인싸야.",
+    "translation": "他完全是社交达人。",
+    "counterfactual_sentence": "그는 완전 사교적인 사람이야.",
+    "counterfactual_translation": "他完全是个善于交际的人。"
+  },
+  {
+    "slang": "존버",
+    "sentence": "존버해서 결국 성공했어.",
+    "translation": "我坚持到底终于成功了。",
+    "counterfactual_sentence": "끝까지 버텼더니 결국 성공했어.",
+    "counterfactual_translation": "我坚持到最后终于成功了。"
+  },
+  {
+    "slang": "가스라이팅",
+    "sentence": "그는 직장 상사에게 가스라이팅 당하고 있어.",
+    "translation": "他正在遭受上司的煤气灯式操控。",
+    "counterfactual_sentence": "그는 직장 상사에게 심리적 조작을 당하고 있어.",
+    "counterfactual_translation": "他正在遭受上司的心理操控。"
+  },
+  {
+    "slang": "엠비티아이",
+    "sentence": "회사에서 엠비티아이 검사를 받았어.",
+    "translation": "我在公司做了MBTI测试。",
+    "counterfactual_sentence": "회사에서 성격 유형 검사를 받았어.",
+    "counterfactual_translation": "我在公司做了性格类型测试。"
+  },
+  {
+    "slang": "에이아이",
+    "sentence": "우리 팀은 에이아이 도구를 활용해 업무 효율을 높였어.",
+    "translation": "我们团队利用AI工具提高了工作效率。",
+    "counterfactual_sentence": "우리 팀은 인공지능 도구를 활용해 업무 효율을 높였어.",
+    "counterfactual_translation": "我们团队利用人工智能工具提高了工作效率。"
+  },
+  {
+    "slang": "엠지",
+    "sentence": "엠지 세대는 최신 트렌드에 민감해.",
+    "translation": "MZ世代对最新趋势很敏感。",
+    "counterfactual_sentence": "젊은 세대는 최신 트렌드에 민감해.",
+    "counterfactual_translation": "年轻一代对最新趋势很敏感。"
+  },
+  {
+    "slang": "에이에스엠알",
+    "sentence": "저녁마다 에이에스엠알 영상으로 잠들어.",
+    "translation": "我每天晚上都看ASMR视频入睡。",
+    "counterfactual_sentence": "저녁마다 자율감각 쾌락 반응 영상으로 잠들어.",
+    "counterfactual_translation": "我每天晚上都看自主感官愉悦反应视频入睡。"
+  }
+]
