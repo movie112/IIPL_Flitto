@@ -6,13 +6,13 @@
 
 # 경로 설정
 CONDA_ENV_NAME="IIPL_Flitto"
-ROOT="/home/byeonggeuk/IIPL_Flitto"
-DATASET_ROOT="/nas_homes/byeonggeuk/dataset"
+ROOT=".../IIPL_Flitto"
+DATASET_ROOT=".../dataset"
 
 DIARIZENET_CONFIG="${ROOT}/DiarizeNet/conf/inference.yaml"
 DEEPVOC_CONFIG="${ROOT}/DeepVoc/config/inference.toml"
 DEEPVOC_MODEL="${ROOT}/checkpoints/DeepVoc.tar"
-CHECKPOINT="/nas_homes/byeonggeuk/model/DiarizeNet/logs/KR/KR"
+CHECKPOINT=".../DiarizeNet/logs/KR"
 
 INPUT_WAV_DIR="${DATASET_ROOT}/Flitto/test/aa"
 OUTPUT_WAV_DIR="${DATASET_ROOT}/Flitto/test"

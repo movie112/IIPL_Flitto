@@ -6,8 +6,7 @@
 
 # 경로 설정
 CONDA_ENV_NAME="IIPL_Flitto"
-ROOT="/home/byeonggeuk/IIPL_Flitto"
-DATASET_ROOT="/nas_homes/byeonggeuk/dataset"
+ROOT=".../IIPL_Flitto"
 
 DIARIZENET_CONFIG="${ROOT}/DiarizeNet/conf/train.yaml"
 DEEPVOC_CONFIG="${ROOT}/DeepVoc/config/inference.toml"
@@ -16,7 +15,7 @@ DEEPVOC_MODEL="${ROOT}/checkpoints/DeepVoc.tar"
 INPUT_WAV_DIR="${ROOT}/DiarizeNet/data/demo/audio"
 OUTPUT_WAV_DIR="${ROOT}/DiarizeNet/data/demo/audio"
 
-stage=3
+stage=1
 
 ######################################
 # 1. Conda activate

@@ -1,6 +1,6 @@
 # Introduction
 
-This project aims to connect online speaker diarization with Speech-to-Text.
+IIPL_Flitto is a comprehensive speech and text processing toolkit. This repository provides a collection of modules and scripts for advanced speaker diarization, speech enhancement modeling, speech-to-text (STT), text-to-speech (TTS) and text processing. The toolkit is designed to facilitate research and development in automatic speech recognition (ASR), speaker identification, and natural language processing (NLP) tasks.
 
 # Install
 1. Clone this repository and navigate to IIPL_Flitto folder
@@ -18,7 +18,7 @@ conda create --name IIPL_Flitto python=3.9
 conda activate IIPL_Flitto
 
 pip install --upgrade "pip<24.1"
-cd FS-EEND && pip install -r requirements.txt
+cd DiarizeNet && pip install -r requirements.txt
 ```
 
 
@@ -31,29 +31,60 @@ pip install -U openai-whisper
 ```
 
 
-# Download checkpoints & data
+# Download checkpoints
 
-Download the [pre-trained FullSubNet-plus checkpoint](https://drive.google.com/file/d/1UJSt1G0P_aXry-u79LLU_l9tCnNa2u7C/view) and input 'FullSubNet-plus/'
+Download the [pre-trained DiarizeNet checkpoint](https://www.dropbox.com/scl/fo/uyer0669wfhpvm055v5mf/ACbFAIbVxQbScEPlhhioL0A?rlkey=0hndtmi059oh2r5bh51i0q1op&st=ix16crxu&dl=0).
 
-Download the [pre-trained FS-EEND checkpoint](https://drive.google.com/file/d/1SWANfLJldK8BpvCl_iAGmVNOBvuy6Uwd/view) and ensure the path is correctly set in 'test_from_folder' in 'FS-EEND/train_dia_Libri2Mix_infer.py'
+Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/fo/3xle2g3505iydwbw6yqg7/APcyGLXHwL83A2Y3Lu_GaZU?rlkey=i36di9snedlj45vttk6nd0zw9&st=sdhgg06z&dl=0).
 
-Download the [Flitto dataset](https://drive.google.com/file/d/1nnSLZ9P3SPOZ4_w7LCYxePnSnUaX7Eqq/view) and ensure the path is correctly set in 'data_dir' in 'FS-EEND/data/Flitto/test/wav.scp'
-
-
-# Path Configuration
-
-You need to modify the following paths:
-- `data_dir` in `FS-EEND/conf/spk_onl_tfm_enc_dec_nonautoreg_Libri2Mix_infer.yaml`.
-- `data_dir` in `FS-EEND/data/Flitto/test/wav.scp`. (ensure it matches the Flitto dataset path)
-- `save_dir_parnt` in `FS-EEND/train/oln_tfm_enc_dec.py`.
-- `out_root` in `FS-EEND/visualize/gen_h5_output.py`.
-- `test_from_folder` in `FS-EEND/train_dia_Libri2Mix_infer.py`. (ensure it matches the FS-EEND checkpoint path)
-- `dataset_dir_list` in `FullSubNet-plus/config/inference.toml`.
-- `path` in `run.sh`.
-
-
-# Inference
+# DeepVoc+DiarizeNet+STT
    
 ```
 bash run.sh
+```
+
+# Metric
+
+```
+python /metric/wer_cer.py
+python /metric/llm_based_acc.py
+```
+
+# AdaptiVoice
+
+1. Install Package
+
+```
+conda create -n adaptivoice python=3.9
+conda activate adaptivoice
+
+cd adaptivoice
+pip install -e .
+pip install git+https://github.com/myshell-ai/MeloTTS.git
+python -m unidic download
+```
+
+2. run
+```
+python /AdaptiVoice/run.py
+```
+
+# Machine Translation
+
+1. Install Package
+
+```
+conda create -n mt python=3.9
+conda activate mt
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install numpy regex sacrebleu tensorboard matplotlib pandas cython setuptools
+pip install pip==23.3.1
+conda install -c conda-forge gxx_linux-64
+conda install -c nvidia cuda-toolkit=11.8 cudatoolkit-dev=11.8
+```
+
+2. metric
+```
+bash /metric/bleu_comet.sh
 ```
