@@ -23,8 +23,16 @@ from fairseq import checkpoint_utils, options, scoring, tasks, utils
 from fairseq.dataclass.utils import convert_namespace_to_omegaconf
 from fairseq.logging import progress_bar
 from fairseq.logging.meters import StopwatchMeter, TimeMeter
-
-
+import json
+with open('.../Text_Processing/Machine_Translation/fairseq_cli/mt_memory.json', 'r', encoding='utf-8') as f:
+    rules = json.load(f)
+    
+def apply_custom_replacements(text: str, tgt_lang: str):
+    """tgt_lang: 'en' / 'zh' / 'ja'"""
+    for k, v in rules.items():
+        if tgt_lang in v:
+            text = text.replace(k, v[tgt_lang])
+    return text
 def main(cfg: DictConfig):
 
     if isinstance(cfg, Namespace):
@@ -178,7 +186,7 @@ def _main(cfg: DictConfig, output_file):
         if tokenizer is not None:
             x = tokenizer.decode(x)
         return x
-
+    
     scorer = scoring.build_scorer(cfg.scoring, tgt_dict)
 
     num_sentences = 0
@@ -249,6 +257,7 @@ def _main(cfg: DictConfig, output_file):
                     )
 
             src_str = decode_fn(src_str)
+            src_str = apply_custom_replacements(src_str, tgt_lang=cfg.task.target_lang)
             if has_target:
                 target_str = decode_fn(target_str)
 
