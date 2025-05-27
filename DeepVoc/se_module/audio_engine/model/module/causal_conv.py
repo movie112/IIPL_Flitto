@@ -11,20 +11,12 @@ class CausalConvBlock(nn.Module):
             kernel_size=(3, 2),
             stride=(2, 1),
             padding=(0, 1),
-            **kwargs  # 这里不是左右 pad，而是上下 pad 为 0，左右分别 pad 1...
+            **kwargs
         )
         self.norm = nn.BatchNorm2d(out_channels)
         self.activation = getattr(nn, encoder_activate_function)()
 
     def forward(self, x):
-        """
-        2D Causal convolution.
-
-        Args:
-            x: [B, C, F, T]
-        Returns:
-            [B, C, F, T]
-        """
         x = self.conv(x)
         x = x[:, :, :, :-1]  # chomp size
         x = self.norm(x)
@@ -49,14 +41,6 @@ class CausalTransConvBlock(nn.Module):
             self.activation = nn.ELU()
 
     def forward(self, x):
-        """
-        2D Causal convolution.
-
-        Args:
-            x: [B, C, F, T]
-        Returns:
-            [B, C, F, T]
-        """
         x = self.conv(x)
         x = x[:, :, :, :-1]  # chomp size
         x = self.norm(x)
@@ -78,16 +62,6 @@ class TCNBlock(nn.Module):
         self.prelu2 = nn.PReLU()
         self.norm2 = nn.GroupNorm(1, hidden_channel, eps=1e-8)
         self.sconv = nn.Conv1d(hidden_channel, out_channels, 1)
-        # self.tcn_block = nn.Sequential(
-        #     nn.Conv1d(in_channels, hidden_channel, 1),
-        #     nn.PReLU(),
-        #     nn.GroupNorm(1, hidden_channel, eps=1e-8),
-        #     nn.Conv1d(hidden_channel, hidden_channel, kernel_size=kernel_size, stride=1,
-        #               groups=hidden_channel, padding=padding, dilation=dilation, bias=True),
-        #     nn.PReLU(),
-        #     nn.GroupNorm(1, hidden_channel, eps=1e-8),
-        #     nn.Conv1d(hidden_channel, out_channels, 1)
-        # )
 
         self.causal = causal
         self.padding = padding
@@ -131,16 +105,6 @@ class STCNBlock(nn.Module):
         self.prelu2 = nn.PReLU()
         self.norm2 = nn.GroupNorm(1, hidden_channel, eps=1e-8)
         self.sconv = nn.Conv1d(hidden_channel, out_channels, 1)
-        # self.tcn_block = nn.Sequential(
-        #     nn.Conv1d(in_channels, hidden_channel, 1),
-        #     nn.PReLU(),
-        #     nn.GroupNorm(1, hidden_channel, eps=1e-8),
-        #     nn.Conv1d(hidden_channel, hidden_channel, kernel_size=kernel_size, stride=1,
-        #               groups=hidden_channel, padding=padding, dilation=dilation, bias=True),
-        #     nn.PReLU(),
-        #     nn.GroupNorm(1, hidden_channel, eps=1e-8),
-        #     nn.Conv1d(hidden_channel, out_channels, 1)
-        # )
 
         self.causal = causal
         self.padding = padding

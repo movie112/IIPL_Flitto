@@ -70,7 +70,6 @@ class Inferencer(BaseInferencer):
         noisy_complex = self.torch_stft(noisy)
         noisy_mag, noisy_phase = mag_phase(noisy_complex)
 
-        # [B, F, T] => [B, 1, F, T] => model => [B, 2, F, T] => [B, F, T, 2]
         noisy_mag = noisy_mag.unsqueeze(1)
         scaled_mask = self.model(noisy_mag)
         scaled_mask = scaled_mask.permute(0, 2, 3, 1)
@@ -158,7 +157,6 @@ class Inferencer(BaseInferencer):
         enhanced = self.torch_istft(enhanced_complex, length=noisy.size(-1))
         enhanced = enhanced.detach().squeeze(0).cpu().numpy()
 
-        #
         rtf = (t2 - t1) / (len(enhanced) * 1.0 / self.acoustic_config["sr"])
         print(f"model rtf: {rtf}")
 
@@ -203,7 +201,6 @@ class Inferencer(BaseInferencer):
 
         prev = None
         enhanced = None
-        # 模拟语音的静音段，防止一上来就给语音，处理的不好
         for chunk_idx in range(num_chunks):
             if chunk_idx == 0:
                 pad = torch.zeros((num_mics, 256), device=noisy.device)
@@ -211,19 +208,15 @@ class Inferencer(BaseInferencer):
                 chunk_start_position = chunk_idx * chunk_hop_length
                 chunk_end_position = chunk_start_position + chunk_length
 
-                # concat([(8, 256), (..., ... + chunk_length)])
                 noisy_chunk = torch.cat((pad, noisy[:, chunk_start_position:chunk_end_position]), dim=1)
                 enhanced_chunk = self.model(noisy_chunk.unsqueeze(0))
                 enhanced_chunk = torch.squeeze(enhanced_chunk)
                 enhanced_chunk = enhanced_chunk[256:]
 
-                # Save the prior half chunk,
                 cur = enhanced_chunk[:chunk_length // 2]
 
-                # only for the 1st chunk,no overlap for the very 1st chunk prior half
                 prev = enhanced_chunk[chunk_length // 2:] * win[chunk_length // 2:]
             else:
-                # use the previous noisy data as the pad
                 pad = noisy[:, (chunk_idx * chunk_hop_length - 256):(chunk_idx * chunk_hop_length)]
 
                 chunk_start_position = chunk_idx * chunk_hop_length
@@ -234,7 +227,6 @@ class Inferencer(BaseInferencer):
                 enhanced_chunk = torch.squeeze(enhanced_chunk)
                 enhanced_chunk = enhanced_chunk[256:]
 
-                # 使用这个窗函数来对拼接的位置进行平滑？
                 enhanced_chunk = enhanced_chunk * win[:len(enhanced_chunk)]
 
                 tmp = enhanced_chunk[:chunk_length // 2]

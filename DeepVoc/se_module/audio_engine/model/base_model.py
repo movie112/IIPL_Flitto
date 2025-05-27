@@ -4,7 +4,6 @@ import torch.nn.init as init
 from torch.nn import functional
 from audio_engine.constant import EPSILON
 
-# for log
 from utils.logger import log
 print=log
 
@@ -14,33 +13,21 @@ class BaseModel(nn.Module):
 
     @staticmethod
     def unfold(input, num_neighbor):
-        """
-        Along with the frequency dim, split overlapped sub band units from spectrogram.
 
-        Args:
-            input: [B, C, F, T]
-            num_neighbor:
-
-        Returns:
-            [B, N, C, F_s, T], F 为子频带的频率轴大小, e.g. [2, 161, 1, 19, 200]
-        """
         assert input.dim() == 4, f"The dim of input is {input.dim()}. It should be four dim."
         batch_size, num_channels, num_freqs, num_frames = input.size()
 
         if num_neighbor < 1:
-            # No change for the input
             return input.permute(0, 2, 1, 3).reshape(batch_size, num_freqs, num_channels, 1, num_frames)
 
         output = input.reshape(batch_size * num_channels, 1, num_freqs, num_frames)
         sub_band_unit_size = num_neighbor * 2 + 1
 
-        # Pad to the top and bottom
         output = functional.pad(output, [0, 0, num_neighbor, num_neighbor], mode="reflect")
 
         output = functional.unfold(output, (sub_band_unit_size, num_frames))
         assert output.shape[-1] == num_freqs, f"n_freqs != N (sub_band), {num_freqs} != {output.shape[-1]}"
 
-        # Split the dim of the unfolded feature
         output = output.reshape(batch_size, num_channels, sub_band_unit_size, num_frames, num_freqs)
         output = output.permute(0, 4, 1, 2, 3).contiguous()
 
@@ -48,40 +35,20 @@ class BaseModel(nn.Module):
 
     @staticmethod
     def _reduce_complexity_separately(sub_band_input, full_band_output, device):
-        """
 
-        Args:
-            sub_band_input: [60, 257, 1, 33, 200]
-            full_band_output: [60, 257, 1, 3, 200]
-            device:
-
-        Notes:
-            1. 255 and 256 freq not able to be trained
-            2. batch size 应该被 3 整除，否则最后一部分 batch 内的频率无法很好的训练
-
-        Returns:
-            [60, 85, 1, 36, 200]
-        """
         batch_size = full_band_output.shape[0]
         n_freqs = full_band_output.shape[1]
         sub_batch_size = batch_size // 3
         final_selected = []
 
         for idx in range(3):
-            # [0, 60) => [0, 20)
             sub_batch_indices = torch.arange(idx * sub_batch_size, (idx + 1) * sub_batch_size, device=device)
             full_band_output_sub_batch = torch.index_select(full_band_output, dim=0, index=sub_batch_indices)
             sub_band_output_sub_batch = torch.index_select(sub_band_input, dim=0, index=sub_batch_indices)
 
-            # Avoid to use padded value (first freq and last freq)
-            # i = 0, (1, 256, 3) = [1, 4, ..., 253]
-            # i = 1, (2, 256, 3) = [2, 5, ..., 254]
-            # i = 2, (3, 256, 3) = [3, 6, ..., 255]
             freq_indices = torch.arange(idx + 1, n_freqs - 1, step=3, device=device)
             full_band_output_sub_batch = torch.index_select(full_band_output_sub_batch, dim=1, index=freq_indices)
             sub_band_output_sub_batch = torch.index_select(sub_band_output_sub_batch, dim=1, index=freq_indices)
-
-            # ([30, 85, 1, 33 200], [30, 85, 1, 3, 200]) => [30, 85, 1, 36, 200]
 
             final_selected.append(torch.cat([sub_band_output_sub_batch, full_band_output_sub_batch], dim=-2))
 
@@ -89,16 +56,7 @@ class BaseModel(nn.Module):
 
     @staticmethod
     def sband_forgetting_norm(input, train_sample_length):
-        """
-        与 forgetting norm相同，但使用拼接后模型的中间频带来计算均值
-        效果不好
-        Args:
-            input:
-            train_sample_length:
 
-        Returns:
-
-        """
         assert input.ndim == 3
         batch_size, n_freqs, n_frames = input.size()
 
@@ -116,26 +74,14 @@ class BaseModel(nn.Module):
 
             mu_list.append(mu)
 
-            # print("input", input[:, :, idx].min(), input[:, :, idx].max(), input[:, :, idx].mean())
-            # print(f"alp {idx}: ", alp)
-            # print(f"mu {idx}: {mu[128, 0]}")
 
-        mu = torch.stack(mu_list, dim=-1)  # [B, 1, T]
+        mu = torch.stack(mu_list, dim=-1)
         input = input / (mu + eps)
         return input
 
     @staticmethod
     def forgetting_norm(input, sample_length_in_training):
-        """
-        输入为三维，通过不断估计邻近的均值来作为当前 norm 时的均值
 
-        Args:
-            input: [B, F, T]
-            sample_length_in_training: 训练时的长度，用于计算平滑因子
-
-        Returns:
-
-        """
         assert input.ndim == 3
         batch_size, n_freqs, n_frames = input.size()
         eps = 1e-10
@@ -153,24 +99,13 @@ class BaseModel(nn.Module):
 
             mu_list.append(mu)
 
-            # print("input", input[:, :, idx].min(), input[:, :, idx].max(), input[:, :, idx].mean())
-            # print(f"alp {idx}: ", alp)
-            # print(f"mu {idx}: {mu[128, 0]}")
-
-        mu = torch.stack(mu_list, dim=-1)  # [B, 1, T]
+        mu = torch.stack(mu_list, dim=-1)
         input = input / (mu + eps)
         return input
 
     @staticmethod
     def hybrid_norm(input, sample_length_in_training=192):
-        """
-        Args:
-            input: [B, F, T]
-            sample_length_in_training:
 
-        Returns:
-            [B, F, T]
-        """
         assert input.ndim == 3
         device = input.device
         data_type = input.dtype
@@ -183,41 +118,30 @@ class BaseModel(nn.Module):
         for idx in range(input.shape[-1]):
             if idx < sample_length_in_training:
                 alp = torch.min(torch.tensor([(idx - 1) / (idx + 1), alpha]))
-                mu = alp * mu + (1 - alp) * torch.mean(input[:, :, idx], dim=1).reshape(batch_size, 1)  # [B, 1]
+                mu = alp * mu + (1 - alp) * torch.mean(input[:, :, idx], dim=1).reshape(batch_size, 1)
                 mu_list.append(mu)
             else:
                 break
-        initial_mu = torch.stack(mu_list, dim=-1)  # [B, 1, T]
+        initial_mu = torch.stack(mu_list, dim=-1)
 
-        step_sum = torch.sum(input, dim=1)  # [B, T]
-        cumulative_sum = torch.cumsum(step_sum, dim=-1)  # [B, T]
+        step_sum = torch.sum(input, dim=1)
+        cumulative_sum = torch.cumsum(step_sum, dim=-1)
 
         entry_count = torch.arange(n_freqs, n_freqs * n_frames + 1, n_freqs, dtype=data_type, device=device)
-        entry_count = entry_count.reshape(1, n_frames)  # [1, T]
-        entry_count = entry_count.expand_as(cumulative_sum)  # [1, T] => [B, T]
+        entry_count = entry_count.reshape(1, n_frames)
+        entry_count = entry_count.expand_as(cumulative_sum)
 
-        cum_mean = cumulative_sum / entry_count  # B, T
+        cum_mean = cumulative_sum / entry_count
 
-        cum_mean = cum_mean.reshape(batch_size, 1, n_frames)  # [B, 1, T]
+        cum_mean = cum_mean.reshape(batch_size, 1, n_frames)
 
-        # print(initial_mu[0, 0, :50])
-        # print("-"*60)
-        # print(cum_mean[0, 0, :50])
         cum_mean[:, :, :sample_length_in_training] = initial_mu
 
         return input / (cum_mean + eps)
 
     @staticmethod
     def offline_laplace_norm(input):
-        """
 
-        Args:
-            input: [B, C, F, T]
-
-        Returns:
-            [B, C, F, T]
-        """
-        # utterance-level mu
         mu = torch.mean(input, dim=(1, 2, 3), keepdim=True)
 
         normed = input / (mu + 1e-5)
@@ -226,19 +150,12 @@ class BaseModel(nn.Module):
 
     @staticmethod
     def cumulative_laplace_norm(input):
-        """
 
-        Args:
-            input: [B, C, F, T]
-
-        Returns:
-
-        """
         batch_size, num_channels, num_freqs, num_frames = input.size()
         input = input.reshape(batch_size * num_channels, num_freqs, num_frames)
 
-        step_sum = torch.sum(input, dim=1)  # [B * C, F, T] => [B, T]
-        cumulative_sum = torch.cumsum(step_sum, dim=-1)  # [B, T]
+        step_sum = torch.sum(input, dim=1)
+        cumulative_sum = torch.cumsum(step_sum, dim=-1)
 
         entry_count = torch.arange(
             num_freqs,
@@ -247,10 +164,10 @@ class BaseModel(nn.Module):
             dtype=input.dtype,
             device=input.device
         )
-        entry_count = entry_count.reshape(1, num_frames)  # [1, T]
-        entry_count = entry_count.expand_as(cumulative_sum)  # [1, T] => [B, T]
+        entry_count = entry_count.reshape(1, num_frames)
+        entry_count = entry_count.expand_as(cumulative_sum)
 
-        cumulative_mean = cumulative_sum / entry_count  # B, T
+        cumulative_mean = cumulative_sum / entry_count
         cumulative_mean = cumulative_mean.reshape(batch_size * num_channels, 1, num_frames)
 
         normed = input / (cumulative_mean + EPSILON)
@@ -259,14 +176,7 @@ class BaseModel(nn.Module):
 
     @staticmethod
     def offline_gaussian_norm(input):
-        """
-        Zero-Norm
-        Args:
-            input: [B, C, F, T]
 
-        Returns:
-            [B, C, F, T]
-        """
         mu = torch.mean(input, dim=(1, 2, 3), keepdim=True)
         std = torch.std(input, dim=(1, 2, 3), keepdim=True)
 
@@ -276,23 +186,15 @@ class BaseModel(nn.Module):
 
     @staticmethod
     def cumulative_layer_norm(input):
-        """
-        Online zero-norm
 
-        Args:
-            input: [B, C, F, T]
-
-        Returns:
-            [B, C, F, T]
-        """
         batch_size, num_channels, num_freqs, num_frames = input.size()
         input = input.reshape(batch_size * num_channels, num_freqs, num_frames)
 
-        step_sum = torch.sum(input, dim=1)  # [B * C, F, T] => [B, T]
+        step_sum = torch.sum(input, dim=1)
         step_pow_sum = torch.sum(torch.square(input), dim=1)
 
-        cumulative_sum = torch.cumsum(step_sum, dim=-1)  # [B, T]
-        cumulative_pow_sum = torch.cumsum(step_pow_sum, dim=-1)  # [B, T]
+        cumulative_sum = torch.cumsum(step_sum, dim=-1)
+        cumulative_pow_sum = torch.cumsum(step_pow_sum, dim=-1)
 
         entry_count = torch.arange(
             num_freqs,
@@ -301,12 +203,12 @@ class BaseModel(nn.Module):
             dtype=input.dtype,
             device=input.device
         )
-        entry_count = entry_count.reshape(1, num_frames)  # [1, T]
-        entry_count = entry_count.expand_as(cumulative_sum)  # [1, T] => [B, T]
+        entry_count = entry_count.reshape(1, num_frames)
+        entry_count = entry_count.expand_as(cumulative_sum)
 
-        cumulative_mean = cumulative_sum / entry_count  # [B, T]
-        cumulative_var = (cumulative_pow_sum - 2 * cumulative_mean * cumulative_sum) / entry_count + cumulative_mean.pow(2)  # [B, T]
-        cumulative_std = torch.sqrt(cumulative_var + EPSILON)  # [B, T]
+        cumulative_mean = cumulative_sum / entry_count
+        cumulative_var = (cumulative_pow_sum - 2 * cumulative_mean * cumulative_sum) / entry_count + cumulative_mean.pow(2)
+        cumulative_std = torch.sqrt(cumulative_var + EPSILON)
 
         cumulative_mean = cumulative_mean.reshape(batch_size * num_channels, 1, num_frames)
         cumulative_std = cumulative_std.reshape(batch_size * num_channels, 1, num_frames)
@@ -330,11 +232,7 @@ class BaseModel(nn.Module):
         return norm
 
     def weight_init(self, m):
-        """
-        Usage:
-            model = Model()
-            model.apply(weight_init)
-        """
+
         if isinstance(m, nn.Conv1d):
             init.normal_(m.weight.data)
             if m.bias is not None:

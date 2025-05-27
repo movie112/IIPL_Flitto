@@ -37,16 +37,7 @@ def cumulative_norm(input):
 
 class CumulativeMagSpectralNorm(nn.Module):
     def __init__(self, cumulative=False, use_mid_freq_mu=False):
-        """
 
-        Args:
-            cumulative: 是否采用累积的方式计算 mu
-            use_mid_freq_mu: 仅采用中心频率的 mu 来代替全局 mu
-
-        Notes:
-            先算均值再累加 等同于 先累加再算均值
-
-        """
         super().__init__()
         self.eps = 1e-6
         self.cumulative = cumulative

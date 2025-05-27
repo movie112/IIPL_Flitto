@@ -26,12 +26,8 @@ def split_sentences_latin(text, min_len=10):
 def split_sentences_zh(text, min_len=10):
     text = re.sub('[。！？；]', '.', text)
     text = re.sub('[，]', ',', text)
-    # 将文本中的换行符、空格和制表符替换为空格
     text = re.sub('[\n\t ]+', ' ', text)
-    # 在标点符号后添加一个空格
     text = re.sub('([,.!?;])', r'\1 $#!', text)
-    # 分隔句子并去除前后空格
-    # sentences = [s.strip() for s in re.split('(。|！|？|；)', text)]
     sentences = [s.strip() for s in text.split('$#!')]
     if len(sentences[-1]) == 0: del sentences[-1]
 
@@ -49,18 +45,8 @@ def split_sentences_zh(text, min_len=10):
 
 
 def merge_short_sentences_en(sens):
-    """Avoid short sentences by merging them with the following sentence.
-
-    Args:
-        List[str]: list of input sentences.
-
-    Returns:
-        List[str]: list of output sentences.
-    """
     sens_out = []
     for s in sens:
-        # If the previous sentense is too short, merge them with
-        # the current sentence.
         if len(sens_out) > 0 and len(sens_out[-1].split(" ")) <= 2:
             sens_out[-1] = sens_out[-1] + " " + s
         else:
@@ -75,19 +61,8 @@ def merge_short_sentences_en(sens):
 
 
 def merge_short_sentences_zh(sens):
-    # return sens
-    """Avoid short sentences by merging them with the following sentence.
-
-    Args:
-        List[str]: list of input sentences.
-
-    Returns:
-        List[str]: list of output sentences.
-    """
     sens_out = []
     for s in sens:
-        # If the previous sentense is too short, merge them with
-        # the current sentence.
         if len(sens_out) > 0 and len(sens_out[-1]) <= 2:
             sens_out[-1] = sens_out[-1] + " " + s
         else:
@@ -103,7 +78,6 @@ def merge_short_sentences_zh(sens):
 
 
 def txtsplit(text, desired_length=100, max_length=200):
-    """Split text it into chunks of a desired length trying to keep sentences intact."""
     text = re.sub(r'\n\n+', '\n', text)
     text = re.sub(r'\s+', ' ', text)
     text = re.sub(r'[""]', '"', text)

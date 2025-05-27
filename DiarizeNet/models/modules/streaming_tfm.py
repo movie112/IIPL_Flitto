@@ -10,25 +10,12 @@ class IncrementalSelfAttention(nn.Module):
         self.attention = nn.MultiheadAttention(embed_dim=d_model, num_heads=nhead, batch_first=True)
     
     def forward(self, query, key, value, past_key=None, past_value=None):
-        """
-        Args:
-            query: (batch_size, 1, d_model)
-            key: (batch_size, 1, d_model)
-            value: (batch_size, 1, d_model)
-            past_key: (batch_size, seq_len, d_model)
-            past_value: (batch_size, seq_len, d_model)
-        Returns:
-            output: (batch_size, 1, d_model)
-            new_key: (batch_size, seq_len+1, d_model)
-            new_value: (batch_size, seq_len+1, d_model)
-        """
         if past_key is not None and past_value is not None:
             comb_key = torch.cat([past_key, key], dim=1)
             comb_value = torch.cat([past_value, value], dim=1)
         else:
             comb_key = key
             comb_value = value
-        # (batch_size, 1, d_model)
         attn_output, _ = self.attention(query, comb_key, comb_value)
         
         return attn_output, comb_key, comb_value
@@ -47,16 +34,6 @@ class StreamingTransformerEncoderLayer(nn.Module):
         self.activation = activation if activation else nn.ReLU()
 
     def forward(self, x, past_key=None, past_value=None):
-        """
-        Args:
-            x: (batch_size, 1, d_model)
-            past_key: (batch_size, seq_len, d_model)
-            past_value: (batch_size, seq_len, d_model)
-        Returns:
-            output: (batch_size, 1, d_model)
-            new_key: (batch_size, seq_len+1, d_model)
-            new_value: (batch_size, seq_len+1, d_model)
-        """
         query = x
         key, value = x, x
         attn_output, new_key, new_value = self._sa_block(query, key, value, past_key, past_value)
@@ -89,24 +66,16 @@ class StreamingTransformerEncoder(nn.Module):
             )
             for _ in range(num_layers)
         ])
-        self.cache = [{} for _ in range(num_layers)] # cache key and value for each layer
+        self.cache = [{} for _ in range(num_layers)]
 
     def forward(self, x):
-        """
-        Args:
-            x: (batch_size, 1, d_model)
-        Returns:
-            output: (batch_size, 1, d_model)
-        """
         for i, layer in enumerate(self.layers):
             cache = self.cache[i]
             past_key = cache.get('key', None)
             past_value = cache.get('value', None)
-            # print(f"Layer {i} - past_key: {past_key.shape if past_key is not None else None}")
-            # print(f"Layer {i} - past_value: {past_value.shape if past_value is not None else None}")
             x, new_key, new_value = layer(x, past_key, past_value)
 
-            self.cache[i]["key"] = new_key.detach()  # Detach to save memory
+            self.cache[i]["key"] = new_key.detach()
             self.cache[i]["value"] = new_value.detach()
         
         return x
@@ -150,11 +119,10 @@ if __name__ == '__main__':
     standard_out = standard_tfm(inp_seq, inp_mask)
 
     for t in range(inp_seq.shape[1]):
-        frame_output = incremental_tfm(inp_seq[:, t:t+1, :])  # 保证输出符合预期
-        # print(f"Frame {t}: {frame_output.shape}")
+        frame_output = incremental_tfm(inp_seq[:, t:t+1, :])
         incremental_output.append(frame_output)
     incremental_output = torch.cat(incremental_output, dim=1)
-    print(f"Incremental output: {incremental_output.shape}", f"Standard output: {standard_out.shape}")  # 打印输出的形状
+    print(f"Incremental output: {incremental_output.shape}", f"Standard output: {standard_out.shape}")
     print(incremental_output)
     print(standard_out)
     print(torch.allclose(incremental_output, standard_out, atol=1e-6, rtol=1e-5))

@@ -70,7 +70,7 @@ def g2p(text):
     sentences = [i for i in re.split(pattern, text) if i.strip() != ""]
     phones, tones, word2ph = _g2p(sentences)
     assert sum(word2ph) == len(phones)
-    assert len(word2ph) == len(text)  # Sometimes it will crash,you can add a try-catch.
+    assert len(word2ph) == len(text)
     phones = ["_"] + phones + ["_"]
     tones = [0] + tones + [0]
     word2ph = [1] + word2ph + [1]
@@ -95,7 +95,6 @@ def _g2p(segments):
     tones_list = []
     word2ph = []
     for seg in segments:
-        # Replace all English words in the sentence
         seg = re.sub("[a-zA-Z]+", "", seg)
         seg_cut = psg.lcut(seg)
         initials = []
@@ -110,14 +109,10 @@ def _g2p(segments):
             initials.append(sub_initials)
             finals.append(sub_finals)
 
-            # assert len(sub_initials) == len(sub_finals) == len(word)
         initials = sum(initials, [])
         finals = sum(finals, [])
-        #
         for c, v in zip(initials, finals):
             raw_pinyin = c + v
-            # NOTE: post process for pypinyin outputs
-            # we discriminate i, ii and iii
             if c == v:
                 assert c in punctuation
                 phone = [c]
@@ -131,7 +126,6 @@ def _g2p(segments):
                 assert tone in "12345"
 
                 if c:
-                    # 多音节
                     v_rep_map = {
                         "uei": "ui",
                         "iou": "iu",
@@ -140,7 +134,6 @@ def _g2p(segments):
                     if v_without_tone in v_rep_map.keys():
                         pinyin = c + v_rep_map[v_without_tone]
                 else:
-                    # 单音节
                     pinyin_rep_map = {
                         "ing": "ying",
                         "i": "yi",
@@ -192,8 +185,3 @@ if __name__ == "__main__":
     bert = get_bert_feature(text, word2ph)
 
     print(phones, tones, word2ph, bert.shape)
-
-
-# # 示例用法
-# text = "这是一个示例文本：,你好！这是一个测试...."
-# print(g2p_paddle(text))  # 输出: 这是一个示例文本你好这是一个测试

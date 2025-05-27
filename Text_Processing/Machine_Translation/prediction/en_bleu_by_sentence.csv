@@ -1,0 +1,501 @@
+﻿Segment,BLEU,Source,Reference,Hypothesis
+0,100.00,"좋아요, 그럼 시작해봅시다.","Okay, then let's start.","Okay, then let's start."
+1,64.32,죄송하지만 아기를 위한 메뉴는 없습니다.,"Sorry, there's no menu available for babies.","I'm sorry, but there's no menu for babies."
+2,75.91,오늘 상무님 스케줄 알려줘.,Could you let me know the executive director's schedule for today?,Please let me know the executive director's schedule today.
+3,23.20,와 나무로 작업을 하시는구나.,"Wow, you work with wood.",You're working with trees.
+4,76.64,그리고 색상도 바꿀 수 있어요.,And you can change the color too.,And you can also change the color.
+5,42.91,외국에서의 예술과 문화는 어땠나요?,What was art and culture like abroad?,How was art and culture in foreign countries?
+6,100.00,외국인 직원의 정규 고용은 가능합니다.,Regular employment of foreign employees is possible.,Regular employment of foreign employees is possible.
+7,77.74,시장이랑 종합 쇼핑몰 좋아하세요?,Do you like markets and shopping malls?,Do you like markets and general shopping malls?
+8,64.00,우리 회사는 글로벌 진출을 계획 중이다.,Our company is planning to expand globally.,Our company is planning to enter the global market.
+9,76.47,회사에서 교통비 전액을 지원해 드립니다.,The company will cover all transportation expenses.,The company provides full transportation expenses.
+10,68.19,그리고 경쟁사와 차별화된 점은 무엇인가요?,And what sets you apart from your competitors?,And what's different from your competitors?
+11,86.77,"기본적으로, 근무 시간은 동일합니다.","Basically, the working hours are the same.","Basically, working hours are the same."
+12,87.65,롯데월드 타워도 꼭 방문해보세요.,Be sure to visit Lotte World Tower too.,Be sure to visit Lotte World Tower.
+13,37.63,호텔 이용객이라면 누구나 사용이 가능합니다.,Anyone staying at the hotel can use it.,Any hotel user can use it.
+14,80.87,우선 경복궁역에서 지하철을 타세요.,"First, take the subway from Gyeongbokgung Station.","First, take the subway at Gyeongbokgung station."
+15,79.33,혹시 선호하시는 디자인이 특별히 있으신가요?,"Do you have a particular design that you prefer?""",Do you have any particular design you prefer?
+16,100.00,저희 학교에서 함께 일하게 되면 좋겠습니다.,I hope we can work together at our school.,I hope we can work together at our school.
+17,62.85,혹시 어떤 주제로 시작하고 싶으신가요?,What topic would you like to start with ?,What topic do you want to start with?
+18,46.75,요즘 유행하는 엠지 단어 알려줘.,Tell me some trendy MG words these days.,Tell me the word MG that is popular these days.
+19,72.77,클라우드 기반의 앱의 장점은 무엇인가요?,What are the benefits of cloud-based apps?,What are the advantages of cloud-based apps?
+20,77.45,그리고 특정 브랜드에 대한 선호도가 있나요?,And do you have any preferences for specific brands?,And do you have a preference for a specific brand?
+21,74.68,이제 우리는 조각 작업을 시작할 거에요.,Now we are going to start the sculpting work.,Now we are going to start sculpture work.
+22,60.52,국제시장에 아주 유명한 가게가 있어요.,There is a very famous store in Gukje Market.,There is a very famous store in the international market.
+23,46.94,"네, 여기 안내 지도를 드릴게요.","Yes, here's a guide map for you.","Yes, I'll give you a guide map."
+24,85.83,부산에 오면 해산물을 먹어야죠.,"When you come to Busan, you have to eat seafood.",You have to eat seafood when you come to Busan.
+25,71.56,저는 주로 풍경 그림을 그리는 편이에요.,I usually paint landscapes.,I usually draw landscapes.
+26,79.65,혹시 여행자 보험 가입돼 있으세요?,Do you have travel insurance?,Do you have traveler's insurance?
+27,100.00,스탠다드가 가장 기본적인 객실이에요.,Standard is the most basic room.,Standard is the most basic room.
+28,44.83,마이크로소프트 업데이트를 하려면 어떻게 해야 돼?,How do I get Microsoft updates?,What should I do to update Microsoft?
+29,79.35,전통과 현대를 조화롭게 표현하고 있네요.,It harmoniously expresses tradition and modernity.,It expresses tradition and modernity in harmony.
+30,56.19,각각의 돌은 고유한 특성을 가지고 있어요.,Each stone has its own unique properties.,Each stone has its own characteristics.
+31,96.04,저는 이 학교에서 경영학을 공부하고 있습니다.,I am studying business administration at this school.,I'm studying business administration at this school.
+32,75.19,네. 해운대까지 모셔 드리겠습니다.,Yes. I will take you to Haeundae.,Okay. I'll take you to Haeundae.
+33,63.91,상대방을 가스라이팅한다는 의미는 뭐야?,What does it mean to gaslight someone?,What does it mean to gas your opponent?
+34,85.43,오늘 디지털 아트의 기초를 배울 것입니다.,Today we will learn the basics of digital art.,I will learn the basics of digital art today.
+35,65.36,시장은 확실히 활기가 있어서 좋구요.,"The market is definitely lively, which is nice.",It's good that the market is definitely lively.
+36,88.56,알파벳과 구글의 관계에 대해서 설명해줘.,Explain the relationship between Alphabet and Google.,Explain the relationship between the alphabet and Google.
+37,43.46,홍보팀에서의 업무 내용은 어떻게 되나요?,What kind of work does the PR team handle?,What's the details of your work in the PR team?
+38,76.44,강남에도 늦게까지 하는 상점이 많아요.,There are many stores in Gangnam that are open late.,There are many shops in Gangnam that are open until late.
+39,71.97,하이브리드랑 전기차가 같은 뜻인가?,Do hybrid cars and electric cars mean the same thing?,Does hybrid mean the same thing as electric cars?
+40,85.83,연락처는 별도로 메일로 전달드리도록 하겠습니다.,We will send you the contact information separately via email.,I will send you the contact information separately by e-mail.
+41,47.35,다음 주에 계약서 관련하여 다시 연락 드리겠습니다.,I will follow up with you next week regarding the contract.,I will contact you again about the contract next week.
+42,51.66,유럽에 진출한 해외 글로벌 기업 좀 알려줘.,Tell me about some global companies that have advanced into Europe.,Please let me know the overseas global companies that have entered Europe.
+43,60.23,원하시는 언어로 진행되는 수업을 선택할 수 있어요.,You can choose a class taught in the language of your choice.,You can choose a class in the language you want.
+44,100.00,먼저 디지털 아트 수업에 참석해 주셔서 감사합니다.,"First of all, thank you for attending the digital art class.","First of all, thank you for attending the digital art class."
+45,76.67,인도네시아 수도 자카르타 여행 정보 좀 알려줘.,"Please give me some travel information about Jakarta, the capital of Indonesia.","Please tell me the travel information of Jakarta, the capital of Indonesia."
+46,79.95,가능하다면 미리 전화로 예약하시는 게 좋아요.,"If possible, it's best to make a reservation by phone in advance.","If possible, you'd better make a reservation by phone in advance."
+47,54.58,데이터베이스와 데이터 아키텍트의 정의를 알려줘.,Please define database and data architect.,Let me know the definition of database and data architecture.
+48,100.00,플레이스테이션의 세일은 언제 하나요?,When is the PlayStation sale?,When is the PlayStation sale?
+49,75.07,이 에어라인은 홈페이지에서 예약을 지원합니다.,This airline supports reservations on its website.,This airline supports reservations on the homepage.
+50,82.99,정상에서 바라보는 풍경은 정말로 마법 같아요.,The view from the top is truly magical.,The view from the top is really magical.
+51,54.51,여기 오셨다니 잘 선택하셨네요.,You made a good choice by coming here.,You've made a good choice since you're here.
+52,55.11,난징에 있는 박물관에 갔다 왔어?,Have you been to the museum in Nanjing?,Did you go to a museum in Nanjing?
+53,64.24,"와, 저도 이렇게 또 배우게 되네요","Wow, I'm learning something like this again","Wow, I'm learning again like this."
+54,92.79,테무와 알리의 다른 점은 무엇인가요?,What is the difference between Temu and Ali?,What is the difference between Timu and Ali?
+55,100.00,트럼프와 머스크는 어떤 관련이 있는지 알아?,Do you know how Trump and Musk are related?,Do you know how Trump and Musk are related?
+56,60.92,전기차랑 하이브리드 차의 차이점을 알려줘.,Tell me the difference between electric and hybrid cars.,Please let me know the difference between an electric car and a hybrid car.
+57,59.60,그래서 원하시는 난이도에 맞게 선택하시면 좋아요.,"So, please choose according to your desired difficulty level.",So you can choose according to the level of difficulty you want.
+58,49.69,이게 바로 지금 제가 하고 있는 작업입니다.,This is what I'm working on right now.,This is what I'm doing now.
+59,67.78,이 작품은 전통과 현대의 조화를 아름답게 보여주고 있어요.,This work beautifully demonstrates the harmony between tradition and modernity.,This work shows a beautiful harmony between tradition and modern times.
+60,68.19,최대한 빠르게 양질의 서비스를 제공하려 노력하고 있습니다.,We strive to provide quality service as quickly as possible.,We are trying to provide quality services as soon as possible.
+61,71.38,실적이 좋은 회사의 스톡 옵션을 구입했어.,I bought stock options from a company with strong performance.,I bought the stock option of a company with good performance.
+62,67.77,이 버튼을 클릭하면 프레젠테이션이 진행되나요?,"If I click this button, will the presentation proceed?",Does the presentation take place if I click this button?
+63,54.94,그래야 제가 적합한 제품을 추천해 드릴 수 있어서요.,"This way, I can recommend the right product for you.","That way, I can recommend a suitable product."
+64,81.70,알겠습니다. 이제 말씀하신 모든 제품 준비해 드릴게요.,"Okay, I'll prepare all the products you mentioned.",Okay. Now I will prepare all the products you mentioned.
+65,59.15,그럼 이곳에 필요한 도구와 색상을 준비할까요?,"So, shall we prepare the tools and colors needed here?",Then should we prepare the necessary tools and colors here?
+66,45.44,제주 민속공예품도 한번 구경해보세요.,Be sure to check out Jeju's folk crafts too.,Look around Jeju folk crafts too.
+67,58.16,에이 기업은 어떤 부분에서 가장 자부심을 가지고 있나요?,What part of its business is Company A most proud of?,What part of A company is the most proud of?
+68,58.20,어떤 이야기를 이 작품으로 전달하고 싶으셨나요?,What kind of story did you want to convey through this work?,What story did you want to tell about with this work?
+69,79.23,특히 날씨가 맑은 날에는 동해까지 보이기도 해요.,"Especially on clear days, you can even see the East Sea.","Especially on clear days, we can see the East Sea."
+70,79.86,지금 엔비디아 주가에 대해서 알려주세요.,Please tell me about Nvidia stock price right now.,Please tell me about Nvidia's stock price now.
+71,38.78,"아 그러시구나, 정말 반갑습니다.","Oh, I see. It's really nice to meet you.","Oh, I see, nice to see you."
+72,80.47,모든 것을 천천히 배울 테니 너무 걱정하지 마세요.,"Don't worry too much, you'll learn everything slowly.","I will learn everything slowly, so don't worry too much."
+73,60.22,비비씨가 어느 나라 방송국이라고 했지?,Which country's broadcasting station did the BBC say it was from?,Which broadcasting station in which country did you say BB?
+74,70.13,베트남 호치민이라는 도시는 여행하기에 어때?,How about traveling to the city of Ho Chi Minh City in Vietnam?,"How about traveling to Ho Chi Minh City, Vietnam?"
+75,73.49,정직원 전환 절차는 일반적으로 다음과 같습니다.,The process for converting to a full-time employee is generally as follows:,The transition process for full-time employees is generally as follows.
+76,42.51,파이썬 코드를 공부하는 법에 관련된 책이 있을까?,Do you know any books that teach you how to study Python programming?,Do you have any books related to how to study the pason code?
+77,22.78,그렇게 생각하니 투자의 가치가 있는 작업이네요.,"When I think about it that way, it seems like a worthwhile investment.",That's what I think is worth investing.
+78,65.23,로제의 신곡 아파트 가사 좀 알려줄래?,"Can you tell me the lyrics to Rosé's new song, Apartment?",Could you tell me the lyrics of Rose's new apartment?
+79,48.56,하노이를 여행하려고 하는데 괜찮은 호텔을 알려줘.,I'm planning to travel to Hanoi. Can you recommend a good hotel?,"I'm going to travel to Hanoi, so please let me know a nice hotel."
+80,77.40,어쿠스틱 음악들 플레이리스트 만들어줘.,Make a playlist of acoustic music.,Make acoustic music playlists.
+81,89.54,제 영감은 서울 주변의 아름다운 장면들이에요.,My inspiration is the beautiful scenes around Seoul.,My inspiration is beautiful scenes around Seoul.
+82,92.99,통역사를 동원한다는 것은 추가적인 비용이 발생하게 됩니다.,Hiring an interpreter will incur additional costs.,Using an interpreter will incur additional costs.
+83,67.05,블랙프라이데이 때 세일하는 항목은 무엇인가요?,What items are on sale on Black Friday?,What are the sales items on Black Friday?
+84,55.00,이 그림은 정말로 감정과 느낌을 잘 담아냈네요.,This painting truly captures the emotions and feelings beautifully.,This picture really captures emotions and feelings well.
+85,40.55,중복되는 메뉴도 있고 다른 메뉴도 있습니다.,There are some duplicate menus and some different menus.,There are overlapping menus and other menus.
+86,78.22,임시 여권을 발급받기 위해서는 여러 가지 서류가 필요해요.,Various documents are required to get a temporary passport.,Various documents are needed to get a temporary passport issued.
+87,84.25,호텔이나 가이드 관련해서 요구사항 있으실까요?,Do you have any requests regarding hotels or guides?,Do you have any requirements regarding hotels or guides?
+88,100.00,어플리케이션을 업데이트하는 시간은 얼마나 소요될까요?,How long will it take to update the application?,How long will it take to update the application?
+89,91.67,발리에서 수영하기 가장 좋은 명소를 알려줘.,Tell me the best places to swim in Bali.,Tell me the best place to swim in Bali.
+90,46.90,보통 헤드헌터는 연봉이 어느 정도 되니?,How much does a headhunter usually earn?,How much is the annual salary for headhunters?
+91,51.18,글로벌 컴퓨팅 플랫폼 중 대표적인 기업 다섯가지를 알려줘.,Tell me five leading companies in global computing platforms.,Please let me know 5 representative companies among the global computing platforms.
+92,63.94,오늘 피피티로 자기소개 자료를 만들었어.,Today I made a self-introduction using PPT.,I made a self-introduction material on PPT today.
+93,55.20,시간 내에 받은 주문만 서비스 제공이 가능합니다.,Only orders placed within the time limit can be serviced.,Only orders received in time can be provided with services.
+94,56.80,그럼 돼지국밥도 꼭 드셔보세요.,Then make sure to try the pork rice soup too.,Then make sure to try pork soup.
+95,83.35,구글은 클라우드 서비스를 무료로 제공하고 있다는데 사실이야?,Is it true that Google offers cloud services for free?,Is it true that Google is offering cloud services for free?
+96,48.12,케이피아이를 쿼터별로 설정하는 방법을 알려줘.,Please tell me how to set KPI by quarter.,Please let me know how to set K-Pia for each quarter.
+97,45.41,미팅 일정을 다시 디벨롭 해서 정리해줘.,Please re-develop and organize the meeting schedule.,Please send the meeting schedule back to the default and arrange it.
+98,100.00,저희도 함께 작업하고 새로운 기술과 기법을 배우고 있어요.,We are also working together and learning new technologies and techniques.,We are also working together and learning new technologies and techniques.
+99,83.38,전기차 중에 아이오닉 전기차가 유명해?,Is the Ioniq electric car famous among electric vehicles?,Are Ionic electric cars famous among electric vehicles?
+100,70.47,효율적인 트래픽 관리를 위해 라우팅 알고리즘을 도입했다.,"To optimize traffic management, a routing algorithm was introduced.","For efficient traffic management, a routing algorithm has been introduced."
+101,67.31,네. 남은 여행도 무사히 즐기시길요.,Yes. I hope you enjoy the rest of your trip.,Yes. Enjoy the rest of your trip safely.
+102,100.00,회사의 국제적인 비즈니스 확장에 대해 어떻게 생각하나요?,What do you think about the company's international business expansion?,What do you think about the company's international business expansion?
+103,84.31,원 밀리언 달러는 현재 환율이 어떻게 돼?,What is the current exchange rate for One Million Dollars?,What is the current exchange rate for one million dollars?
+104,84.37,제안서 작성 전에 메모로 정리해 줄래?,Could you please organize this into a memo before writing the proposal?,Would you please organize it with a memo before writing the proposal?
+105,72.27,구글에서 이용할 수 있는 클라우드 서비스가 있다면 알려줘.,Let me know if there are any cloud services available from Google.,Please let me know if there is a cloud service available on Google.
+106,67.04,글로벌 시장에 진출하기 위해 필요한 주요 요소들을 알려주세요.,Please tell me the key elements needed to enter the global market.,Please let me know the main factors needed to enter the global market.
+107,79.46,글로벌 마켓 시장에서 네이티브 스피커의 장점을 알려줘.,Tell me about the advantages of native speakers in the global market.,Please let me know the advantages of native speakers in the global market.
+108,89.15,"혹시, 연구개발팀과의 협업 기회도 많나요?",Are there many opportunities to collaborate with the research and development team?,Do you have many opportunities to collaborate with the research and development team?
+109,81.03,나는 우리 회사의 프로젝트를 비딩할 준비가 됐어.,I'm ready to bid on our company's project.,I'm ready to cover our company's project.
+110,56.29,나는 요즘 노션을 이용해서 회의록을 작성하고 있어.,I'm using Notion to write meeting minutes these days.,I'm writing a meeting book using a mission these days.
+111,76.53,그런데 이 부분은 어떤 붓을 사용해서 그린거야?,"By the way, what brush did you use to paint this part?","By the way, which brush did you use to draw this part?"
+112,53.72,오늘 수업에서는 어떤 주제로 시작하길 원하시나요?,What topic would you like to start with in today's class?,What kind of subject do you want to start in today's class?
+113,75.64,"예를 들면, 부장님의 의견도 매우 중요하게 생각합니다.","For example, I also consider the manager's opinion very important.","For example, the manager's opinion is also very important."
+114,60.48,새로운 디자인을 만들어 특허를 받으려면 어떻게 해야 되나요?,How do I create a new design and get a patent for it?,What should I do to make a new design and get a patent?
+115,64.02,이번 자라 디자이너 중에 명품 회사에서 일했던 사람 있어?,Are there any Zara designers who have worked for luxury companies?,Is there anyone who worked for a luxury company among this Zara designers?
+116,75.35,원하시는 시간대와 요일에 따라 다를 수 있어요.,It may vary depending on your preferred time zone and day of the week.,It may vary depending on the time zone and day of the week you want.
+117,76.32,모임 일정이 잡히는 대로 이메일로 알려드리도록 하겠습니다.,We will notify you by email as soon as the meeting schedule is set.,I will let you know by e-mail as soon as the meeting schedule is set.
+118,62.18,그리고 연속 수강 시 혜택에 대해서도 알려드릴게요.,And I'll also let you know about the benefits of continuous enrollment.,And I'll let you know the benefits of continuous classes.
+119,70.17,베트남 다낭과 같은 항구 도시 여행 정보 알려줘.,"Please tell me about travel information for port cities like Da Nang, Vietnam.","Please let me know the travel information of the port cities like Danang, Vietnam."
+120,91.67,와이파이 없이 통신을 원활하게 하는 방법이 있는지 알려주세요.,Please let me know if there is a way to communicate smoothly without wifi.,Please let me know if there is a way to communicate smoothly without Wi-Fi.
+121,65.56,조사한 데이터를 바탕으로 우리 부서의 문제점을 파악해줘.,"Based on the data you have collected, identify the problems in our department.",Please identify the problems of our department based on the data we researched.
+122,83.08,마이크로소프트 업데이트하고 싶은데 어떻게 하면 되는지 알려줄래?,"I want to update Microsoft, can you tell me how to do that?","I want to update Microsoft, can you tell me what to do?"
+123,66.21,"아 그러셨구나, 진짜 잘 오셨습니다.","Oh, I see. I'm really glad you're here.","Oh, I see, I'm so glad you're here."
+124,57.29,일본 도요타 회사에서 나오는 전기차가 무엇인지 알려줘.,"Tell me what kind of electric car is coming out from Toyota, Japan.",Please tell me what electric cars are coming out of Toyota company in Japan.
+125,64.38,"발리는 인도네시아의 섬 명소라던데, 맞아?",I heard that Bali is a famous island destination in Indonesia. is that right?,"I heard that Bali is an island attraction in Indonesia, is that correct?"
+126,52.85,베트남에 가서 무역을 해보고 싶은데 어떻게 생각하니?,I want to go to Vietnam and do some trading. What do you think?,"I want to trade in Vietnam, what do you think?"
+127,70.38,저작권에 걸리지 않는 일러스트가 필요한데 사이트를 알려주세요.,I need illustrations that are not copyrighted. Please let me know the site.,"I need an illustration that doesn't get copyrighted, so please let me know the site."
+128,42.11,그럼 이렇게 조화롭게 결합하는 것이 좋아 보이네요.,"Well, it looks like it would be nice to combine them harmoniously like this.",Then it looks good to combine in harmony like this.
+129,70.29,스타트업 창업을 생각 중인데 팀빌딩 피드백을 받고 싶어.,"I'm thinking about starting a startup, and I'd like some feedback on team building.","I'm thinking of starting a startup, but I want to get feedback on the team building."
+130,79.56,현재의 복리후생 혜택은 지속적으로 유지될 예정입니다.,Current welfare benefits will continue to be maintained.,The current benefits of welfare will continue to be maintained.
+131,77.07,이제 그림을 좀 더 디테일하게 만들어볼까요?,Shall we make the drawing more detailed now?,Shall we make the picture more detailed now?
+132,79.97,여러 레이어를 조립하여 복잡한 장면을 만들 수 있습니다.,You can create complex scenes by assembling multiple layers.,You can make complicated scenes by assembling multiple layers.
+133,72.03,와이탄에서 볼 만한 관광지를 추천해줄래?,Can you recommend some tourist attractions in Waitan?,Could you recommend some tourist attractions to visit in Witan?
+134,47.43,지난번 프로젝트에서 발생했던 최대 아웃풋은 뭐야?,What was the maximum output from the last project?,What is the biggest output that occurred in the last project?
+135,90.14,웨이신은 텐센트가 개발한 소셜 커뮤니케이션 플랫폼이야.,WeChat is a social communication platform developed by Tencent.,Weixin is a social communication platform developed by Tencent.
+136,58.40,현재 마사지는 사일 월요일로 예약되어 있습니다.,Massages are currently booked for Monday the 4th.,"Currently, massage is booked for private Monday."
+137,83.39,가스라이팅의 의미에 대해서 알려줄 수 있을까?,Can you tell me the meaning of gaslighting?,Can you tell me about the meaning of gas lighting?
+138,69.73,지마켓이랑 쿠팡 중에 뭐가 더 쿠폰을 많이 받아?,"Which one gives more coupons, Gmarket or Coupang?","Which coupons do you get more, Gmarket or Coupang?"
+139,67.64,방금 다운받은 어플리케이션에 업데이트가 끝나지 않아요.,The application I just downloaded won't finish updating.,The update is not over on the application I just downloaded.
+140,92.84,플로리다의 잭슨빌은 관광지로서 어때?,"How about Jacksonville, Florida as a tourist destination?",How about Jacksonville in Florida as a tourist destination?
+141,73.45,프레젠테이션에서 클릭 한번으로 애니메이션 효과를 추가할 수 있습니다.,Add animation effects to your presentations with just one click.,You can add animation effects with just one click from the presentation.
+142,78.08,쇼핑몰 웹디자이너는 보통 어떤 편집 프로그램을 써?,What editing program do shopping mall web designers usually use?,What kind of editing program does a shopping mall web designer usually use?
+143,63.42,난징에 있는 박물관을 같이 관람하러 갈래?,Would you like to go see the museum in Nanjing together?,Do you want to visit the museum in Nanjing together?
+144,74.28,너 항저우 여행 갔을 때 호수도 갔었어?,Did you go to the lake when you traveled to Hangzhou?,Did you go to the lake when you went on a trip to Hangzhou?
+145,76.33,이번 연도 유니콘 기업들의 최대 실적 성과들을 알려줘.,Tell me about the best performances of unicorn companies this year.,Please let me know the best performance of unicorn companies this year.
+146,48.85,디비 엔진이 다양한 데이터 모델러가 뭐가 있을까?,What are the different data modelers that DB Engine has?,What are the various data models for the DB engine?
+147,57.15,재계약 협의 시에 그 부분도 포함해서 논의해보겠습니다.,We will discuss that part as well during the contract renewal negotiations.,We will discuss it including that part when discussing the renewal of the contract.
+148,58.48,크리스마스엔 혼자서 촌캉스에 도전해볼까 해.,I'm thinking about trying a country vacation alone for Christmas.,I'm thinking of taking on a vacation alone on Christmas.
+149,83.68,시카고에서 가족 사인이 묵을 만한 호텔을 추천해줘.,Recommend me a hotel in Chicago where my family can stay.,Please recommend a hotel in Chicago where my family can stay.
+150,53.08,호텔 조식으로 스크램블 말고 또 뭐가 나와?,What else do hotels serve for breakfast besides scrambled eggs?,What else is there other than scrambles for breakfast at the hotel?
+151,42.37,반지르에서 추천할 만한 도시의 명소는 무엇인가요?,What are some city attractions you would recommend in Banjul?,What are the famous places in the city recommended by Bandre?
+152,80.99,중국 난징에 있는 박물관을 한번 가보고 싶어.,"I'd like to visit a museum in Nanjing, China.","I want to visit a museum in Nanjing, China."
+153,70.76,내가 올려주는 데이터를 분석해서 결과를 알려줄 수 있어?,Can you analyze the data I upload and tell me the results?,Can you tell me the result after analyzing the data I uploaded?
+154,56.64,미서부 여행으로 그랜드 캐니언이 유명해?,Is the Grand Canyon famous for trips to the West Coast?,Is Grand Canyon famous for traveling west-west?
+155,74.21,힙스터들이 많이 가는 맛집 추천해줄 수 있어?,Can you recommend a restaurant that a lot of hipsters go to?,Can you recommend me a good restaurant that many hipsters go to?
+156,69.24,에이아이 챗봇 미드저니 사용 방법을 알려줄래?,Can you tell me how to use AI Chatbot Midjourney?,Could you tell me how to use AI chatbot Midzani?
+157,54.76,"네, 이렇게 함께 해주신다니 정말 영광입니다.","Yes, it's truly an honor to have you with us.","Yes, it's an honor to be with you like this."
+158,62.19,모든 활동과 식사 포함하여 일인당 팔십만원입니다.,"It costs eight hundred thousand won per person, including all activities and meals.","It's 80 million won per person, including all activities and meals."
+159,72.29,상무님 스케줄 확인해서 달력에 표시해줄래?,"Sir, could you please check my schedule and mark it on the calendar?",Could you check the director's schedule and mark it on the calendar?
+160,84.83,홀리데이 시즌에 부산에서 가기 좋은 호텔을 추천해줘.,Please recommend a good hotel to stay at in Busan during the holiday season.,Please recommend a good hotel to go to Busan during the holiday season.
+161,68.34,해킹에 취약한 클라우드 환경의 주요 특징이 뭔지 좀 알려줘.,Tell me some key characteristics of a cloud environment that are vulnerable to hacking.,Please let me know the main characteristics of the cloud environment that is vulnerable to hacking.
+162,64.48,이번에 새롭게 설치한 미드저니의 사용 방법을 좀 알려주세요.,Could you please tell me how to use the newly installed Midjourney?,Please tell me how to use the newly installed midzarie.
+163,75.33,저는 유니콘 기업에 취직해서 좋은 성과를 내고 싶습니다.,I want to get a job at a unicorn company and achieve great results.,I want to get a job at a unicorn company and get good results.
+164,47.16,파이썬이랑 코드 공부하고 있는데 관련 책 소개해줘.,I'm studying Python and coding. Please recommend some related books.,"I'm studying the code with Pason, so please introduce me to a related book."
+165,61.57,쓰촨의 명소와 음식이 맛있는 맛집을 알려줘.,Please tell me about some famous attractions and great restaurants with delicious food in Sichuan.,Please tell me the famous restaurants and restaurants in Sichuan that have delicious food.
+166,42.90,이월 달에 하노이에서 삼일 정도 묵을 호텔이 있을까?,Are there any hotels I can stay at in Hanoi for three days in February?,Will there be a hotel to stay in Hanoi for 3 days in this month?
+167,46.17,미드저니를 사용해보고 싶은데 기본적인 사용 방법을 알려줘.,"I want to try Midjourney, please tell me the basic usage method.","I'd like to try the mid-sized one, so please tell me the basic way to use it."
+168,48.20,성과는 높고 일은 쉬운 그런 유니콘 기업 없을까?,Is there a unicorn company where the work is easy but the results are great?,Isn't there such a unicorn company with high performance and easy work?
+169,62.68,새로운 디자인을 만들었을 때 특허를 신청하는 방법을 알려줘.,"When I create a new design, please tell me how to apply for a patent.",Please let me know how to apply for a patent when you make a new design.
+170,36.98,쿠타라는 해변에서 즐겁게 서핑해보고 싶어.,I’d love to have a fun surfing experience at a beach called Kuta.,I want to surf happily at the beach called Kuta.
+171,71.90,지난번 우리가 했던 프로젝트 아웃풋이 굉장히 좋던데?,"The output of the project we did last time was really good, wasn't it?","The project output we did last time was really good, right?"
+172,67.05,베트남 여행 가려고 하는데 하롱 베이 기후 좀 알려줘.,"I'm planning a trip to Vietnam, so can you tell me what the climate is like in Ha Long Bay?","I'm planning to go on a trip to Vietnam, so please tell me the climate in Halong Bay."
+173,68.52,설악산에는 다양한 난이도의 코스가 마련되어 있는데요.,Seoraksan Mountain has courses of various difficulty levels.,Seoraksan Mountain has a variety of difficult courses.
+174,67.64,에이아이로 그린 일러스트는 저작권을 침해하는 것일까?,Do AI-generated illustrations infringe on copyright?,Does illustration drawn with an AI infringe on copyright?
+175,22.24,트렌드는 어떤 걸 기준 지표로 삼아서 만드는 거야?,What is the standard indicator used to create trends?,What kind of trend is made by using it as a reference index?
+176,66.75,엠비티아이 잇프제의 특성에 대해서 설명해 주세요.,Please explain the characteristics of MBTI IFPJ.,Please explain about the characteristics of the MBI gum.
+177,34.71,줄임말 엠지는 뭐의 줄임말일까?,What does the abbreviation 'MG' stand for?,What does the short term MG mean?
+178,83.45,어쿠스틱 장르의 노래를 플레이리스트로 만들어줄래?,Could you make a playlist of acoustic genre songs?,Could you make the acoustic genre song a playlist?
+179,77.27,팀 본딩은 팀플과 다른 의미가 있는 거야?,Does team bonding have a different meaning than team play?,Does Team bonding have a different meaning than Team People?
+180,72.59,일반적으로 대사관은 오전 아홉시부터 오후 다섯시까지 운영해요.,"In general, embassies operate from 9 am to 5 pm.","In general, the embassy is open from 9 am to 5 pm."
+181,92.07,험블과 플렉스의 차이에 대해 알려줄 수 있을까?,Can you tell me the difference between Humble and Flex?,Can you tell me the difference between Hable and Flex?
+182,54.65,넷플릭스에서 로맨스 영화 추천해줄래? 달달한 걸로.,Can you recommend some romantic movies on Netflix? Something sweet.,Would you recommend a romance movie on Netflix? It's sweet.
+183,44.17,케이피아이 수립은 헤드쿼터에서 하는 업무야?,Is establishing KPI a task that is done at headquarters?,Is setting up a KPI a task in the head quarter?
+184,76.48,일론 머스크가 운영하는 테슬라를 제외한 다른 회사를 알려줘.,Tell me any other company besides Tesla run by Elon Musk.,Tell me another company except Tesla run by Elon Musk.
+185,65.48,이 기사 스크랩해서 슬랙에 올려볼까?,Should I scrap this article and post it on Slack?,Shall we scrap this article and put it on the slack?
+186,64.93,스타트업 아이티 기업에서는 팀 빌딩을 어떻게 해야 할까?,How should team building be approached in a startup IT company?,What should we do with a team building at a startup IT company?
+187,77.29,그래피티와 색상 표현은 정말로 멋진 아트 스타일이죠.,Graffiti and color expression are really cool art styles.,Grapiti and color expression are really wonderful art styles.
+188,75.69,명확한 지시나 피드백 없이 일을 시작해야 하는 경우가 있거든.,Sometimes you have to start a task without clear instructions or feedback.,There are times when you have to start work without clear instructions or feedback.
+189,56.09,설악산은 자연이 풍부하게 그려진 명화 같은 곳이죠.,"Seoraksan is a place rich in nature, like a famous painting.",Seoraksan is a famous place where nature is abundantly painted.
+190,58.07,제미니 어플 가장 최신 버전은 언제 나왔니?,When was the latest version of the Gemini app released?,When did you get the latest version of the Jemini application?
+191,88.51,나트랑에서 가장 큰 리조트를 알려줄 수 있니?,Can you tell me the biggest resort in Nha Trang?,Can you tell me the biggest resort in Natrang?
+192,53.93,모바일로 비행기 체크인하려고 하는데 좌석 지정할 수 있어?,"If I check in on mobile, can I choose my seat?","I want to check-in through mobile, can I choose a seat?"
+193,86.91,도시 호치민에서 가장 유명한 관광지는 어떤 곳인가요?,What are the most famous tourist attractions in Ho Chi Minh City?,What is the most famous tourist attraction in Ho Chi Minh City?
+194,39.64,현재 진행되고 있는 데이터 분석가 채용 공고 알려줄 수 있어?,Can you let me know about any current data analyst job openings?,Can you tell me the job posting of the data analyst in progress?
+195,68.03,지난 미팅 자료에서 디벨롭이라는 글자를 찾아줘.,"Find the word ""develop"" in the last meeting materials.",Please find the word developer in the last meeting.
+196,79.39,스펙과 커리어의 상관관계를 예를 들어 설명해 주세요.,Please explain the correlation between specs and career with an example.,"Please explain, for example, the correlation between spec and career."
+197,73.23,구글 크롬 브라우저를 쓰려면 확장 프로그램이 필요할까?,Do I need extensions to use the Google Chrome browser?,Do I need an extension program to use Google Chrome browser?
+198,74.19,중국에서 사업을 할 때에 <unk>시가 어느 정도 필요할까?,How much guanxi is needed when doing business in China?,How much do you need when doing business in China?
+199,80.76,월 이십만 원의 지방근무 수당이 지급됩니다.,A local work allowance of two hundred thousand won per month is paid.,A monthly allowance of two hundred thousand won is paid for local work.
+200,62.87,그렇게 생각하신다면 연속 수강은 훌륭한 선택일 것입니다.,"If you think so, taking consecutive classes would be a great choice.","If you think so, continuous classes will be a great choice."
+201,69.40,여기에서는 다양한 등산로를 통해 다양한 경험을 할 수 있어요.,"Here, you can have a variety of experiences through various hiking trails.",You can experience various things here through various hiking trails.
+202,63.17,파이브가이즈에서 판매하는 쉐이크의 가격을 알려줄래?,Can you tell me the price of a shake sold at Five Guys?,Could you tell me the price of the shake sold by Five Kids?
+203,65.30,여기 호텔에서는 룸 서비스가 모두 무료가 아닌 유료야.,"In this hotel, room service is not free; it is paid.","In this hotel, all room services are not free, but paid."
+204,57.73,줌을 활용한 미팅에서 자주 발생하는 문제와 해결책은 무엇인가요?,What are some common problems and solutions for meetings using Zoom?,What are the problems and solutions that occur frequently in meetings using zoom?
+205,65.81,임시 여권을 발급받으면 여행 일정을 계속 진행할 수 있습니다.,"Once you have your temporary passport, you can continue with your travel plans.","If you get a temporary passport, you can continue your travel schedule."
+206,62.77,대만 여행에서 기념품인 펑리수를 사 왔어.,I bought some fengli cakes as a souvenir from my trip to Taiwan.,"I bought Peng Li Su, a souvenir, from my trip to Taiwan."
+207,65.29,쿠팡과 스마트스토어 어디에 입점하는 게 더 수익이 될까요?,"Where would be more profitable to open a store, Coupang or Smart Store?",Where will it be more profitable to enter Coupang and Smart Store?
+208,58.55,저장한 파일을 볼 수 있는 디렉토리는 무엇인지 알려줘.,Can you let me know the directory where the saved file is located?,Please let me know what directory you can see the saved file.
+209,83.13,스타트업에서는 팀빌딩이 중요하다는데 팀빌딩이 뭐야?,"They say team building is important in startups, but what is team building?","I heard that team building is important in startups, what is team building?"
+210,59.71,이 장소의 네트워크 연결이 지연되고 있어. 무엇이 문제일까?,The network connection to this location is lagging. What could be the problem?,The network connection of this place is being delayed. What is the problem?
+211,51.36,고객님 죄송하지만 오션뷰 객실은 이미 예약이 끝났습니다.,"I'm sorry, but the ocean view rooms are no longer available.","I'm sorry, but the reservation for the ocean view room is already complete."
+212,100.00,두 장소의 매력이 달라서 한 곳을 추천하기는 어렵네요.,It's hard to recommend one place because the two places have different charms.,It's hard to recommend one place because the two places have different charms.
+213,60.38,서울 바닐라 크림브륄레 맛집을 알려줄래?,Can you tell me a good vanilla crème brulee restaurant in Seoul?,Can you tell me the Seoul Vanilla Cream Brule restaurant?
+214,74.78,뮤지컬 알라딘 출연 배우들 좀 알려줄 수 있니?,Can you tell me the names of the actors in the musical Aladdin?,Can you tell me the actors who appear in the musical Aladin?
+215,54.09,내가 만든 디자인 시안으로 특허를 출원하는 방법을 알아봐 줘.,Please tell me how to apply for a patent for a design draft I created.,Please find out how to apply for a patent with my design proposal.
+216,49.51,전기차와 하이브리드는 같은 뜻인가요? 다른 뜻인가요?,"Do electric cars and hybrids mean the same thing, or are they different?",Does the hybrid mean the same thing as the electric car? Does it mean something else?
+217,63.31,자카르타 여행할 건데 만디리 은행 박물관은 어때?,"If you're traveling to Jakarta, how about visiting the Bank Mandiri Museum?","I'm going to travel to Jakarta, how about the Mandiri Bank Museum?"
+218,57.90,발리에 여행을 가려고 하는데 발리 명소를 좀 알고 싶어.,I'm planning a trip to Bali and would like to know some popular attractions.,"I'm trying to go on a trip to Bali, but I'd like to know some attractions in Bali."
+219,71.33,요즘은 미팅을 줌이라는 어플을 이용해서 하는 거 같애.,It seems like people are using an app called Zoom for meetings these days.,I think we're using an application called Zoom for meetings these days.
+220,73.68,블루투스랑 와이파이 기술이 각각 언제 발명되었는지 알고 싶어.,I'd like to know when Bluetooth and Wi-Fi technologies were each invented.,I want to know when Bluetooth and Wi-Fi technologies were invented respectively.
+221,68.40,호텔 예약할 거면 하노이에 있는 나의 친구한테 부탁해보자.,"If you want to book a hotel, I'll ask my friend in Hanoi.","If you're going to book a hotel, let's ask my friend in Hanoi."
+222,56.98,그런데 평소에 그림 기법에 대해 어떤 기술을 주로 사용하시나요?,"By the way, what kind of techniques do you usually use when it comes to drawing?",But what kind of technology do you usually use for painting techniques?
+223,85.21,내일 회의 아젠다를 업데이트해야 되는데 어떻게 해야 될까?,I need to update the agenda for tomorrow's meeting. How should I do that?,"I need to update the agenda for tomorrow's meeting, what should I do?"
+224,40.14,간단한 프로그램을 하나 만들고 싶은데 파이썬 코드를 짜줄래?,I want to create a simple program. Can you write some Python code for me?,"I'd like to make a simple program, so could you squeeze out the pason code?"
+225,50.67,넷플릭스에 탈주라는 프로그램이 있는데 지금 순위가 어떻게 될까?,"There is a show called The Escape on Netflix, I wonder what its current ranking is.","There is a program on Netflix called Escape, what is the ranking now?"
+226,74.44,특정한 주소로 스팸메일이 온다던데 무슨 주소인지 알아?,I heard spam emails are coming from a specific address — do you know what it is?,"I heard spam mail is coming to a specific address, do you know what it is?"
+227,71.10,등록 양식을 작성하면서 개인 정보와 연락처를 적어 주셔야해요.,"When you fill out the registration form, you will be asked to provide personal information and contact information.",You have to write down your personal information and contact information while filling out the registration form.
+228,62.68,데이식스콘서트에 가고 싶은데 예매가 너무 힘들어.,"I want to go to the Day6 concert, but it's so hard to reserve tickets.","I want to go to the Day6 concert, but the booking is so hard."
+229,65.08,이번에 여행을 갈 건데 발리에서 제일 멋진 명소를 알려줘.,I'm going on a trip soon. Please tell me the best place to visit in Bali.,"I'm going on a trip this time, so please tell me the best attraction in Bali."
+230,60.41,발리로 해외여행 갈 건데 발리의 명소 알려줄 수 있어?,I'm going on a trip to Bali. Can you tell me some famous places in Bali?,"I'm going abroad to Bali, can you tell me some attractions in Bali?"
+231,55.92,일본 여행을 가려는데 후지산으로 패키지 여행을 계획 중이야.,I'm planning a trip to Japan and I'm planning a package tour to Mt. Fuji.,I'm planning a package trip to Fujisan to travel to Japan.
+232,65.68,중국의 수도인 베이징을 가려고 하는데 비행기로 얼마나 걸리지?,"I'm planning to go to Beijing, the capital of China. How long will it take by plane?","How long does it take by plane to get to Beijing, the capital of China?"
+233,48.34,트래픽을 좀 줄이는 방식으로 이 알고리즘을 변형하려면 어떻게 해야 될까?,How can we modify this algorithm to reduce traffic?,What should we do to transform this algorithm into a way to reduce traffic?
+234,66.22,모두 여기 타블렛에 그리기 앱을 사용하실 거에요.,Everyone will be using the drawing app on this tablet.,Everyone will use the drawing app here at the tablet.
+235,53.14,여기 수강생들이랑도 교류하면서 친해질 수 있고요.,"Here, you can become friends by interacting with the students.",You can get to know each other while interacting with the students here.
+236,49.72,그래피티와 스프레이 페인트는 정말 멋진 기술이에요.,Graffiti and spray paint are really cool skills.,Grapiti and spray paint are wonderful technologies.
+237,78.80,이 도구는 부드러운 돌보다 단단한 돌에 더 적합합니다.,This tool is better suited for hard stones than soft stones.,This tool is more suitable for hard stones than soft stones.
+238,55.36,모든 힘들었던 등산이 그 순간에 모두 보상받은 것 같죠.,All the hard climbing seemed to be rewarded in that moment.,"""Every hard climb seems to have been rewarded at that moment."""
+239,73.12,강원도에 불멍하기 좋은 힐링캠핑장이 어디 있니?,Where is a good healing camping site in Gangwon-do?,Where is the best healing campsite in Gangwon-do?
+240,100.00,호텔 어메니티 중에 어느 호텔의 샴푸가 제일 좋아?,Which hotel's shampoo is your favorite among hotel amenities?,Which hotel's shampoo is your favorite among hotel amenities?
+241,88.47,구글에서 나온 픽셀 나인 프로를 사용해 본 적이 있니?,Have you ever used the Pixel Nine Pro from Google?,Have you ever used Pixel Nine Pro from Google?
+242,88.76,구글에서 나온 픽셀 에이트 프로를 사용해 본 적이 있니?,Have you ever used the Pixel Eight Pro from Google?,Have you ever used Pixel Eight Pro from Google?
+243,54.39,다양한 데이터베이스를 통해 데이터 아키텍트를 쌓아가는 곳을 알려줘.,Tell me where to build your data architecture across various databases.,Please let me know where you are stacking data architecture through various databases.
+244,82.51,"조각은 당연 알고 계시겠지만, 창의적이고 멋진 과정이에요.","As you probably know, sculpture is a creative and wonderful process.","As you know, sculpture is a creative and wonderful process."
+245,56.35,팝 음악계에서 고트한 사람은 비욘세가 맞을까?,Is Beyoncé the goth person in pop music?,Is Beyonce the gott in the pop music world?
+246,62.82,요즘 인기 좋은 인급동의 유튜브 채널은 어떤 것들이 있어?,What are some popular Ingeupdong YouTube channels these days?,What kind of YouTube channels are popular these days?
+247,78.40,홀리데이 시즌에 가볼 만한 국내 여행지를 추천해 주세요.,Please recommend some domestic travel destinations to visit during the holiday season.,Please recommend a domestic destination to visit during the holiday season.
+248,51.67,베트남 하노이에서 묵기 편한 한국어가 통하는 호텔에 대해서 알아봐 줘.,"Find out about convenient Korean-speaking hotels in Hanoi, Vietnam.","Please find out about a hotel that is easy to stay in Hanoi, Vietnam."
+249,84.63,우리 항저우로 여행 갔었을 때 갔던 호수 기억나?,Do you remember the lake we visited when we traveled to Hangzhou?,Do you remember the lake we went to when we traveled to Hangzhou?
+250,63.69,스팸메일 주소가 보통 어떤 도메인으로 끝나는지 알려줄래?,Can you tell me what domains spam email addresses usually end with?,Could you tell me which domain your spam address usually ends up with?
+251,50.55,데이터 모델러와 디비 엔진은 어떨 때 사용하는 거지?,When do you use a data modeler and a DB engine?,What do data models and DB engines use?
+252,55.24,바딘 광장에서 꼭 방문해야 할 주요 명소는 어디야?,What are the must-visit attractions in Ba Dinh Square?,Where is the main attraction you must visit at Badin Square?
+253,72.40,"야, 고맙다. 오늘 너 덕분에 진짜 많이 배우네.","Hey, thank you. I learned a lot today thanks to you.","Hey, thank you. I really learn a lot thanks to you today."
+254,100.00,"네, 고객님. 혹시 저희 여행사 이용이 처음이실까요?","Yes, sir. Is this your first time using our travel agency?","Yes, sir. Is this your first time using our travel agency?"
+255,58.49,롬복으로 신혼여행을 떠날 때 드는 경비를 알려줘.,Tell me how much it costs to go on a honeymoon to Lombok.,Let me know the cost of going on a honeymoon to Lombok.
+256,64.70,한국은 요우커들로 인해 관광지가 항상 사람들로 붐벼.,"In Korea, tourist destinations are always crowded with people because of the tourists.","In Korea, tourist attractions are always crowded with people due to Youke."
+257,58.98,호이안에서 사진을 예쁘게 찍을 수 있는 명소를 추천해줘.,Please recommend some spots in Hoi An where I can take pretty pictures.,Please recommend me some attractions where I can take beautiful pictures in Hoian.
+258,41.83,주말에 할 수 있는 랜선 투어로 어디가 좋을지 알려줘.,Please tell me where to go for a LAN tour on the weekend.,Please let me know where would be good for the LANN tour that I can do on the weekend.
+259,84.34,하이브리드와 전기차 중에 장거리 여행자들에게 더 추천해주는 차는 뭐야?,Which car do you recommend for long-distance travelers: hybrid or electric?,Which car do you recommend to long-distance travelers is hybrid or electric car?
+260,66.84,웹디자이너가 사용하는 편집 툴에는 어떤 게 있나 알려주세요.,Can you let me know which editing tools are commonly used by web designers?,Please let me know what kind of editing tools are used by web designers.
+261,73.63,슬랙을 이용해서 아이데이션을 효과적으로 진행하는 방법을 알려주세요.,Please tell me how to use Slack to effectively proceed with ideation.,Please tell me how to effectively proceed with the foundation using slack.
+262,42.70,객실 내 팜플랫 보시면 모든 메뉴 있으니까 확인해 주세요.,"Please check the pamphlet in your room, as it contains all the menus.","If you look at the farm flat in the room, there are all the menus, so please check."
+263,57.46,설악산 정상에서 멋진 경치를 함께 감상하면 좋겠네요.,It would be wonderful to enjoy the beautiful view together at the top of Seoraksan.,I hope you enjoy the wonderful scenery at the top of Mt. Seoraksan together.
+264,68.03,엔비디아의 주가가 수직 상승한 이유가 뭔지 알려줄 수 있어?,Can you tell me why Nvidia's stock price is skyrocketing?,Can you tell me why Nvidia's stock price has risen vertically?
+265,73.28,제미니로 라이브 방송을 실시간 볼 수 있는 방법이 있어?,Is there a way to watch live broadcasts in real time with Gemini?,Is there a real-time way to watch live broadcasts with Jeremy?
+266,78.09,요즘 중국 쇼핑몰 테무랑 알리가 엄청 핫하다던데?,I heard that Chinese shopping malls Temu and Ali are super hot these days?,I heard the Chinese shopping mall Temu and Ali are very hot these days.
+267,54.96,미쉐린 가이드에서 선정한 맛집에는 스타 셰프가 있어.,You’ll often find star chefs working at restaurants selected by the Michelin Guide.,There is a star chef at the restaurant selected by Michelin Guide.
+268,87.04,유니콘 기업이 되려면 매출 성과 말고 다른 성과는 뭐가 필요할까?,"What other achievements are needed to become a unicorn company, other than sales performance?",What other achievements do we need other than sales performance to become a unicorn company?
+269,65.71,세미나를 여러 번 참석하면 내가 인생 멘토가 될 수 있을까?,"If I attend several seminars, will I be able to become a life mentor?",Will I be a life mentor if I attend several seminars?
+270,85.53,픽셀 에잇 프로와 픽셀 세븐 프로는 어떤 차이가 있어?,What's the difference between Pixel Eight Pro and Pixel Seven Pro?,What is the difference between Pixel It Pro and Pixel Seven Pro?
+271,42.23,자 그럼 이제부터 레이어와 브러시 사용에 대해 배울 것입니다.,"Okay, now we're going to learn about using layers and brushes.","So from now on, I will learn about layer and brush use."
+272,29.36,이제 나름 베트남도 다양한 무역이 이루어진다고 볼 수 있지.,We can now say that Vietnam is engaged in a fairly diverse range of trade.,"Now, it can be said that Vietnam has various trade."
+273,66.96,남자가 부른 어쿠스틱 플레이리스트 추천해줘. 많을수록 좋아.,Recommend me some acoustic playlists sung by men. The more the better.,"Please recommend an acoustic playlist sung by a man. The more it is, the better."
+274,53.16,신칸센을 타고 일본 여행을 할 때 좋은 자리가 있어?,Is there a good seat to choose when traveling around Japan by Shinkansen?,Is there a good place to travel to Japan by Shinkansen?
+275,67.65,런던에 있는 메리어트 호텔의 일박 가격을 알고 싶어.,I would like to know the price for one night at the Marriott Hotel in London.,I want to know the price of the Marriott Hotel in London overnight.
+276,69.40,상하이 여행 중 가장 인상 깊게 본 것은 동방명주입니다.,The most impressive thing I saw during my trip to Shanghai was the Oriental Pearl Tower.,The most impressive thing I saw during my trip to Shanghai is Eastern Myeongju.
+277,50.76,내가 만든 이 디자인을 특허를 내고 싶은데 유효기간이 어느 정도일까?,"I want to patent this design I created, but how long is the patent period?","I want to issue a patent for this design that I made, how long is it valid?"
+278,96.14,클라이언트가 요구한 물량이 가격이랑 맞지 않으면 어떻게 해야 돼?,What should I do if the quantity requested by the client does not match the price?,What should I do if the quantity requested by the client doesn't match the price?
+279,55.10,픽셀 세븐 프로와 픽셀 에잇 프로의 사양 차이를 알려줘.,Tell me the spec differences between the Pixel Seven Pro and Pixel Eight Pro.,Let me know the difference in specifications between Pixel 7 Pro and Pixel It Pro.
+280,82.75,검색 속도는 빅데이터 검색 엔진의 성능에 따라 달라진다고 들었는데.,I heard that search speed varies depending on the performance of the big data search engine.,I heard that the search speed depends on the performance of the big data search engine.
+281,64.00,오늘 델타항공과 아시아나항공 중에 일본행 비행기가 있는지 알려줘.,Please let me know if there are any flights to Japan today on Delta or Asiana Airlines.,Please let me know if there is a flight to Japan between delta Airlines and Asiana Airlines today.
+282,33.80,관광지 투어 신청하면서 와이탄은 꼭 돌아보라고 했어.,"When I signed up for the tourist tour, I was told to definitely visit Waitan.","When I applied for a tour of tourist attractions, I told them to look around the Witan."
+283,61.05,싱가포르 래플스 호텔 객실 중 흡연실의 객실 수를 알려줘.,Please let me know how many smoking rooms are available at Raffles Hotel in Singapore.,Please let me know the number of rooms in the smoking room of the Rapples Hotel in Singapore.
+284,60.66,미쉐린 가이드 식당에 스타 셰프가 상주하고 있다던데.,I heard there's a star chef working full-time at the Michelin Guide restaurant.,I heard that a star chef is residing in the Michelin Guide Restaurant.
+285,65.77,오늘 처갓집 양념치킨이 글로벌 시장 진출을 선언하였습니다.,"Today, Cheogatjip Yangnyeom Chicken announced its entry into the global market.","Today, my sister-in-law's seasoned chicken announced its entry into the global market."
+286,52.01,그래서 사람들이 휴식이랑 여가 즐기러 많이들 오겠지?,"So, I guess a lot of people will come here to relax and enjoy leisure time?","So many people will come to enjoy relaxation and leisure, right?"
+287,51.98,그럼 우리 나트랑으로 리조트 잡고 여행 가는 거 어때?,Then how about we go on a trip to Nha Trang and book a resort?,Then why don't we take a resort and go on a trip to Natrang?
+288,47.76,최초로 바지단에 시보리를 넣어 출시한 회사는 어디였을까?,Which company was the first to introduce ribbed cuffs on its trousers?,Where was the first company to launch with the Seabori on the trousers?
+289,61.10,거기서 오른쪽으로 꺾어서 오분 정도 올라가면 대사관이 보일 거예요.,"From there, turn right and go up for about five minutes and you will see the embassy.",Turn right there and go up about five minutes to see the embassy.
+290,53.75,신혼여행 가서 아기가 생기면 왜 허니문 베이비라고 해?,"If you go on your honeymoon and have a baby, why is it called a honeymoon baby?",Why do you call a honey baby when you have a baby on your honeymoon?
+291,58.23,식사 예약을 하려면 웨이팅 리스트에 저희 이름을 남기면 될까요?,"If we want to make a dining reservation, can we put our names on the waiting list?",Should we leave our name on the waiting list to make a reservation for a meal?
+292,83.22,탄손누트 공항에서 호치민으로 가는 방법 좀 알려줘.,Please tell me how to get from Tan Son Nhat Airport to Ho Chi Minh City.,Please tell me how to get to Ho Chi Minh City from Tanson Nut Airport.
+293,66.01,항구도시로 여행하고 싶은데 혹시 다낭에 가본 적 있니?,I'd like to travel to a port city. Have you ever been to Danang?,"I want to travel to a port city, have you ever been to Danang by any chance?"
+294,69.81,그럼 다른 관광지 둘러보고 와이탄에서 야경도 구경하자.,"Then, let's go check out other tourist attractions and enjoy the night view at Waitan.",Then let's look around other tourist attractions and see the night view at Witan.
+295,72.52,중국 여행을 왔으니 치파오 입고 사진 한번 찍을래?,"Since you're in China, do you want to take a picture wearing a cheongsam?","Since I'm on a trip to China, do you want to take a picture wearing a chifao?"
+296,56.99,우리가 내일 가는 관광지에도 요우커들이 엄청 많겠지?,"There will be a lot of tourists at the tourist destination we're going to tomorrow, right?","There must be a lot of Youke in our tourist destination tomorrow, right?"
+297,61.88,우리 그럼 바딘에 도착하면 역사적인 관광도시 많이 돌아보자.,"Then, when we arrive in Badin, let's tour many of the historical tourist cities.",Then let's look around a lot of historic tourist cities when we arrive at Badin.
+298,54.76,내용을 확인하기 위해서 크로스체크를 하고 싶은데 이에 관련된 앱이 있을까요?,I would like to cross-check the contents to confirm them. Is there an app for this?,"I want to do cross check to check the contents, is there an app related to this?"
+299,41.43,이번에 휴가를 무이네로 떠나려고 하는데 어떤 옷 입지?,I'm planning to go on vacation to Mui Ne this time. What clothes should I wear?,What clothes do you wear as I'm about to leave for Mui's this vacation?
+300,69.54,유튜브에서 운영하는 에이에스엠알 채널은 몇 개가 있을까?,How many ASMR channels are there on YouTube?,How many ASM channels do you have on YouTube?
+301,62.77,이번 여행에서 가장 쇼킹했던 모먼트는 어떤 게 있어?,What was the most shocking moment on this trip?,What was the most talked about on this trip?
+302,73.13,이스라엘에 있는 예루살렘은 꼭 한번 가보고 싶은 여행지이다.,Jerusalem in Israel is a must-visit travel destination.,Jerusalem in Israel is a must-see destination.
+303,27.43,호이안 여행을 갈 때 몇 월에 가는 게 제일 좋아?,What month is best to go to Hoi An?,What month do you like the most when you go on a trip to Hoian?
+304,66.76,구글에서 제미나이 첫 번째 버전은 언제 출시되었나요?,When did Google release the first version of Gemini?,When was the first version of Semina released on Google?
+305,79.13,엠비티아이 중에 아이에스에프제이의 특징은 뭔가요?,What are the characteristics of ISFJ among MBTI?,What are the characteristics of ISCJ among the MVI?
+306,76.99,싱가포르 래플즈 호텔의 별점 리뷰에 대해서 요약해줘.,Please summarize the star reviews of Raffles Hotel Singapore.,Please summarize the star review of the Rapples Hotel in Singapore.
+307,88.32,내 클라우드의 정보를 해킹당했을 때 제일 먼저 무엇을 해야 할까?,What should I do first if my cloud information is hacked?,What should I do first when my cloud information is hacked?
+308,72.14,스팸메일 주소를 내 이메일 주소록에서 지우는 방법은 무엇입니까?,How do I remove spam addresses from my email address book?,How can I delete the spam address from my email address book?
+309,33.70,"야, 하노이에 호텔이 그렇게 죽여주게 이쁘더라.","Wow, the hotels in Hanoi are so freaking beautiful.","Hey, the hotel is so pretty in Hanoi."
+310,78.32,피피엘과 스폰서를 효과적으로 활용하려면 어떤 전략이 필요할까?,What strategies are needed to effectively utilize PPL and sponsors?,What strategies do we need to effectively use PPL and sponsors?
+311,36.62,여러 돌을 시도해보며 어떤 것이 가장 마음에 드는지 찾아보세요.,Experiment with different stones to find which one you like best.,Try to find out which stone you like the most.
+312,81.53,모나리자가 전시되어 있는 곳이 루브르 박물관이야?,Is the Louvre Museum where the Mona Lisa is displayed?,Is the Louvre Museum the place where Mona Lisa is displayed?
+313,64.82,오로라를 관측하기 좋은 여행지 세 곳만 추천해줘.,Please recommend three great travel destinations for observing the Aurora.,Please recommend only three good tourist destinations to observe Aurora.
+314,57.28,너 쑤저우에 여행 갔을 때 산책은 주로 어디에서 했어?,Where did you mostly take walks when you were in Suzhou?,Where did you usually take a walk when you went on a trip to Suzhou?
+315,72.80,제안서를 작성하기 위해 메모를 해두는 습관은 좋은 건가요?,Is it a good habit to take notes when writing a proposal?,Is it a good habit to take notes to fill out a proposal?
+316,62.19,이번 연도에 꽝닌으로 관광 온 인구가 몇 명이야?,How many tourists came to Quang Ninh this year?,How many people came to visit Quang Nin this year?
+317,65.07,나도 한번 써봐야겠다. 디테일 표현하기에 딱 좋겠는데?,I should try it too. It would be perfect for expressing details.,"I should try it too. It's perfect to express details, right?"
+318,27.83,여권 분실로 인한 추가 비용은 여행자 본인이 부담해야 하셔야 해요.,Any additional costs resulting from lost passports must be borne by the traveler.,The traveler has to pay extra for the loss of the passport.
+319,83.64,"네, 설악산은 우리나라의 자랑스러운 자연 명소 중 하나에요.","Yes, Seoraksan is one of our country's proud natural attractions.","Yes, Seoraksan Mountain is one of our proud natural attractions."
+320,81.16,해안에서 채취한 여러 돌들을 가공해서 만든 팔찌가 있어요.,There is a bracelet made by processing various stones collected from the coast.,We have bracelets made from processing various stones collected from the coast.
+321,69.78,호텔 조식으로 스크램블이 나온 적 있는 호텔을 추천해줘.,Recommend me a hotel that serves scrambled eggs for breakfast.,Please recommend a hotel that has a scrambles for breakfast.
+322,87.33,용산공원 근처에서 할랄푸드 먹을 수 있는 곳 좀 알려줄래?,Can you tell me where I can eat halal food near Yongsan Park?,Can you tell me a place where I can eat halal food near Yongsan Park?
+323,48.49,혹시 지금 훌루에 일위 하고 있는 드라마 보신 적 있으세요?,Have you seen the drama that is currently ranked number one on Hulu?,Have you ever seen the drama that is at the top of Hulu?
+324,62.83,한국에 관광을 오는 중국 관광객들을 한국에서는 요우커 라고 부르고 있어.,"In Korea, Chinese tourists who visit for sightseeing are called 'Youke'.",Chinese tourists who visit Korea are called Youke in Korea.
+325,66.30,요즘 요우커들은 어디를 어떤 관광지를 주로 다니는지 알려줘.,Tell me where and what tourist attractions do tourists mainly go to these days.,You guys these days tell me where and which tourist attractions you usually go to.
+326,79.38,와이탄은 중국 상해에 있는 굉장히 유명한 관광지 중에 하나야.,"The Bund is one of the most famous tourist attractions in Shanghai, China.","Witan is one of the most famous tourist destinations in Shanghai, China."
+327,73.73,구글에서 나온 픽셀 에이트 프로라는 핸드폰에 대해서 알고 있니?,"Do you know about the Pixel Eight Pro, the smartphone from Google?",Do you know about the cell phone called Pixel Eight Pro from Google?
+328,72.44,네. 그럼요. 잠실 주변으로는 올림픽 공원이 가기 좋아요.,"Yes, of course. Olympic Park is a good place to go around Jamsil.","Yes, of course. It's good to go to Olympic Park around Jamsil."
+329,65.68,머라이어 캐리가 부른 캐롤 노래가 몇 개인지 알려줄래?,Can you tell me how many Christmas carols Mariah Carey has sung?,Can you tell me how many carol songs Mariah Carey sang?
+330,82.38,나트랑에서 가장 큰 수영장이 있는 리조트를 추천해줘.,Recommend me a resort with the largest swimming pool in Nha Trang.,Please recommend me a resort with the largest swimming pool in Natrang.
+331,77.07,호치민에서 꼭 가봐야 할 도시의 명소는 어디인지 알려줘.,Tell me what are the must-see city attractions in Ho Chi Minh City.,Let me know where the must-see city attraction is in Ho Chi Minh City.
+332,55.52,구글 미트에서 해당 사용자만 뮤트하는 방법 검색해줘.,Please help me find out how to mute only that user in Google Meet.,Please search for a way to mute only the user in Google Mite.
+333,92.73,링귀스트들은 프리랜서로 일할 때 주로 어떤 업무를 하게 될까?,What kind of work do linguists usually do when they work as freelancers?,What kind of work do ringguists usually do when they work as freelancers?
+334,70.99,데이터 아키텍트는 데이터베이스 설계 시 어떤 요소들을 가장 중요하게 고려하나요?,What are the most important factors that a data architect considers when designing a database?,What elements are considered most important when designing a database for data architecture?
+335,49.54,무이네 사막 완전 아름답던데. 신혼여행으로도 간대.,Mui Ne desert is so beautiful. I recommend going there for your honeymoon.,Mui's desert was so beautiful. They're going on a honeymoon as well.
+336,86.21,이번 휴가는 무이네로 가고 싶은데 너는 가봤니?,I want to go to Mui Ne this vacation. Have you been there?,"I want to go to Muine this vacation, have you been there?"
+337,88.21,이제 시작해볼까요? 전통 가옥의 스케치부터 시작하겠습니다.,Shall we begin now? Let's start with a sketch of a traditional house.,Shall we start now? Let's start with a sketch of a traditional house.
+338,79.92,오 좋은데요? 설악산 근처에는 맛있는 음식점이 많아요.,"Oh, that's good. There are a lot of delicious restaurants near Seoraksan.","Oh, that's great? There are many delicious restaurants near Seoraksan."
+339,59.07,일본 여행 가면 도쿄에서 신주쿠 공원을 꼭 가봐.,"If you travel to Japan, be sure to visit Shinjuku Park in Tokyo.","If you are traveling to Japan, make sure to go to Shinjuku Park from Tokyo."
+340,64.88,중국에 가게 된다면 난징에 있는 박물관에 꼭 가보고 싶네.,"If I ever go to China, I definitely want to visit the museum in Nanjing.","If I go to China, I really want to visit a museum in Nanjing."
+341,71.86,구글 미트로 수업을 듣고 있는데 뮤트할 수 있는 방법이 뭐야?,I'm taking a class on Google Meet. How can I mute it?,"I'm taking a class with Google Mitt, how can I mute it?"
+342,64.74,유니콘 기업이 이번 연도에 성과를 어느 정도 냈는지 알고 싶어요.,I'd like to know how much progress the unicorn company has made this year.,I want to know how much the unicorn company has achieved this year.
+343,81.40,기업 세미나에서는 다양한 멘토들을 만날 수 있어서 좋은 거 같애.,I think it's good to be able to meet various mentors at corporate seminars.,I think it's good to meet various mentors at the corporate seminar.
+344,76.35,크롬브라우저는 아는데 확장 프로그램은 무슨 뜻인지 모르겠어요.,"I know about Chrome browser, but I don't know what extension means.","I know Chrome browser, but I don't know what the extension program means."
+345,100.00,와이탄에서 야경으로 유명한 관광지는 어디를 가면 좋을까?,Where should I go to a tourist attraction famous for its night view in Witan?,Where should I go to a tourist attraction famous for its night view in Witan?
+346,54.13,바딘이 관광하기에 되게 좋은 장소래. 같이 놀러 가자.,Badin is a great place for sightseeing. Let's go and have fun together.,Badin is a great place to visit. Let's hang out together.
+347,68.90,프로젝트를 진행할 때 원하는 아웃풋을 얻기 위해 가장 중요한 요소는 무엇인가요?,"When working on a project, what is the most important factor in achieving the desired output?",What is the most important factor to get the desired output when carrying out a project?
+348,62.19,회의록을 노션에 저장하고 싶은데 어떻게 해야 되는지 방법을 알려줘.,I want to save meeting minutes to Notion. Please tell me how to do that.,"I want to save the minutes of the meeting in the action, so please tell me how to do it."
+349,60.16,호텔 정문에 있는 기사님에게 따로 발렛비를 주시면 돼요.,You can pay the valet fee separately to the driver at the hotel's main entrance.,You can give a separate ballet fee to the driver at the front gate of the hotel.
+350,57.43,외국 방송국에 뭐가 있지? 비비씨 말고는 떠오르는 게 없네.,Are there any other foreign broadcasting stations? The only one that comes to mind is the BBC.,What is there in a foreign broadcasting station? Nothing comes to mind except Mr.B.
+351,83.85,훌루라는 티비쇼가 있다고 들었어. 어떤 종류의 프로그램이야?,I heard there's a TV show called Hulu. What kind of show is it?,I heard there's a TV show called Hulu. What kind of program is it?
+352,79.22,머스크는 트럼프 대선을 지원하기 위해 수억 달러를 썼다고 해.,Musk is said to have spent hundreds of millions of dollars to support Trump's presidential campaign.,Musk said he spent hundreds of millions of dollars to support Trump's presidential election.
+353,57.04,요즘 줄임말이 많은데 엠지는 진짜 줄임말을 쓰는 거야?,"There are a lot of abbreviations these days, but does MG really use abbreviations?","There are a lot of short words these days, but do MG really use short words?"
+354,66.51,중국 청두 지역은 판다가 많기로 굉장히 유명한 관광 도시야.,"Chengdu, China is a very famous tourist city known for having lots of pandas.",Chengdu area in China is a very famous tourist city with a lot of panda.
+355,73.94,신혼여행을 발리로 가는데 허니문 할 최고의 호텔 추천해줘.,I'm going to Bali for my honeymoon. Please recommend the best hotel for my honeymoon.,"I'm going to Bali for my honeymoon, so please recommend me the best hotel I can enjoy."
+356,70.24,요즘 베트남이 무역으로 유명하지 않나? 내는 그런 걸로 아는데.,Isn't Vietnam famous for trade these days? I think it's something like that.,Aren't Vietnam famous for trade these days? I know it's like that.
+357,58.46,현대 아이오닉이 몇 까지 나왔더라? 그거 전기차 맞지?,"How much has the Hyundai Ioniq been released? It's an electric car, right?","How many Hyundai Ionics came out? That's an electric car, right?"
+358,43.70,엠비티아이 중에 잇프제 성향을 가진 사람의 특징을 알려줘.,Tell me the characteristics of a person with the I-P-Je tendency among MBTIs.,Please let me know the characteristics of a person who has a gum-like disposition among MVI children.
+359,75.35,베트남 나트랑 여행 시 가장 가성비 좋은 리조트 정보 알려줘.,"Please tell me the most cost-effective resort information when traveling to Nha Trang, Vietnam.","Please let me know the most cost-effective resort information when you travel to Nath, Vietnam."
+360,64.07,난 패키지를 별로 안 좋아하는데 유럽 여행은 역시 패키지로 가야 될까?,"I don't really like package tours, but should I go on a package tour to Europe?","I don't really like packages, should I go on a trip to Europe as well?"
+361,69.06,내가 모아온 자료를 디렉토리에 저장하고 싶은데 어떻게 해야 하니?,What should I do if I want to save the materials I've collected into a directory?,What should I do if I want to store the data I collected in the directory?
+362,36.71,크리스마스에 촌캉스를 가려고 하는데 괜찮은 여행지 좀 추천해줘.,I'm thinking of going on a Christmas getaway. Can you recommend some good places to visit?,"I'm planning to go on a vacation at Christmas, so please recommend me a good tourist destination."
+363,60.46,저번 주에 예능 프로그램에 호치민이라는 도시가 나오던데 여행해보고 싶어.,"Last week, a city called Ho Chi Minh appeared on a TV show. I want to travel there.","There was a city called Ho Chi Minh on the entertainment show last week, and I want to travel."
+364,64.40,난 패키지가 싫은데 유럽 여행으로 자유 가는 거 어떻게 생각해?,"I don't like package tours, but what do you think about going on a free tour of Europe?","I don't like packages, so what do you think about traveling freely to Europe?"
+365,81.31,프로젝트 팔로우업하기 편한 플랫폼 찾고 있는데 추천해 줄 수 있어?,I'm looking for a platform that's easy to follow up on projects. Can you recommend one?,"I'm looking for a platform that's easy to follow up with, can you recommend one?"
+366,51.57,내가 에이아이 회사에 들어가서 파이썬으로 된 코드를 요즘 보고 있어.,I'm working at an AI company and I'm looking at code written in Python these days.,I'm looking at the pieon code after entering AI company these days.
+367,63.39,이번에 베트남에 있는 바딘 광장이라는 곳에 관광을 갔는데 너무 좋더라.,This time I went on a tour to a place called Ba Dinh Square in Vietnam and it was really nice.,I went to a tourist attraction called Badin Square in Vietnam and it was really good.
+368,48.95,도쿄 여행을 가려는데 다다미가 깔린 숙소 중 괜찮은 곳을 추천해줘.,"I'm planning a trip to Tokyo, so please recommend a good place to stay with tatami mats.",Please recommend me a nice place among the accommodations with tatami on my way to Tokyo.
+369,72.21,호치민 가려면 너도 아마 탄손누트 공항으로 가게 될걸?,"If you're going to Ho Chi Minh, you'll probably go to Tan Son Nhat Airport, right?","If you want to go to Ho Chi Minh City, you'll probably go to Tanson Nut Airport, right?"
+370,57.94,에이아이 어시스턴트 재미나이가 무슨 뜻인지 말해줘.,Tell me what the AI assistant Gemini means.,Tell me what AI Assistant Funny means.
+371,59.27,호텔 어메니티 중에 샴푸를 아베다를 쓰는 호텔이 어디가 있을까?,Which hotel uses Aveda shampoo among hotel amenities?,"Which hotel in the hotel's amenities uses shampoos, Abeda?"
+372,67.95,전기차 중에 아이오닉은 인기가 있는 편인가요? 없는 편인가요?,Is the Ioniq popular among electric vehicles or not?,Is Ionic popular among electric vehicles? Are there any?
+373,61.78,발리에서 꼭 방문해야 할 명소에는 어떤 것들이 있는지 알려줄 수 있어?,Can you tell me some must-visit attractions in Bali?,Can you tell me what kind of attractions you must visit in Bali?
+374,69.38,호텔 프론트 데스크에서 수건을 빌릴 수 있는지 물어봐 주세요.,Please ask the hotel front desk if we can borrow a towel.,Please ask if I can borrow towels at the front desk of the hotel.
+375,100.00,이 뷰어를 보고 싶은데 어떻게 하면 액세스 권한을 가질 수 있어?,"I want to see this viewer, how can I get access?","I want to see this viewer, how can I get access?"
+376,66.51,브라우저 북마크를 다른 피씨로 이송하는 방법은 뭐가 있을까요?,How can I transfer my browser bookmarks to another PC?,What is the way to transfer browser bookmark to another PC?
+377,61.96,미국 오티티 훌루에서 가장 인기 있는 티비쇼는 뭐니?,What are the most popular TV shows on Hulu in the US?,"What is the most popular TV show in Otty Hulu, USA?"
+378,62.73,내 남자친구는 나이가 너무 많아서 유행이나 밈 같은 것도 다 몰라.,My boyfriend is too old to know anything about trends or memes.,My boyfriend is so old that he doesn't know anything about fashion or memes.
+379,79.86,프로젝트의 팔로우업 과정을 에이아이를 활용해서 자동화할 수 있을까?,Can the follow-up process of a project be automated using AI?,Can we automated the follow-up process of the project using AI?
+380,58.05,"네, 비행기 티켓비, 유류 할증료까지 모두 포함되어 있습니다.","Yes, the price covers the flight ticket and the fuel surcharge as well.","Yes, the flight ticket fee and fuel surcharge fee are all included."
+381,44.52,미팅에 투머치 토커가 나왔을 때 어떻게 대응하는 것이 좋을까?,How should you respond when a talker talks too much in a meeting?,How should we respond to the meeting when the Tumutch Toker comes out?
+382,75.69,나트랑에서 인기 있는 리조트의 시설이나 서비스는 어떤 것들이 있어?,What facilities and services are offered at popular resorts in Nha Trang?,What kind of facilities and services are popular resorts in Natrang?
+383,64.46,와이탄은 역시 상하이에서 꼭 가봐야 되는 관광지 중 하나야.,The Bund is definitely one of the must-visit tourist destinations in Shanghai.,Witan is also one of the must-see tourist destinations in Shanghai.
+384,72.42,디럭스룸 이상 투숙객의 경우 발렛 서비스가 무료입니다.,Valet service is free for guests staying in deluxe rooms or higher.,"For guests with deluxe rooms or higher, the ballet service is free."
+385,72.22,나는 나스닥에 투자했는데 수익을 얻었다는 사람을 본 적이 없다.,I have never seen anyone invest in NASDAQ and make a profit.,I've never seen anyone invest in NASDAQ and earn money.
+386,64.56,프로젝트 이후에도 클라이언트랑 꾸준히 팔로우업하는 게 중요할까?,Is it important to continue to follow up with the client after the project?,Will it be important to follow the client after the project?
+387,79.13,"네, 늦은 시간에 놀 수 있는 곳으로 홍대나 강남을 추천해요.","Yes, I recommend Hongdae or Gangnam as places to hang out late at night.","Yes, I recommend Hongdae or Gangnam as places where you can hang out late."
+388,65.28,루브르 박물관에서 모나리자를 촬영하는 걸 허용하나요?,Are you allowed to take pictures of the Mona Lisa in the Louvre?,Are you allowed to take Mona Lisa at the Louvre Museum?
+389,44.99,요우커들이 우리나라에 와서 가장 선호하는 관광지에 대해서 알려줄 수 있을까?,Could you tell me which tourist destinations are most popular among Chinese visitors to Korea?,Can you tell me about your favorite tourist destination when you come to Korea?
+390,100.00,백엔드 개발에서 소프트웨어 성능 최적화를 위해 가장 중요한 요소는 무엇인가요?,What is the most important factor for optimizing software performance in backend development?,What is the most important factor for optimizing software performance in backend development?
+391,66.36,유후인에서 료칸으로 이박 머무실 수 있습니다.,You can stay for two nights at a ryokan in Yufuin.,You can stay for two nights in Ryokan from the Zhuin.
+392,74.34,원데이 클래스 중에 소금빵을 만드는 홈베이킹 클래스가 있을까요?,Is there a home baking class for making salt bread during the one-day class?,Is there a home baking class that makes salt bread among the one-day classes?
+393,80.07,발리에 가보고 싶은데 발리에서 꼭 가야 할 명소에 대해서 추천해줘.,I want to go to Bali. Please recommend some must-see attractions in Bali.,Please recommend a must-see attraction in Bali because I want to go to Bali.
+394,73.49,오늘 미팅에서 나온 안건 중에 가장 좋은 걸로 디벨롭 해줄래?,Could you develop the best of the items that came out of today's meeting?,Could you de-level the best agenda that came out of today's meeting?
+395,51.91,오늘 법블레스유라는 말을 들었는데 그게 도대체 무슨 말이야? 알려줘.,"I heard someone say 'Beop Bless You' today, what does that even mean?","I heard about Beopbles U today, what on earth does that mean? Tell me."
+396,67.92,크리스마스에 촌캉스 가는 거 어떻게 생각해? 어디로 가면 좋을까?,What do you think about going to a countryside vacation for Christmas? Where should we go?,What do you think about going on a vacation at Christmas? Where should I go?
+397,73.13,최현석 스타 셰프가 운영하는 미쉐린 가이드 식당 위치 알려줘.,Tell me the location of the Michelin Guide restaurant run by star chef Choi Hyun-seok.,Please let me know the location of the Michelin Guide Restaurant run by the star chef Choi Hyun-suk.
+398,68.27,발리로 자유여행 갈 계획인데 꼭 가야 될 명소 하나 추천해줘.,I'm planning a free trip to Bali. Please recommend one must-see attraction.,"I'm planning to go on a free trip to Bali, so please recommend me a must-visit attraction."
+399,68.11,이탈리아의 조식 좋고 오션뷰가 아주 예쁜 호텔 추천해줄래?,Can you recommend a hotel in Italy with a good breakfast and a very pretty ocean view?,Could you recommend a hotel with a nice breakfast and a very beautiful ocean view in Italy?
+400,72.91,성공적인 애자일 프로젝트를 위한 제품의 백로그 관리 방법을 알려줄 수 있을까?,Could you tell me how to manage the product backlog for a successful Agile project?,Can you tell me how to manage the backpack of the product for a successful Azail project?
+401,84.57,그래픽아트와 일러스트를 보면은 그림 그리는 사람들은 참 대단한 것 같아.,"When I look at graphic art and illustration, I think the people who draw are truly amazing.","When I look at graphic art and illustration, I think people who draw are amazing."
+402,60.19,베트남의 항구 도시로 유명했던 다낭은 내가 오 년 전에 여행 갔었어.,"Da Nang, a famous port city in Vietnam, was a place I visited five years ago.","I traveled to Danang, which was famous as a port city in Vietnam, 5 years ago."
+403,65.93,하노이에서 묵었던 호텔 정말 최악이었어. 시설이 너무 이상하지 않았어?,This was the worst hotel I stayed at in Hanoi. Wasn't the facility just weird?,The hotel I stayed in Hanoi was the worst. Isn't the facility so strange?
+404,52.45,지에스이십오와 씨유의 마케팅 전략이 궁금해. 알려줄 수 있어?,I'm curious about GS25 and CU's marketing strategies. Can you tell me?,I would like to know the marketing strategy of GSShipo and CU. Can you tell me?
+405,48.65,우리 회사에 새로운 시스템이 들어와서 일 년 치 플랜을 다시 짜야 돼.,"A new system has been introduced to our company, so we have to re-plan the year.","Our company has a new system, so we have to make a year's plan again."
+406,50.80,어차피 리조트 예약해야 되면은 나트랑에 있는 거 예매하자.,"If you have to reserve a resort anyway, let's reserve one in Nha Trang.","If we have to book a resort anyway, let's book something in Natrang."
+407,37.36,고트를 뜻하는 요즘 밈이 뭐가 있어? 유행하는 걸로 알려줄래?,What are some current memes that refer to goth? Can you tell me what's trending?,What kind of memes do you have these days? Can you tell me which one is in fashion?
+408,75.45,나 이번에 런던 여행 가는데 메리어트 호텔 예약 잡아줄 수 있어?,I'm going to London this time. Can you make a reservation at the Marriott Hotel for me?,"I'm going on a trip to London this time, can you make a reservation for a Marriott hotel?"
+409,55.30,회사에서 좋은 성과를 냈는데 좋은 피드백을 받지 못했어. 어떻게 해야 할까?,"I did well at work, but I didn't get any good feedback. What should I do?",I didn't get good feedback even though my company did a good job. What should I do?
+410,41.41,요번 주 일요일은 쉬는 날이어서 호텔에 스테이케이션을 하러 가.,"This coming Sunday is a day off, so I'm going to a hotel for a staycation.","I'm off this Sunday, so I'm going to the hotel to stay."
+411,72.23,대전으로 여행 갈 건데 소보로를 잘하는 베이커리 추천해줘.,I'm going on a trip to Daejeon. Can you recommend a bakery that makes good soboro?,"I'm going on a trip to Daejeon, so please recommend a bakery that's good at Sobo."
+412,46.96,저번에 여행 갔다가 환전을 못 하고 온 건데 이거 위안화 동전이다?,I went on a trip last time and came back without being able to exchange money. Are these Yuan coins?,"I didn't exchange money when I went on a trip last time, is this a yuan coin?"
+413,83.59,베트남의 다른 도시들은 여행을 해봤는데 호치민은 아직 못 가봤어.,"I've been to other cities in Vietnam, but I haven't been to Ho Chi Minh City yet.","I've traveled to other cities in Vietnam, but I haven't been to Ho Chi Minh yet."
+414,72.56,이번에 여행 어디로 갈지 고민 중인데 호이안으로 가는 거 어떻게 생각해?,I'm thinking about where to go for my trip this time. What do you think about going to Hoi An?,"I'm thinking about where to travel this time, how do you think about going to Hoian?"
+415,59.43,나는 이년 전부터 투자에 관심이 생겨서 엔비디아에 꾸준히 넣고 있어.,"I got interested in investing about two years ago, and I've been consistently putting money into NVIDIA since then.","I've been interested in investment since two years ago, so I'm constantly putting it into Nvidia."
+416,51.88,연말이라고 플레이스테이션 세일하네. 이번 기회에 한번 사볼까?,They're having a PlayStation sale because it's the end of the year. Should I buy one this time?,PlayStation is on sale at the end of the year. Shall we buy it this time?
+417,65.04,요즘 메타버스랑 에이아이가 많이 나오는데 그 두 개의 차이점이 정확히 뭐야?,"These days, there's been a lot of talk about the metaverse and AI — what's the exact difference between the two?","There are a lot of children in the metaverse these days, so what exactly is the difference between the two?"
+418,77.90,새로 나온 에이아이 어시스턴트 제미나이는 어느 회사에서 만든 거야?,Which company makes the new AI Assistant Gemini?,Which company made the new AI Assistant Semina?
+419,76.23,파라다이스시티랑 인스파이어 리조트 중에 어디가 더 좋을까?,"Which is better, Paradise City or Inspire Resort?","Which do you prefer, Paradise City or Inspire Resort?"
+420,66.47,발리 여행할 때 빠뜨리지 말고 꼭 가봐야 할 명소들로 추천해줘.,Please recommend some must-see attractions when traveling to Bali.,Please recommend some of the must-see attractions instead of missing them when traveling to Bali.
+421,100.00,혹시 플레이리스트 추천해 주실 수 있으세요? 저는 어쿠스틱 음악을 참 좋아해요.,Could you recommend a playlist? I really like acoustic music.,Could you recommend a playlist? I really like acoustic music.
+422,63.89,데이터 사이언티스트는 어떤 걸 하는 역할이고 데이터 파이프라인은 뭐야?,What does a data scientist do and what is a data pipeline?,What role does the data scientist play and what is the data pipeline?
+423,64.14,링크드인에서 가장 매력적인 프로필을 작성하기 위한 방법에는 무엇이 있을까?,How do you create the most attractive profile on LinkedIn?,What are the ways to write the most attractive profile in LinkedIn?
+424,66.83,오늘 오전에 실시한 회의의 아젠다에 대해 업데이트해 줄 수 있어?,Can you update me on the agenda discussed in this morning's meeting?,Could you update me on the agenda of the meeting this morning?
+425,83.45,나는 자바 개발자라서 파이썬 코드는 거의 볼 일이 없긴 해.,"I'm a Java developer, so I rarely see Python code.","I'm a Java developer, so I rarely see the pison code."
+426,51.94,"이걸 디폴트로 해서 입력해줬으면 하는데, 도와줄 수 있으실까요?","I would like to have this entered as default, can you help me?","I want you to put this in as a default, can you help me?"
+427,49.21,비행기가 레이오버된다고 하는데 그러면 기내식이 보통 한 끼 더 제공돼?,"If the flight has a layover, do they usually provide an extra meal?","The flight says it's a layover, so do you usually have one more meal?"
+428,71.14,신혼여행으로 발리에 갔을 때 다니기 좋은 관광 명소에 대해서 알려줘.,Please tell me about good tourist attractions to visit when going to Bali for honeymoon.,Tell me about the tourist attractions that are good to visit when you go to Bali for your honeymoon.
+429,64.59,인생 멘토를 가장 많이 만날 수 있는 세미나에 참석하려면 어떻게 해야 할까?,How do I get into a seminar where I can meet the most life mentors?,What should I do to attend a seminar where I can meet life mentors the most?
+430,93.44,소프트웨어와 하드웨어의 차이점은 뭐고 백엔드가 뭔지 설명해줄래?,Can you explain the difference between software and hardware and what the backend is?,Could you explain the difference between software and hardware and what the backend is?
+431,31.08,중국 여행 갔을 때 치파오 입고 사진 찍어보지 못한 게 좀 아쉬워.,I regret not taking a picture wearing a cheongsam when I traveled to China.,I'm a bit disappointed that I couldn't take a picture with the Chipao on my trip to China.
+432,51.39,중국 난징에 갔다가 박물관을 우연히 갔었거든? 정말 넓더라고.,"I happened to go to a museum in Nanjing, China. It was really big.","Did you happen to go to the museum when you went to Nanjing, China? It was really wide."
+433,62.45,후쿠오카 리츠칼튼 호텔 조식에는 스크램블이 있나요?,"Does The Ritz-Carlton, Fukuoka have scrambled eggs for breakfast?",Do you have a scrambles in Fukuoka Ritz-Carlton hotel breakfast?
+434,36.68,내가 이번에 대구로 관광 갔는데 요우커들이 겁나 많더라구.,"I went to Daegu for sightseeing this time, and there were a lot of foreigners there.",I went to Daegu for a tour this time and you guys were scared.
+435,65.43,이번 프로젝트에서 디벨롭이 필요할 것 같은데 내일 미팅해보는 거 어때요?,I think we need to further develop this project — how about having a meeting tomorrow?,"I think we need a developer for this project, so why don't we have a meeting tomorrow?"
+436,75.96,스프레드시트를 드라이브에 저장한 후 다른 사람과 어떻게 공유할 수 있나요?,How can I share a spreadsheet with others after saving it to the shared drive?,How can I share the spreadsheet with others after storing it on the drive?
+437,54.85,프로젝트 진행 상황을 팔로우업할 때 쓰기 좋은 툴이 있다면 좀 알려줘.,Could you let me know if there is a good tool for managing or tracking project progress?,Please let me know if there is a good tool to use when following up the progress of the project.
+438,81.28,"잘 되어가고 있긴 한데, 음 미안한데 물감을 좀 빌려도 될까?","It's going well, but, um, sorry, can I borrow some paint?","It's going well, but I'm sorry but can I borrow some paint?"
+439,67.82,라우터를 설치했는데도 와이파이가 잘 안 터지면 어떤 걸 바꿔야 돼?,What should I change if the WiFi isn't working well even after installing the router?,What should I change if the Wi-Fi doesn't work even though I installed the router?
+440,92.25,오키나와 여행 갔는데 거기는 렌트카가 없으면 아무 데도 못 가겠더라.,"I went on a trip to Okinawa, but I couldn't go anywhere there without a rental car.","I went on a trip to Okinawa, but I couldn't go anywhere without a rental car."
+441,58.50,유후인 여행을 가고 싶은데 인기가 많은 료칸을 추천해줄래?,I want to go on a trip to Yufuin. Can you recommend a popular ryokan?,"I'd like to go on a trip to the U.S., so could you recommend a popular Ryokan?"
+442,80.09,호텔에 캐리어를 미리 맡기고 싶은데 컨시어지에 가서 부탁하면 될까?,I want to leave my luggage at the hotel in advance. Can I go to the concierge and ask?,"I want to leave my luggage to the hotel in advance, so can I go to the concierge and ask for it?"
+443,71.26,베트남에 있는 호치민 탄손누트 공항은 시설이 어때? 깔끔하니?,"How are the facilities at Tan Son Nhat Airport in Ho Chi Minh City, Vietnam? Is it clean?","How's the facility at Tanson Nut Airport in Ho Chi Minh, Vietnam? Is it clean?"
+444,39.53,이번에 새로 산 스투시 슬리브 입고 감성 카페 가서 사진 찍고 싶다.,I want to wear the new Stussy sleeves I bought this time and go to a sentimental cafe to take pictures.,I want to go to an emotional cafe and take a picture wearing a new Stush slip.
+445,58.93,친구랑 휴가 가려고 하는데 무이네에서 할 수 있는 가장 재밌는 게 뭐야?,"I'm planning a vacation with a friend, what's the most fun thing to do in Mui Ne?","I'm going on a vacation with my friend, what's the most interesting thing you can do in Mui's?"
+446,51.94,중국에서는 사업을 할 때 <unk>시가 가장 중요하다는데 <unk>시가 도대체 뭐야?,"They say guanxi is the most important thing when doing business in China, but what exactly is guanxi?","In China, it is said that the most important thing is to do business, but what on earth is it?"
+447,45.44,사이공 거리 걸으면서 맥주 한 잔 하면은 그날 여행 피로 다 풀려.,A beer while walking through the streets of Saigon will wash away all the fatigue from the day's travel.,A glass of beer while walking on Saigon Street will be released from fatigue that day.
+448,68.29,내용이 맞는지 확인하려고 크로스체크를 할 건데 다른 자료랑 어떻게 비교하면 될까?,"I'm going to cross-check to make sure the content is correct, but how can I compare it to other sources?","I'm going to cross check to see if the content is correct, how can I compare it with other data?"
+449,52.52,저 지금 투잡 뛰고 있는데 이러다가 엔잡러 되는 거 아닌지 모르겠어요.,"I'm working two jobs right now, and I'm not sure if I'll end up a part-timer.","I'm running two jobs right now, and I'm not sure if I'm going to get into something like this."
+450,51.80,베트남 여행 때문에 환전하려고 보니까 백 동에 오 점 오구원이래.,"When I was trying to exchange money for my trip to Vietnam, I saw that there were 5 points and 59 won for 100 dong.","I tried to exchange money for my trip to Vietnam, but it's a five-way shop that came in 100 dong."
+451,77.35,이번에 홋카이도로 여행을 가는데 이제 겨울이잖아. 그래서 나베 요리를 먹으려고.,"I'm going on a trip to Hokkaido this time, and it's winter now. So I'm planning to eat nabe.",I'm going on a trip to Hokkaido this time. It's winter now. So I'm going to have a nabe dish.
+452,72.29,메타버스와 에이아이의 결합이 이루어진다면 기대해볼 수 있는 효과는 뭘까?,What effects can we expect if the metaverse and AI are combined?,What are the expected effects if the metaverse and the AI are combined?
+453,60.92,슬랙에서 아이데이션을 진행할 때 유용한 기능들을 추천해 줄 수 있어?,Could you recommend some useful functions for ideation sessions in Slack?,Could you recommend some useful functions when proceeding with the foundation in slack?
+454,63.16,"에이아이야, 스타벅스 프리퀀시 열개 모으면 뭐 주는지 알아?","Hey AI, do you know what you get if you collect ten Starbucks frequencies?","Ah, do you know what to give if I collect ten Starbucks sequences?"
+455,86.15,뉴욕에 있는 존 에프 케네디 국제공항에 가는 최단 루트를 알려줘.,Tell me the shortest route to John F. Kennedy International Airport in New York.,Let me know the shortest route to John F Kennedy International Airport in New York.
+456,62.48,챗 지피티 포오와 챗 지피티 오원의 차이점은 어떻게 돼?,What is the difference between Chat GPT PoE and Chat GPT One?,What's the difference between Chat Zipiti Poo and Chat Gypty Owon?
+457,39.65,구글 미트라는 화상 채팅 어플에서 소리를 뮤트시키려면 어떻게 해야 돼?,"How do I mute the sound in Google Meet, a video chat app?",What should I do to mute sound from a video chat application called Google Mitt?
+458,58.41,그 회사는 정말 프로의식이 없어. 전부 다 아마추어만도 못한 사람들이야.,That company has absolutely no sense of professionalism. They're all amateurs.,That company doesn't have a sense of professionalism. All of them are not even amateur.
+459,55.20,다음 주에 미팅이 있는데 내가 지금 미팅 디벨롭을 하려면 어떻게 해야 좋을까?,"I have a meeting next week, how do I go about developing the meeting now?","I have a meeting next week, so what should I do if I want to get a meeting developer now?"
+460,65.75,챗지피티의 문제점이 할루시네이션이라는데 그게 무슨 뜻인지 알아?,The problem with ChatGP is called hallucination. Do you know what that means?,"The problem with Chatzipiti is that it's Halusination, do you know what that means?"
+461,53.01,초보자부터 숙련자까지 모두 즐길 수 있는 다양한 산행 코스가 있어요.,There are various hiking trails that can be enjoyed by everyone from beginners to experienced hikers.,There are various hiking courses that you can enjoy from beginners to skilled people.
+462,63.57,엠지란 말은 도대체 어디서 온 말이야? 어떤 말의 줄임말인 거야?,Where on earth does the word MG come from? What is it an abbreviation for?,Where on earth does the word M.G come from? What does it mean?
+463,50.90,새로 산 백팩은 포켓이 많아서 여행 갈 때 정말 유용한 것 같아.,The new backpack I bought has so many pockets — it's really useful for traveling.,I think the new backpack I bought is very useful when traveling because there are a lot of pocketets.
+464,84.82,너 이번에 베트남 여행했다며. 베트남 사파에서 하이킹도 해봤어?,"You said you traveled to Vietnam this time. Did you go hiking in Sapa, Vietnam?","You said you traveled to Vietnam this time. Have you also hiking in Sapa, Vietnam?"
+465,50.11,일본에서 료칸 여행 좀 하려고 하는데 괜찮은 료칸 좀 추천해주라.,I'm planning a ryokan trip in Japan. Can you recommend some good ones?,"I'm planning to travel to Ryokan in Japan, so please recommend me a good Ryokan."
+466,79.61,슬랙에서 사용할 신문 기사를 스크랩하고 싶어. 하나만 추천해 줄 수 있을까?,I'd like to scrape newspaper articles to use in Slack. Can you recommend one?,I want to scrap a newspaper article to use in Slack. Can you recommend me one?
+467,46.91,브루노마스랑 로제랑 같이 부른 아파트 동영상 조회수 몇이야?,"How many views did the video of ""Apartment"" with Bruno Mars and Rosé get?",What is the number of views on the apartment video you sang with Brunomas and Rosé?
+468,32.49,대만은 여행 다녀오면 기념품으로 펑리수 밖에 사 올 게 없나?,"When you travel to Taiwan, is there nothing you can buy as a souvenir other than fengli cakes?",Do you have anything else to buy in Taiwan as a souvenir after a trip?
+469,57.03,말레이시아 여행 때 먹었던 사테라는 꼬치구이가 가장 기억에 많이 남는다.,The satay skewer I ate the most during my trip to Malaysia is what I remember the most.,"The most memorable thing for me was the skewers, which I ate during my trip to Malaysia."
+470,44.99,너는 투잡에 대해서 어떻게 생각해? 유명한 엔잡러에 대해서 소개해줘.,What do you think about part-time jobs? Tell me about some famous part-time jobbers.,What do you think about two jobs? Please introduce me to the famous entrants.
+471,52.27,"야, 그거 알아? 청두 여행을 가면 판다를 꼭 보고 와야 된대.","Hey, you know what? If you go to Chengdu, you absolutely have to see the pandas.","Hey, do you know that? You have to see Panda when you go on a trip to Chengdu."
+472,75.25,일러스트와 그래픽아트라는 걸 수업시간에 배웠는데 두 개념의 차이가 뭔지 궁금해.,"I learned about illustration and graphic art in class, but I'm curious about the difference between the two concepts.","I learned illustration and graphic art in class, and I wonder what the difference between the two concepts is."
+473,59.17,엔비디아 주가가 십년 뒤에는 얼마나 더 올라 있을까? 투자해도 괜찮을까?,How much higher will Nvidia's stock price be in ten years? Is it worth investing in?,How much more Nvidia's stock price will rise in 10 years? Is it okay to invest?
+474,81.40,산행 경험이 많이 없으시다면 비교적 쉬운 코스로 시작하시는 것이 좋죠.,"If you don't have much hiking experience, it's a good idea to start with a relatively easy course.","If you don't have much experience in hiking, it's better to start with a relatively easy course."
+475,35.88,중국 여행 갔다가 동전이 남아 버렸네. 이게 다 몇 위안인겨?,I came back from a trip to China and ended up with a bunch of coins. How many yuan is this altogether?,There are coins left while traveling to China. How many yuan is this?
+476,36.00,이번에 일본 여행 갈 거거든? 숙소로는 일본 전통 료칸이 좋겠어.,"I’m planning a trip to Japan, and I’d really like to stay in a traditional ryokan.",Are you going on a trip to Japan this time? Japanese traditional Ryokan would be good for accommodation.
+477,50.39,그럼 우리 이 나라 수도인 하노이 또 여행해볼까? 재밌을 것 같아.,"Then, should we travel to Hanoi, the capital of our country, again? It seems like it would be fun.","Shall we travel to Hanoi, the capital of this country? I think it'll be fun."
+478,63.09,중국 관광지 중에 와이탄이 손꼽힐 정도이면 한 번쯤 가봐야 되지 않을까?,"If the Bund is considered one of the top tourist destinations in China, shouldn't you visit it at least once?",Wouldn't it be better to visit at least once if Witan is one of the most popular tourist destinations in China?
+479,57.81,요즘 연말이라고 블랙프라이데이 세일하네. 나도 패딩 하나 새로 살까?,"These days, there's a Black Friday sale because it's the end of the year. Should I buy a new padding?",Black Friday is on sale at the end of the year. Should I also buy a new padding?
+480,62.90,이젤의 주요 종류로는 표준 이젤과 드로잉 이젤이 있어요.,The main types of easels are standard easels and drawing easels.,The main types of bezel are standard bezel and drawing bezel.
+481,45.82,시카고에 있는 호텔 중에 일박에 백불 넘지 않은 곳들로만 좀 알려줘.,Tell me about hotels in Chicago that cost less than $100 a night.,Please let me know the hotels in Chicago that don't exceed $100 a day.
+482,43.55,내 엠비티아이는 아이에스티피인데 이 엠비티아이의 특징을 알려줘.,My MBTI is an IST. Please tell me the characteristics of this MBTI.,"My emblemia is Iestape, so please let me know the characteristics of this emblemia."
+483,55.86,미국 대통령 링컨의 게티즈버그 연설 내용을 다섯 문장으로 요약해줘.,Summarize U.S. President Lincoln's Gettysburg Address in five sentences.,Please summarize the contents of Lincoln's Gettyberg speech in five sentences.
+484,22.07,사파에 가면 카약 투어가 유명하대. 한번 꼭 해보는 거 어때?,Kayaking tours are said to be popular in Sapa. How about trying it at least once?,The kayak tour is famous in Sapa. Why don't you try it?
+485,59.19,걔는 내 친구긴 하지만 너무 투머치 토커야. 그렇지 않아?,"He's my friend, but he's a bit too talkative, isn't he?","He's my friend, but he's too much a Tumutch Toker, isn't he?"
+486,35.23,너 요즘 엠지 용어 좀 알아? 줄임말이나 티엠아이 이런 거?,"Do you know any MG terminology these days? Abbreviations, TMI, things like that?",Do you know the term M.G these days? What do you mean in short or T.M?
+487,41.14,퍼플렉시티라는 에이아이가 나온 걸로 알고 있는데 이걸 검색 엔진에 활용할 수 있을까?,"I know there's an AI called Perplexity, can this be used in a search engine?","As far as I know, a child named Purple City came out, can I use it for a search engine?"
+488,48.28,베트남 여행했는데 베트남에는 까이랑 수상시장이 있거든. 되게 독특하게 생겼더라.,"I traveled to Vietnam, and there's this floating market called Cai Rang. It looked really unique.","I traveled to Vietnam, but Vietnam has a water market with black hair. It looks very unique."
+489,67.00,겨울에 후쿠오카로 여행을 갈 예정인데 나베로 유명한 식당 찾아봐 줘.,"I'm planning a trip to Fukuoka in the winter, so please find a restaurant famous for nabe.","I'm going on a trip to Fukuoka in winter, so please look for a famous restaurant in Nabe."
+490,64.24,이번 회의는 웨비나로 할 건데 그러면 스크린샷을 좀 전송해 줘야 하지 않을까?,We're doing this meeting as a webinar — maybe we should send over some screenshots?,"We're going to have this meeting as a webina, so shouldn't we send you a screen shot?"
+491,70.18,이번 휴가 때 타이베이로 여행 갈 건데 갈만한 야시장 추천 좀 해줄래?,I'm going on a trip to Taipei for my vacation. Could you recommend any good night markets to visit?,"I'm going on a trip to Taipei this vacation, could you recommend me a night market for me?"
+492,54.33,너 일본 삿포로에 살지? 내가 여행 갈 건데 가이드 좀 부탁해도 될까?,"Do you live in Sapporo, Japan? I'm planning a trip there, could you please be my guide?","Do you live in Sapporo, Japan? I'm going on a trip, can I ask for a guide?"
+493,55.41,요즘 유행하는 밈을 가르쳐줄래? 너무 뒤떨어지고 있는 것 같아서 그래.,Can you teach me some of the trending memes these days? I feel like I'm falling behind so much.,Can you teach me the memes that are popular these days? I think they're falling behind.
+494,46.24,피엔지는 그 사진 파일 그거고 피이지는 뭐야? 처음 들어봤어.,"PNG is that photo file, and what is PEG? This is the first time I've heard of it.",That's the photo file of P&G and what's P/G? It's my first time listening to it.
+495,60.03,유럽의 어떤 나라에서 오로라가 관측되는지 알려줄 수 있어? 겨울에 여행하고 싶거든.,Can you tell me which countries in Europe I can see the Northern Lights in? I want to travel there in the winter.,Can you tell me which countries in Europe are observing aurora? I want to travel in winter.
+496,47.97,코로나가 한창 심했을 때는 자가격리 때문에 해외여행 나가기가 많이 힘들었었지.,"When COVID-19 was at its peak, it was hard to travel abroad because of quarantine requirements.","When COVID-19 was in full swing, it was hard to go on an overseas trip because of the self-price."
+497,57.08,"에이아이 챗봇아, 어메니티로 샴푸 조말론 거 나오는 호텔 알려줘.","AI Chatbot, please let me know which hotels provide Jo Malone shampoo as part of their amenities.","A-i Chatbot, please let me know the hotel where the shampoo Jonathan comes out with an amenities."
+498,72.27,인스파이어 리조트랑 파라다이스 시티 중 호캉스로 더 좋은 곳은 어디야?,"Which is better for a vacation, Inspire Resort or Paradise City?","Which is better, Inspire Resort or Paradise City?"
+499,79.80,엠비티아이 아이에스티피랑 이엔에프피의 특성과 그 궁합 좀 알려줘.,Please tell me the characteristics and compatibility of MBTI IST and ENF.,Please let me know the characteristics and compatibility of MBI IST and E&F.

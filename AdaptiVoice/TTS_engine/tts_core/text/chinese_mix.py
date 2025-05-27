@@ -4,7 +4,6 @@ import re
 import cn2an
 from pypinyin import lazy_pinyin, Style
 
-# from text.symbols import punctuation
 from .symbols import language_tone_start_map
 from .tone_sandhi import ToneSandhi
 from .english import g2p as g2p_en
@@ -77,7 +76,6 @@ def g2p(text, impl='v2'):
         raise NotImplementedError()
     phones, tones, word2ph = _func(sentences)
     assert sum(word2ph) == len(phones)
-    # assert len(word2ph) == len(text)  # Sometimes it will crash,you can add a try-catch.
     phones = ["_"] + phones + ["_"]
     tones = [0] + tones + [0]
     word2ph = [1] + word2ph + [1]
@@ -103,8 +101,6 @@ def _g2p(segments):
     tones_list = []
     word2ph = []
     for seg in segments:
-        # Replace all English words in the sentence
-        # seg = re.sub("[a-zA-Z]+", "", seg)
         seg_cut = psg.lcut(seg)
         initials = []
         finals = []
@@ -119,23 +115,18 @@ def _g2p(segments):
                 initials.append(sub_initials)
                 finals.append(sub_finals)
 
-            # assert len(sub_initials) == len(sub_finals) == len(word)
         initials = sum(initials, [])
         finals = sum(finals, [])
-        #
         for c, v in zip(initials, finals):
             if c == 'EN_WORD':
                 tokenized_en = tokenizer.tokenize(v)
                 phones_en, tones_en, word2ph_en = g2p_en(text=None, pad_start_end=False, tokenized=tokenized_en)
-                # apply offset to tones_en
                 tones_en = [t + language_tone_start_map['EN'] for t in tones_en]
                 phones_list += phones_en
                 tones_list += tones_en
                 word2ph += word2ph_en
             else:
                 raw_pinyin = c + v
-                # NOTE: post process for pypinyin outputs
-                # we discriminate i, ii and iii
                 if c == v:
                     assert c in punctuation
                     phone = [c]
@@ -149,7 +140,6 @@ def _g2p(segments):
                     assert tone in "12345"
 
                     if c:
-                        # 多音节
                         v_rep_map = {
                             "uei": "ui",
                             "iou": "iu",
@@ -158,7 +148,6 @@ def _g2p(segments):
                         if v_without_tone in v_rep_map.keys():
                             pinyin = c + v_rep_map[v_without_tone]
                     else:
-                        # 单音节
                         pinyin_rep_map = {
                             "ing": "ying",
                             "i": "yi",
@@ -208,7 +197,6 @@ def _g2p_v2(segments):
 
     for text in segments:
         assert spliter not in text
-        # replace all english words
         text = re.sub('([a-zA-Z\s]+)', lambda x: f'{spliter}{x.group(1)}{spliter}', text)
         texts = text.split(spliter)
         texts = [t for t in texts if len(t) > 0]
@@ -216,10 +204,8 @@ def _g2p_v2(segments):
         
         for text in texts:
             if re.match('[a-zA-Z\s]+', text):
-                # english
                 tokenized_en = tokenizer.tokenize(text)
                 phones_en, tones_en, word2ph_en = g2p_en(text=None, pad_start_end=False, tokenized=tokenized_en)
-                # apply offset to tones_en
                 tones_en = [t + language_tone_start_map['EN'] for t in tones_en]
                 phones_list += phones_en
                 tones_list += tones_en
@@ -234,11 +220,7 @@ def _g2p_v2(segments):
     
 
 if __name__ == "__main__":
-    # from text.chinese_bert import get_bert_feature
 
-    text = "NFT啊！chemistry 但是《原神》是由,米哈\游自主，  [研发]的一款全.新开放世界.冒险游戏"
-    text = '我最近在学习machine learning，希望能够在未来的artificial intelligence领域有所建树。'
-    text = '今天下午，我们准备去shopping mall购物，然后晚上去看一场movie。'
     text = '我们现在 also 能够 help 很多公司 use some machine learning 的 algorithms 啊!'
     text = text_normalize(text)
     print(text)
@@ -246,8 +228,3 @@ if __name__ == "__main__":
     bert = get_bert_feature(text, word2ph, device='cuda:0')
     print(phones)
     import pdb; pdb.set_trace()
-
-
-# # 示例用法
-# text = "这是一个示例文本：,你好！这是一个测试...."
-# print(g2p_paddle(text))  # 输出: 这是一个示例文本你好这是一个测试

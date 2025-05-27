@@ -1,5 +1,3 @@
-# Convert Japanese text to phonemes which is
-# compatible with Julius https://github.com/julius-speech/segmentation-kit
 import re
 import unicodedata
 
@@ -15,7 +13,6 @@ except ImportError as e:
 from num2words import num2words
 
 _CONVRULES = [
-    # Conversion of 2 letters
     "アァ/ a a",
     "イィ/ i i",
     "イェ/ i e",
@@ -217,7 +214,6 @@ _CONVRULES = [
     "ヴェ/ b e",
     "ヴォ/ b o",
     "ヴュ/ by u",
-    # Conversion of 1 letter
     "ア/ a",
     "イ/ i",
     "ウ/ u",
@@ -294,7 +290,6 @@ _CONVRULES = [
     "ッ/ q",
     "ヴ/ b u",
     "ー/:",
-    # Try converting broken text
     "ァ/ a",
     "ィ/ i",
     "ゥ/ u",
@@ -302,7 +297,6 @@ _CONVRULES = [
     "ォ/ o",
     "ヮ/ w a",
     "ォ/ o",
-    # Try converting broken text
     "ャ/ y a",
     "ョ/ y o",
     "ュ/ y u",
@@ -310,7 +304,6 @@ _CONVRULES = [
     "ヶ/ k e",
     "髙/ t a k a",
     "煞/ sh y a",
-    # Symbols
     "、/ ,",
     "。/ .",
     "！/ !",
@@ -331,7 +324,6 @@ _RULEMAP1, _RULEMAP2 = _makerulemap()
 
 
 def kata2phoneme(text: str) -> str:
-    """Convert katakana text to phonemes."""
     text = text.strip()
     res = []
     while text:
@@ -348,7 +340,6 @@ def kata2phoneme(text: str) -> str:
             continue
         res.append(text[0])
         text = text[1:]
-    # res = _COLON_RX.sub(":", res)
     return res
 
 
@@ -486,20 +477,16 @@ def japanese_text_to_phonemes(text: str) -> str:
 
 
 def is_japanese_character(char):
-    # 定义日语文字系统的 Unicode 范围
     japanese_ranges = [
-        (0x3040, 0x309F),  # 平假名
-        (0x30A0, 0x30FF),  # 片假名
-        (0x4E00, 0x9FFF),  # 汉字 (CJK Unified Ideographs)
-        (0x3400, 0x4DBF),  # 汉字扩展 A
-        (0x20000, 0x2A6DF),  # 汉字扩展 B
-        # 可以根据需要添加其他汉字扩展范围
+        (0x3040, 0x309F),
+        (0x30A0, 0x30FF),
+        (0x4E00, 0x9FFF),
+        (0x3400, 0x4DBF),
+        (0x20000, 0x2A6DF),
     ]
 
-    # 将字符的 Unicode 编码转换为整数
     char_code = ord(char)
 
-    # 检查字符是否在任何一个日语范围内
     for start, end in japanese_ranges:
         if start <= char_code <= end:
             return True
@@ -537,12 +524,9 @@ def replace_punctuation(text):
     return replaced_text
 
 from pykakasi import kakasi
-# Initialize kakasi object
 kakasi = kakasi()
-# Set options for converting Chinese characters to Katakana
-kakasi.setMode("J", "K")  # Chinese to Katakana
-kakasi.setMode("H", "K")  # Hiragana to Katakana
-# Convert Chinese characters to Katakana
+kakasi.setMode("J", "K")
+kakasi.setMode("H", "K")
 conv = kakasi.getConverter()
 
 def text_normalize(text):
@@ -561,10 +545,6 @@ def distribute_phone(n_phone, n_word):
         min_index = phones_per_word.index(min_tasks)
         phones_per_word[min_index] += 1
     return phones_per_word
-
-
-
-# tokenizer = AutoTokenizer.from_pretrained('cl-tohoku/bert-base-japanese-v3')
 
 model_id = 'tohoku-nlp/bert-base-japanese-v3'
 tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -591,10 +571,7 @@ def g2p(norm_text):
             phs += [text]
             word2ph += [1]
             continue
-        # import pdb; pdb.set_trace()
-        # phonemes = japanese_text_to_phonemes(text)
         phonemes = kata2phoneme(text)
-        # phonemes = [i for i in phonemes if i in symbols]
         for i in phonemes:
             assert i in symbols, (group, norm_text, tokenized, i)
         phone_len = len(phonemes)
@@ -618,9 +595,6 @@ def get_bert_feature(text, word2ph, device):
 
 
 if __name__ == "__main__":
-    # tokenizer = AutoTokenizer.from_pretrained("./bert/bert-base-japanese-v3")
-    text = "こんにちは、世界！..."
-    text = 'ええ、僕はおきなと申します。こちらの小さいわらべは杏子。ご挨拶が遅れてしまいすみません。あなたの名は?'
     text = 'あの、お前以外のみんなは、全員生きてること?'
     from text.japanese_bert import get_bert_feature
 
@@ -630,18 +604,3 @@ if __name__ == "__main__":
     bert = get_bert_feature(text, word2ph)
 
     print(phones, tones, word2ph, bert.shape)
-
-# if __name__ == '__main__':
-#     from pykakasi import kakasi
-#     # Initialize kakasi object
-#     kakasi = kakasi()
-
-#     # Set options for converting Chinese characters to Katakana
-#     kakasi.setMode("J", "H")  # Chinese to Katakana
-#     kakasi.setMode("K", "H")  # Hiragana to Katakana
-
-#     # Convert Chinese characters to Katakana
-#     conv = kakasi.getConverter()
-#     katakana_text = conv.do('ええ、僕はおきなと申します。こちらの小さいわらべは杏子。ご挨拶が遅れてしまいすみません。あなたの名は?')  # Replace with your Chinese text
-
-#     print(katakana_text)  # Output: ニーハオセカイ
