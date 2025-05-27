@@ -6,7 +6,7 @@ from voice_engine import utils
 from voice_engine import commons
 import os
 import librosa
-from openvoice.text import text_to_sequence
+from voice_engine.text import text_to_sequence
 from voice_engine.processing import spectrogram_torch
 from voice_engine.models import SynthesizerTrn
 

@@ -102,9 +102,9 @@ def load_pred_file(path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--lang_code', type=str, default='ko')
-    parser.add_argument('--ref', type=str, default="/home/byeonggeuk/IIPL_Flitto/test/KR.rttm")
-    parser.add_argument('--pred', type=str, default="/home/byeonggeuk/IIPL_Flitto/test/KR_transcriptions.json")
-    parser.add_argument('--output', type=str, default="/home/byeonggeuk/IIPL_Flitto/test/aaaa.csv")
+    parser.add_argument('--ref', type=str, default="/path/to/your/IIPL_Flitto/test/KR.rttm")
+    parser.add_argument('--pred', type=str, default="/path/to/your/IIPL_Flitto/test/KR_transcriptions.json")
+    parser.add_argument('--output', type=str, default="/path/to/your/IIPL_Flitto/test/output_with_jamo.csv")
     args = parser.parse_args()
 
     processor = WhisperProcessor.from_pretrained("openai/whisper-large-v3")
@@ -172,5 +172,9 @@ if __name__ == '__main__':
             avg_cer  = round(total_cer  / cnt,      4)
             avg_jamo = round(total_jamo / jamo_cnt, 4) if jamo_cnt > 0 else ''
             writer.writerow(['average', avg_wer, avg_cer, avg_jamo, '', '', '', ''])
-
+    
+    print("Overall Average Scores:")
+    print(f"  Average WER: {avg_wer:.4f}")
+    print(f"  Average CER: {avg_cer:.4f}")
+    print(f"  Average WER with jamo: {avg_jamo:.4f}")
     print("Done. Results appended to", args.output)

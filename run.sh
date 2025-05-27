@@ -6,9 +6,10 @@
 export CONDA_ENV_NAME="IIPL_Flitto"
 
 # 경로 설정
-ROOT=".../IIPL_Flitto"
+ROOT="/path/to/your/IIPL_Flitto"
+DIARIZENET_CHECKPOINT="/path/to/your/DiarizeNet_ckpt"
+
 DIARIZENET_CONFIG="${ROOT}/DiarizeNet/conf/inference.yaml"
-DIARIZENET_CHECKPOINT=".../DiarizeNet/logs/KR"
 DEEPVOC_CONFIG="${ROOT}/DeepVoc/config/inference.toml"
 DEEPVOC_MODEL="${ROOT}/checkpoints/DeepVoc.tar"
 
@@ -49,7 +50,7 @@ if [ $stage -le 2 ]; then
 fi
 
 ######################################
-# 3. DiarizeNet Inference (Speaker Diarization)
+# 3. DiarizeNet Inference
 ######################################
 if [ $stage -le 3 ]; then
   echo "=== [STEP 3] DiarizeNet Inference ==="
@@ -61,7 +62,7 @@ if [ $stage -le 3 ]; then
     --wav_scp="${WAV_SCP_FILE}" \
     --configs="${DIARIZENET_CONFIG}" \
     --test_from_folder="${DIARIZENET_CHECKPOINT}" \
-    --output_rttm="${ROOT}/test_folder/test.rttm"
+    --output_rttm="${ROOT}/DiarizeNet/data/test_folder/test.rttm"
 
 fi
 

@@ -7,7 +7,7 @@ from . import punctuation, symbols
 
 
 from num2words import num2words
-from MeloTTS.melo.text.ko_dictionary import english_dictionary, etc_dictionary
+from TTS_engine.tts_core.text.ko_dictionary import english_dictionary, etc_dictionary
 from anyascii import anyascii
 from jamo import hangul_to_jamo
 

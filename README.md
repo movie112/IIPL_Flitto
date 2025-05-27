@@ -25,7 +25,10 @@ cd DiarizeNet && pip install -r requirements.txt
 3. Install additional packages
 
 ```
-pip install Cython librosa pesq pystoi pydub tqdm toml colorful mir_eval torch_complex "numpy<2" "accelerate<1.0.0" ffmpeg --no-deps
+pip install Cython librosa pesq pystoi pydub tqdm toml colorful mir_eval torch_complex "numpy<2" "accelerate<1.0.0" ffmpeg --no-deps jieba Mecab
+
+conda install -c conda-forge compilers
+pip install pkuseg nlptutti torch==2.1.2 transformers soynlp
 
 pip install -U openai-whisper
 ```
@@ -37,8 +40,17 @@ Download the [pre-trained DiarizeNet checkpoint](https://www.dropbox.com/scl/fo/
 
 Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/fo/3xle2g3505iydwbw6yqg7/APcyGLXHwL83A2Y3Lu_GaZU?rlkey=i36di9snedlj45vttk6nd0zw9&st=sdhgg06z&dl=0).
 
+Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/rsl0xailbxcoeiz1ebf5g/AOh-MttVZHLOsO8BH7dc7ZA?rlkey=lta539u6qrqovke5ndodtfsmu&st=3xh1n9xr&dl=0).
+
+Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/uyer0669wfhpvm055v5mf/ACbFAIbVxQbScEPlhhioL0A?rlkey=0hndtmi059oh2r5bh51i0q1op&st=ix16crxu&dl=0).
+
 # DeepVoc+DiarizeNet+STT
-   
+
+Before running the following script, make sure to configure the following environment variables:
+
+- **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
+- **DIARIZENET_CHECKPOINT**: Set this to the full path of your `DiarizeNet` checkpoint folder (the directory where you downloaded the DiarizeNet checkpoint).
+
 ```
 bash run.sh
 ```
@@ -58,13 +70,19 @@ python /metric/llm_based_acc.py
 conda create -n adaptivoice python=3.9
 conda activate adaptivoice
 
-cd adaptivoice
-pip install -e .
+cd AdaptiVoice
+pip install -r requirements.txt
 pip install git+https://github.com/myshell-ai/MeloTTS.git
 python -m unidic download
+conda install -c conda-forge ffmpeg
 ```
 
 2. run
+Before running the following script, make sure to configure the following environment variables:
+
+- **root**: Set this to the full path of your `IIPL_Flitto` repository.
+- **AdaptiVoice_ckpt**: Set this to the full path of your checkpoints folder.
+  
 ```
 python /AdaptiVoice/run.py
 ```

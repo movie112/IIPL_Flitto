@@ -6,10 +6,10 @@ from torch.nn import functional as F
 from torch.nn import Conv1d
 from torch.nn.utils import weight_norm, remove_weight_norm
 
-from openvoice import commons
-from openvoice.commons import init_weights, get_padding
-from openvoice.transforms import piecewise_rational_quadratic_transform
-from openvoice.attentions import Encoder
+from voice_engine import commons
+from voice_engine.commons import init_weights, get_padding
+from TTS_engine.tts_core.transforms import piecewise_rational_quadratic_transform
+from TTS_engine.tts_core.attentions import Encoder
 
 LRELU_SLOPE = 0.1
 
