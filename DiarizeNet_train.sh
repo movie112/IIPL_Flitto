@@ -6,7 +6,7 @@
 
 # 경로 설정
 CONDA_ENV_NAME="IIPL_Flitto"
-ROOT=".../IIPL_Flitto"
+ROOT="/path/to/your/IIPL_Flitto"
 
 DIARIZENET_CONFIG="${ROOT}/DiarizeNet/conf/train.yaml"
 DEEPVOC_CONFIG="${ROOT}/DeepVoc/config/inference.toml"
