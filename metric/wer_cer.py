@@ -78,11 +78,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--lang_code", type=str, default="ko")
     parser.add_argument("--ref", type=str,
-                        default=".../KR.rttm")
+                        default="/path/to/your/IIPL_Flitto/test/KR.rttm")
     parser.add_argument("--pred", type=str,
-                        default=".../KR_transcriptions.json")
+                        default="/path/to/your/IIPL_Flitto/test/KR_transcriptions.json")
     parser.add_argument("--output", type=str,
-                        default=".../output.csv")
+                        default="/path/to/your/IIPL_Flitto/test/output.csv")
     args = parser.parse_args()
 
     processor = WhisperProcessor.from_pretrained("openai/whisper-large-v3")
