@@ -31,7 +31,7 @@ cd DiarizeNet && pip install -r requirements.txt
 3. Install additional packages
 
 ```
-pip install Cython librosa pesq pystoi pydub tqdm toml colorful mir_eval torch_complex "numpy<2" "accelerate<1.0.0" ffmpeg --no-deps jieba Mecab
+pip install Cython librosa pesq pystoi pydub tqdm toml colorful mir_eval torch_complex "numpy<2" "accelerate<1.0.0" ffmpeg --no-deps jieba Mecab openai
 
 conda install -c conda-forge compilers
 pip install pkuseg nlptutti transformers soynlp
@@ -56,31 +56,15 @@ Download the [TTA Test Dataset](https://www.dropbox.com/scl/fi/zeps24kl7rgugpjdi
 
 Before running the following script, make sure to configure the following environment variables:
 
+- **LANG**: Choose one language from KR (Korean), EN (English), CN (Chinese), or JP (Japanes).
 - **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
 - **DIARIZENET_CHECKPOINT**: Set this to the full path of your `DiarizeNet` checkpoint folder (the directory where you downloaded the DiarizeNet checkpoint).
+- **OPENAI_API_KEY**: Provide your OpenAI API key
+
 - **TTA Test Dataset**: Put your TTA Test Dataset files into `TTA_test/wer_cer_llm_based_acc_data` folder.
-  
-```
-bash /TTA_test/wer_cer_llm_based_acc.sh
-```
-
-
-## DeepVoc+DiarizeNet+STT
-
-Before running the following script, make sure to configure the following environment variables:
-
-- **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
-- **DIARIZENET_CHECKPOINT**: Set this to the full path of your `DiarizeNet` checkpoint folder (the directory where you downloaded the DiarizeNet checkpoint).
 
 ```
-bash run.sh
-```
-
-## Metric
-
-```
-python /metric/wer_cer.py
-python /metric/llm_based_acc.py
+bash TTA_test/wer_cer_llm_based_acc.sh
 ```
 
 ## AdaptiVoice
@@ -106,7 +90,7 @@ Before running the following script, make sure to configure the following enviro
 - **AdaptiVoice_ckpt**: Set this to the full path of your `AdaptiVoice` checkpoints folder.
   
 ```
-python /AdaptiVoice/run.py
+python AdaptiVoice/run.py
 ```
 
 ## Metric
@@ -117,7 +101,7 @@ Before running the following script, make sure to configure the following enviro
 - **Crossview-AP_datasets**: Put your CrossView-AP datasetse files into `crossview-ap` folder.
   
 ```
-python /metric/crossview-ap/code/evaluate_all.py
+python metric/crossview-ap/code/evaluate_all.py
 ```
 
 ## Machine Translation
@@ -145,7 +129,7 @@ Before running the following script, make sure to configure the following enviro
 - **machin_translation_ckpt**: Set this to the full path of your `Machine Translation` checkpoints folder.
   
 ```
-bash /metric/bleu_comet.sh
+bash metric/bleu_comet.sh
 ```
 
 ## Error Correction
@@ -167,5 +151,5 @@ Before running the following script, make sure to configure the following enviro
 - **model_path**: Set this to the full path of your `Error Correction` checkpoints folder.
   
 ```
-python /Text_Processing/Error_Correction/LLM_grammer_inference.py
+python Text_Processing/Error_Correction/LLM_grammer_inference.py
 ```

@@ -5,7 +5,7 @@ from unsloth import FastLanguageModel
 import torch
 
 root = "/path/to/your/IIPL_Flitto"
-model_path = "/path/to/your/Error_Correction_ckpt"
+MODEL_PATH = "/path/to/your/Error_Correction_ckpt"
 INPUT_JSON  = f"{root}/Text_Processing/Error_Correction/transcription.json"
 OUTPUT_JSON = f"{root}/Text_Processing/Error_Correction/transcription_correction.json"
 
