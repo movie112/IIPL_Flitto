@@ -46,8 +46,8 @@ model = FastLanguageModel.get_peft_model(
     loftq_config=None,
 )
 
-train = pd.read_csv("../IIPL_Flitto/Text_Processing/Error_Correction/train.csv", encoding="utf-8-sig")
-test = pd.read_csv("../IIPL_Flitto/Text_Processing/Error_Correction/test.csv", encoding = 'utf-8-sig')
+train = pd.read_csv("/path/to/your/IIPL_Flitto/Text_Processing/Error_Correction/train.csv", encoding="utf-8-sig")
+test = pd.read_csv("/path/to/your/IIPL_Flitto/Text_Processing/Error_Correction/test.csv", encoding = 'utf-8-sig')
 train = train.drop(columns="ID")
 
 def jamo_formatting(examples):

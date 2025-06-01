@@ -4,9 +4,10 @@ import hgtk
 from unsloth import FastLanguageModel
 import torch
 
-MODEL_PATH = "..."
-INPUT_JSON  = ".../transcription.json"
-OUTPUT_JSON = ".../transcription_v2.json"
+root = "/path/to/your/IIPL_Flitto"
+model_path = "/path/to/your/Error_Correction_ckpt"
+INPUT_JSON  = f"{root}/Text_Processing/Error_Correction/transcription.json"
+OUTPUT_JSON = f"{root}/Text_Processing/Error_Correction/transcription_correction.json"
 
 def decompose(text):
     result = []

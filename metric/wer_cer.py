@@ -13,7 +13,7 @@ import re
 import jieba
 
 seg = pkuseg.pkuseg()
-mecab = MeCab.Tagger("-Owakati")
+mecab = MeCab.Tagger()
 
 REF_PATTERN = re.compile(r"<NA>\s+<NA>\s*(.*?)\s*\|\|\|")
 
@@ -77,12 +77,9 @@ def segment_chars(text):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--lang_code", type=str, default="ko")
-    parser.add_argument("--ref", type=str,
-                        default="/path/to/your/IIPL_Flitto/test/KR.rttm")
-    parser.add_argument("--pred", type=str,
-                        default="/path/to/your/IIPL_Flitto/test/KR_transcriptions.json")
-    parser.add_argument("--output", type=str,
-                        default="/path/to/your/IIPL_Flitto/test/output.csv")
+    parser.add_argument("--ref", type=str, default="/path/to/your/IIPL_Flitto/test/KR.rttm")
+    parser.add_argument("--pred", type=str, default="/path/to/your/IIPL_Flitto/test/KR_transcriptions.json")
+    parser.add_argument("--output", type=str, default="/path/to/your/IIPL_Flitto/test/output.csv")
     args = parser.parse_args()
 
     processor = WhisperProcessor.from_pretrained("openai/whisper-large-v3")
@@ -120,11 +117,11 @@ if __name__ == "__main__":
         r = norm["reference_normalized"]
         p = norm["prediction_normalized"]
         
-        if args.lang_code.lower() in ("zh"):
+        if args.lang_code.lower() in ("cn"):
             ref_text = segment_chinese(r)
             pred_text = segment_chinese(p)
             wer = 100 * nt.get_wer(segment_chinese(r), segment_chinese(p))["wer"]
-        elif args.lang_code.lower() in ("ja"):
+        elif args.lang_code.lower() in ("jp"):
             ref_text = segment_japanese(r)
             pred_text = segment_japanese(p)
             wer = 100 * nt.get_wer(segment_japanese(r), segment_japanese(p))["wer"]

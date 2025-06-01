@@ -1,6 +1,6 @@
 log:
   model_name: Demo
-  log_dir: !ref .../IIPL_Flitto/DiarizeNet/logs/<log[model_name]>
+  log_dir: !ref /path/to/your/IIPL_Flitto/DiarizeNet/logs/<log[model_name]>
   save_top_k: -1
   start_epoch: 0
   end_epoch: 9
@@ -61,8 +61,8 @@ data:
     normtype: minmax # minmax or standard or mean normalization
     dims: [1, 2] # dimensions over which normalization is applied
 
-  train_data_dir: .../IIPL_Flitto/DiarizeNet/data/demo/train  # swb_sre_tr_ns1n2n3n4_beta2n2n5n9_100000 # swb_sre_tr_ns2_beta2_100000  # swb_sre_tr_ns1n2n3n4_beta2n2n2n2_20000
-  val_data_dir: .../IIPL_Flitto/DiarizeNet/data/demo/valid
+  train_data_dir: /path/to/your/IIPL_Flitto/DiarizeNet/data/demo/train  # swb_sre_tr_ns1n2n3n4_beta2n2n5n9_100000 # swb_sre_tr_ns2_beta2_100000  # swb_sre_tr_ns1n2n3n4_beta2n2n2n2_20000
+  val_data_dir: /path/to/your/IIPL_Flitto/DiarizeNet/data/demo/valid
 
 task:
   max_speakers: 

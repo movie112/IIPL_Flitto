@@ -1,6 +1,6 @@
 log:
   model_name: Demo
-  log_dir: !ref .../IIPL_Flitto/DiarizeNet/logs/<log[model_name]>
+  log_dir: !ref /path/to/your/IIPL_Flitto/DiarizeNet/logs/<log[model_name]>
   save_top_k: -1
   start_epoch: 89
   end_epoch: 99
@@ -61,8 +61,8 @@ data:
     normtype: minmax 
     dims: [1, 2] 
 
-  train_data_dir: .../IIPL_Flitto/DiarizeNet/data/demo/train
-  val_data_dir: .../IIPL_Flitto/DiarizeNet/data/demo/test
+  train_data_dir: /path/to/your/IIPL_Flitto/DiarizeNet/data/demo/train
+  val_data_dir: /path/to/your/IIPL_Flitto/DiarizeNet/data/demo/test
 
 task:
   max_speakers: 

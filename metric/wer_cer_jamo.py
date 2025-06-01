@@ -101,14 +101,14 @@ def load_pred_file(path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lang_code', type=str, default='ko')
+    parser.add_argument('--lang_code', type=str, default='kr')
     parser.add_argument('--ref', type=str, default="/path/to/your/IIPL_Flitto/test/KR.rttm")
     parser.add_argument('--pred', type=str, default="/path/to/your/IIPL_Flitto/test/KR_transcriptions.json")
     parser.add_argument('--output', type=str, default="/path/to/your/IIPL_Flitto/test/output_with_jamo.csv")
     args = parser.parse_args()
 
     processor = WhisperProcessor.from_pretrained("openai/whisper-large-v3")
-    jamo_tok  = Tokenizer() if args.lang_code.lower() == 'ko' else None
+    jamo_tok  = Tokenizer() if args.lang_code.lower() == 'kr' else None
 
     refs  = load_ref_file(args.ref)
     preds = load_pred_file(args.pred)
@@ -123,8 +123,7 @@ if __name__ == '__main__':
         writer = csv.writer(fout)
         if is_new:
             writer.writerow([
-                'audio_id','wer','cer','jamo_wer',
-                'jamo_ref','jamo_hyp','reference','prediction'
+                'audio_id','wer','cer','jamo_ref','jamo_hyp','reference','prediction'
             ])
 
         for fid in tqdm(ids, desc="Scoring files"):
@@ -132,11 +131,11 @@ if __name__ == '__main__':
             norm_ref = processor.tokenizer.normalize(r_raw)
             norm_prd = processor.tokenizer.normalize(p_raw)
 
-            if args.lang_code.lower() == 'zh':
+            if args.lang_code.lower() == 'cn':
                 ref_norm = ' '.join(seg.cut(norm_ref.replace('，',' ').replace('。',' ')))
                 prd_norm = ' '.join(seg.cut(norm_prd.replace('，',' ').replace('。',' ')))
                 wer_val = nt.get_wer(ref_norm, prd_norm)['wer'] * 100
-            elif args.lang_code.lower() == 'ja':
+            elif args.lang_code.lower() == 'jp':
                 ref_norm = mecab.parse(norm_ref).strip()
                 prd_norm = mecab.parse(norm_prd).strip()
                 wer_val = nt.get_wer(ref_norm, prd_norm)['wer'] * 100
@@ -171,10 +170,9 @@ if __name__ == '__main__':
             avg_wer  = round(total_wer  / cnt,      4)
             avg_cer  = round(total_cer  / cnt,      4)
             avg_jamo = round(total_jamo / jamo_cnt, 4) if jamo_cnt > 0 else ''
-            writer.writerow(['average', avg_wer, avg_cer, avg_jamo, '', '', '', ''])
+            writer.writerow(['average', avg_jamo, avg_cer, '', '', '', ''])
     
     print("Overall Average Scores:")
-    print(f"  Average WER: {avg_wer:.4f}")
+    print(f"  Average WER: {avg_jamo:.4f}")
     print(f"  Average CER: {avg_cer:.4f}")
-    print(f"  Average WER with jamo: {avg_jamo:.4f}")
     print("Done. Results appended to", args.output)

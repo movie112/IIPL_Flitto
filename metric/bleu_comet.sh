@@ -1,15 +1,16 @@
 #!/bin/bash
 
 langs=("en" "cn" "jp")
-data_dir=".../IIPL_Flitto/Text_Processing/Machine_Translation/data"
-ckpt_dir=".../fairseq_ck"
-results_base=".../prediction"
+root="/path/to/your/IIPL_Flitto"
+ckpt_dir="/path/to/your/Machine_Translation_ckpt"
+data_dir="${root}/Text_Processing/Machine_Translation/data"
+result_base="${root}/Text_Processing/Machine_Translation/prediction"
 
 # fairseq-generate + 결과 분리
 for lang in "${langs[@]}"; do
   model_dir="${ckpt_dir}/real_ckp_ko_${lang}"
   data_path="${data_dir}/spm_ko_${lang}"
-  result_path="${results_base}/${lang}"
+  result_path="${result_base}/${lang}"
   mkdir -p "$result_path"
 
   echo "Generating translation for ko→${lang}..."
@@ -46,12 +47,11 @@ model_path = download_model("Unbabel/wmt22-comet-da")
 comet_model = load_from_checkpoint(model_path)
 
 results = {}
-
 def evaluate(lang, tokenize_fn=None):
-    root = f"/home/byeonggeuk/fairseq/prediction/{lang}"
-    src = open(f"{root}/gen.out.src", encoding="utf-8").read().splitlines()
-    ref = f"{root}/gen.out.ref"
-    hyp = f"{root}/gen.out.sys"
+    prediction=f"{result_base}/{lang}"
+    src = open(f"{prediction}/gen.out.src", encoding="utf-8").read().splitlines()
+    ref = f"{prediction}/gen.out.ref"
+    hyp = f"{prediction}/gen.out.sys"
 
     ref_tok, hyp_tok = ref, hyp
     if tokenize_fn:
@@ -99,9 +99,7 @@ evaluate("cn", char_tokenize)
 evaluate("jp", char_tokenize)
 
 # 결과를 JSON으로 저장
-with open(".../prediction/scores.json", "w", encoding="utf-8") as f:
+with open(f"{result_base}/scores.json", "w", encoding="utf-8") as f:
     json.dump(results, f, indent=2, ensure_ascii=False)
 
 EOF
-
-

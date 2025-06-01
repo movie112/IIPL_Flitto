@@ -6,21 +6,21 @@ from voice_engine import extractor
 from TTS_engine.tts_core.api import TTS
 from pydub import AudioSegment
 
-root = "/home/byeonggeuk/IIPL_Flitto/AdaptiVoice"
+root = "/path/to/your/IIPL_Flitto"
 ckpt_root = f"{root}/checkpoints/AdaptiVoice_ckpt"
 ckpt_converter = f"{ckpt_root}/converter"
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-output_dir = f'{root}/demo'
+output_dir = f'{root}/AdaptiVoice/demo'
 os.makedirs(output_dir, exist_ok=True)
 
 tone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)
 tone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')
 
 refs = [
-    f"{root}/resources/demo_0.mp3",
-    f"{root}/resources/demo_1.mp3",
-    f"{root}/resources/demo_2.mp3",
+    f"{root}/AdaptiVoice/resources/demo_0.mp3",
+    f"{root}/AdaptiVoice/resources/demo_1.mp3",
+    f"{root}/AdaptiVoice/resources/demo_2.mp3",
 ]
 available_embeddings = []
 for p in refs:
@@ -35,9 +35,9 @@ source_se = torch.load(
 
 tts_model = TTS(language=language, device=device)
 default_speaker_id = list(tts_model.hps.data.spk2id.values())[0]
-snr_path = f"{root}/domain_normalized_snr.json"
+snr_path = f"{root}/AdaptiVoice/domain_normalized_snr.json"
 
-rttm_path = f"{root}/demo/KR.rttm"
+rttm_path = f"{root}/AdaptiVoice/demo/KR.rttm"
 
 speaker_map = {}
 speaker_counter = 0
