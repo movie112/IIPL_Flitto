@@ -6,8 +6,8 @@
 export CONDA_ENV_NAME="IIPL_Flitto"
 
 # 경로 설정
-ROOT="/home/byeonggeuk/IIPL_Flitto"
-DIARIZENET_CHECKPOINT="/nas_homes/byeonggeuk/model/DiarizeNet/logs/KR/KR"
+ROOT="/path/to/your/IIPL_Flitto"
+DIARIZENET_CHECKPOINT="/path/to/your/DiarizeNet_ckpt"
 
 DIARIZENET_CONFIG="${ROOT}/DiarizeNet/conf/inference.yaml"
 DEEPVOC_CONFIG="${ROOT}/DeepVoc/config/inference.toml"

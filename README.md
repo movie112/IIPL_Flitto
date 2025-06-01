@@ -50,7 +50,20 @@ Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/
 
 Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/rsl0xailbxcoeiz1ebf5g/AOh-MttVZHLOsO8BH7dc7ZA?rlkey=lta539u6qrqovke5ndodtfsmu&st=3xh1n9xr&dl=0).
 
-Download the [TTS Test Dataset](https://www.dropbox.com/scl/fi/zeps24kl7rgugpjdi9yqd/TTA_test_wer_cer_llm_acc.zip?rlkey=xdjxdvfgye4wjjyix1i4ot5rf&st=34rxda79&dl=0).
+Download the [TTA Test Dataset](https://www.dropbox.com/scl/fi/zeps24kl7rgugpjdi9yqd/TTA_test_wer_cer_llm_acc.zip?rlkey=xdjxdvfgye4wjjyix1i4ot5rf&st=34rxda79&dl=0).
+
+## TTA_test
+
+Before running the following script, make sure to configure the following environment variables:
+
+- **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
+- **DIARIZENET_CHECKPOINT**: Set this to the full path of your `DiarizeNet` checkpoint folder (the directory where you downloaded the DiarizeNet checkpoint).
+- **TTA Test Dataset**: Put your TTA Test Dataset files into `TTA_test/wer_cer_llm_based_acc_data` folder.
+  
+```
+bash /TTA_test/wer_cer_llm_based_acc.sh
+```
+
 
 ## DeepVoc+DiarizeNet+STT
 
