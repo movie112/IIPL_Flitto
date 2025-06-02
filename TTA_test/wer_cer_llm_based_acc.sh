@@ -8,8 +8,8 @@ export CONDA_ENV_NAME="IIPL_Flitto"
 # 경로 설정
 LANG="KR"
 ROOT="/path/to/your/IIPL_Flitto"
-DIARIZENET_CHECKPOINT="path/to/your/DiarizeNet_ckpt/${LANG}/${LANG}"
 OPENAI_API_KEY="your_openai_api_key"
+DIARIZENET_CHECKPOINT="${ROOT}/checkpoints/DiarizeNet_ckpt_${LANG}"
 
 DIARIZENET_CONFIG="${ROOT}/DiarizeNet/conf/inference.yaml"
 DEEPVOC_CONFIG="${ROOT}/DeepVoc/config/inference.toml"
