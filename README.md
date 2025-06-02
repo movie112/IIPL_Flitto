@@ -52,7 +52,7 @@ Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/
 
 Download the [TTA Test Dataset](https://www.dropbox.com/scl/fi/zeps24kl7rgugpjdi9yqd/TTA_test_wer_cer_llm_acc.zip?rlkey=xdjxdvfgye4wjjyix1i4ot5rf&st=34rxda79&dl=0).
 
-## TTA_test
+## TTA_test: WER/CER/LLM-based acc
 
 Before running the following script, make sure to configure the following environment variables:
 
@@ -62,12 +62,13 @@ Before running the following script, make sure to configure the following enviro
 - **OPENAI_API_KEY**: Provide your OpenAI API key
 
 - **TTA Test Dataset**: Put your TTA Test Dataset files into `TTA_test/wer_cer_llm_based_acc_data` folder.
+- **{LANG}_wav.scp**: Ensure that the {LANG}_wav.scp file inside TTA_test/wer_cer_llm_based_acc_data/{LANG} contains correct audio paths.
 
 ```
 bash TTA_test/wer_cer_llm_based_acc.sh
 ```
 
-## AdaptiVoice
+## TTA_test: crossview-AP
 
 1. Install Package
 
@@ -85,17 +86,6 @@ conda install -c conda-forge ffmpeg
 2. run
 
 Before running the following script, make sure to configure the following environment variables:
-
-- **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **AdaptiVoice_ckpt**: Set this to the full path of your `AdaptiVoice` checkpoints folder.
-  
-```
-python AdaptiVoice/run.py
-```
-
-## Metric
-
-Before running the following script, make sure to configure the following environment variables:
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
 - **Crossview-AP_ckpt**: Put your CrossView-AP checkpoint files into `crossview-ap` folder.
 - **Crossview-AP_datasets**: Put your CrossView-AP datasetse files into `crossview-ap` folder.
@@ -104,7 +94,7 @@ Before running the following script, make sure to configure the following enviro
 python metric/crossview-ap/code/evaluate_all.py
 ```
 
-## Machine Translation
+## TTA_test: BLEU/COMET
 
 1. Install Package
 
@@ -121,7 +111,7 @@ pip install --editable ./
 conda install -c nvidia cuda-toolkit=11.8 cudatoolkit-dev=11.8
 ```
 
-2. metric
+2. run
 
 Before running the following script, make sure to configure the following environment variables:
 
@@ -132,7 +122,7 @@ Before running the following script, make sure to configure the following enviro
 bash metric/bleu_comet.sh
 ```
 
-## Error Correction
+### Error Correction
 
 1. Install Package
 
