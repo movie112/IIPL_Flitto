@@ -31,12 +31,13 @@ cd DiarizeNet && pip install -r requirements.txt
 3. Install additional packages
 
 ```
-pip install Cython librosa pesq pystoi pydub tqdm toml colorful mir_eval torch_complex "numpy<2" "accelerate<1.0.0" ffmpeg --no-deps jieba Mecab openai
+pip install Cython librosa pesq pystoi pydub tqdm toml colorful mir_eval torch_complex "numpy<2" "accelerate<1.0.0" ffmpeg --no-deps jieba Mecab pkuseg
 
 conda install -c conda-forge compilers
 pip install pkuseg nlptutti transformers soynlp
 
 pip install -U openai-whisper
+pip install openai
 ```
 
 
