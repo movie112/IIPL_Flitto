@@ -130,13 +130,8 @@ if __name__ == "__main__":
 
         ids1 = np.hstack(ids1)
         ids2, ind = np.unique(np.hstack(ids2), return_index=True)
-        # ids2 = np.hstack(ids2)
         embs1 = np.vstack(embs1)
         embs2 = np.vstack(embs2)[ind]
-        # print(ids1.shape)
-        # print(ids2.shape)
-        # print(embs1.shape)
-        # print(embs2.shape)
 
         acoustic_ap = metric.acoustic_ap(embs1, ids1)
         crossview_ap = metric.crossview_ap(embs1, ids1, embs2, ids2)
@@ -161,26 +156,7 @@ if __name__ == "__main__":
         words1 = [id_to_label(idx) for idx in ids1]
         words2 = [id_to_label(idx) for idx in ids2]
 
-        # write csv
-        with open(f"{expt_dir}/save/{this_lang}-acoustic-labels.tsv", 'w', encoding='utf-8') as f:
-            for word in words1:
-                f.write(f"{word}\n")
-
-        with open(f"{expt_dir}/save/{this_lang}-acoustic-vectors.tsv", 'w') as f:
-            for vec in embs1:
-                for i in vec:
-                    f.write(f"{i}\t")
-                f.write('\n')
-
-        with open(f"{expt_dir}/save/{this_lang}-word-labels.tsv", 'w', encoding='utf-8') as f:
-            for word in words2:
-                f.write(f"{word}\n")
-
-        with open(f"{expt_dir}/save/{this_lang}-word-vectors.tsv", 'w') as f:
-            for vec in embs2:
-                for i in vec:
-                    f.write(f"{i}\t")
-                f.write('\n')
+        os.makedirs(f"{args.result_dir}", exist_ok=True)
         with open(f"{args.result_dir}/{this_lang}.txt", 'w') as f:
             f.write(f"language = {this_lang},"
                  f"acoustic_ap = {acoustic_ap:.3f} ,"

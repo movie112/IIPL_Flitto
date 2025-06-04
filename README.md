@@ -88,7 +88,7 @@ bash TTA_test/wer_cer_llm_based_acc.sh
 1-1. Create `ap_env` environment
 
 ```
-cd /IIPL_Flitto/AdaptiVoice/TTS_engine
+cd IIPL_Flitto/AdaptiVoice/TTS_engine
 conda create -n ap_env python=3.9
 conda activate ap_env
 ```
@@ -97,7 +97,7 @@ conda activate ap_env
 
 ```
 pip install -e .
-cd /IIPL_Flitto/AdaptiVoice/voice_engine
+cd IIPL_Flitto/AdaptiVoice/voice_engine
 pip install -e .
 ```
 
@@ -115,16 +115,16 @@ pip install pkuseg janome konlpy h5py textgrid tgt opencc librosa
 2-1. Create `mfa_env` environment
 
 ```
-  conda create -n mfa_env -c conda-forge montreal-forced-aligner
-  conda activate mfa_env
+conda create -n mfa_env -c conda-forge montreal-forced-aligner
+conda activate mfa_env
 ```
 
 2-2. Install packages
 
 ```
-  pip install joblib==1.2.0
-  pip install python-mecab-ko jamo spacy-pkuseg dragonmapper hanziconv textgrid tgt
-  conda install -c conda-forge spacy sudachipy sudachidict-core
+pip install joblib==1.2.0
+pip install python-mecab-ko jamo spacy-pkuseg dragonmapper hanziconv textgrid tgt
+conda install -c conda-forge spacy sudachipy sudachidict-core
 ```
 
 3. run
@@ -135,7 +135,7 @@ Before running the following script, make sure to configure the following enviro
 - **lang**: Choose one language from kr (Korean), en (English), cn (Chinese), or jp (Japanes).
 
 ```
-bash /IIPL_Flitto/TTA_test/crossview_ap.shcrossview_ap.sh
+bash TTA_test/crossview_ap.shcrossview_ap.sh
 ```
 
 ## TTA_test: BLEU/COMET

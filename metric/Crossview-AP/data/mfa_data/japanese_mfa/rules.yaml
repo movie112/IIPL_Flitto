@@ -1,0 +1,99 @@
+dialects:
+  us:
+  - following_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    non_silence_before_correction: 0.0
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.32
+    replacement: i̥
+    segment: i
+    silence_after_probability: 0.82
+    silence_before_correction: 0.01
+  - following_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    non_silence_before_correction: 0.03
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.89
+    replacement: ''
+    segment: i
+    silence_after_probability: 1.65
+    silence_before_correction: -0.01
+  - following_context: $
+    non_silence_before_correction: 0.08
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.1
+    replacement: i̥
+    segment: i
+    silence_after_probability: 0.23
+    silence_before_correction: -0.33
+  - following_context: $
+    non_silence_before_correction: 0.08
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.23
+    replacement: ''
+    segment: i
+    silence_after_probability: 0.46
+    silence_before_correction: -0.26
+  - following_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    non_silence_before_correction: -0.01
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.29
+    replacement: ɯ̥
+    segment: ɯ
+    silence_after_probability: 1.36
+    silence_before_correction: 0.05
+  - following_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    non_silence_before_correction: -0.01
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.69
+    replacement: ''
+    segment: ɯ
+    silence_after_probability: 1.0
+    silence_before_correction: 0.14
+  - following_context: $
+    non_silence_before_correction: -0.02
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.25
+    replacement: ɯ̥
+    segment: ɯ
+    silence_after_probability: 23.0
+    silence_before_correction: 0.02
+  - following_context: $
+    non_silence_before_correction: 0.04
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.24
+    replacement: ''
+    segment: ɯ
+    silence_after_probability: 5.5
+    silence_before_correction: -0.19
+  - following_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    non_silence_before_correction: -0.01
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.47
+    replacement: ɨ̥
+    segment: ɨ
+    silence_after_probability: 0.94
+    silence_before_correction: 0.03
+  - following_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    non_silence_before_correction: -0.01
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.82
+    replacement: ''
+    segment: ɨ
+    silence_after_probability: 0.76
+    silence_before_correction: 0.1
+  - following_context: $
+    non_silence_before_correction: -0.02
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.35
+    replacement: ɨ̥
+    segment: ɨ
+    silence_after_probability: 8.25
+    silence_before_correction: -0.04
+  - following_context: $
+    non_silence_before_correction: 0.05
+    preceding_context: '[skctɕɸçhp][ʲsɕ]?ː?'
+    probability: 0.34
+    replacement: ''
+    segment: ɨ
+    silence_after_probability: 3.38
+    silence_before_correction: -0.17
+rules: []
