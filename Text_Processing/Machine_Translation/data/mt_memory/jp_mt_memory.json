@@ -1,0 +1,926 @@
+{
+  "가스라이팅": [
+    {
+      "correct_translation": "教えてもらえますか",
+      "incorrect_translations": [
+        "知らせることができるだろうか"
+      ]
+    }
+  ],
+  "가족 사인": [
+    {
+      "correct_translation": "家族四人",
+      "incorrect_translations": [
+        "家族サイン"
+      ]
+    }
+  ],
+  "객실 수": [
+    {
+      "correct_translation": "部屋数",
+      "incorrect_translations": [
+        "客室数"
+      ]
+    }
+  ],
+  "경복궁": [
+    {
+      "correct_translation": "景福宮",
+      "incorrect_translations": [
+        "キョンボックン"
+      ]
+    }
+  ],
+  "고트": [
+    {
+      "correct_translation": "GOAT",
+      "incorrect_translations": [
+        "ゴットした人",
+        "ゴート"
+      ]
+    }
+  ],
+  "구글 ": [
+    {
+      "correct_translation": "Google",
+      "incorrect_translations": [
+        "グーグル"
+      ]
+    }
+  ],
+  "구글 미트": [
+    {
+      "correct_translation": "Google Meet",
+      "incorrect_translations": [
+        "グーグルミット"
+      ]
+    }
+  ],
+  "구글 크롬": [
+    {
+      "correct_translation": "Google Chrome",
+      "incorrect_translations": [
+        "グーグルクローム"
+      ]
+    }
+  ],
+  "기념품": [
+    {
+      "correct_translation": "お土産",
+      "incorrect_translations": [
+        "記念品"
+      ]
+    }
+  ],
+  "까이랑 수상시장": [
+    {
+      "correct_translation": "カイラン水上マーケット",
+      "incorrect_translations": [
+        "カイと水上市場"
+      ]
+    }
+  ],
+  "꽌시": [
+    {
+      "correct_translation": "関係",
+      "incorrect_translations": [
+        "グアム"
+      ]
+    }
+  ],
+  "나베": [
+    {
+      "correct_translation": "鍋料理",
+      "incorrect_translations": [
+        "鍋料理"
+      ]
+    }
+  ],
+  "나트랑": [
+    {
+      "correct_translation": "ニャチャン",
+      "incorrect_translations": [
+        "ナトラン"
+      ]
+    }
+  ],
+  "넷플릭스": [
+    {
+      "correct_translation": "Netflix",
+      "incorrect_translations": [
+        "ネットフリックス"
+      ]
+    }
+  ],
+  "노션": [
+    {
+      "correct_translation": "Notion",
+      "incorrect_translations": [
+        "ノーション"
+      ]
+    }
+  ],
+  "데이터 분석가": [
+    {
+      "correct_translation": "データアナリスト",
+      "incorrect_translations": [
+        "データ分析家"
+      ]
+    }
+  ],
+  "데이터 아키텍트": [
+    {
+      "correct_translation": "データアーキテクト",
+      "incorrect_translations": [
+        "データアーキテクチャ"
+      ]
+    }
+  ],
+  "동방명주": [
+    {
+      "correct_translation": "東方明珠",
+      "incorrect_translations": [
+        "東方溟州"
+      ]
+    }
+  ],
+  "디벨롭": [
+    {
+      "correct_translation": "開発",
+      "incorrect_translations": [
+        "デベロップ"
+      ]
+    }
+  ],
+  "랜선 투어": [
+    {
+      "correct_translation": "オンラインツアー",
+      "incorrect_translations": [
+        "ラン線ツアー"
+      ]
+    }
+  ],
+  "로제": [
+    {
+      "correct_translation": "ロゼ",
+      "incorrect_translations": [
+        "ロジェ"
+      ]
+    }
+  ],
+  "롬복": [
+    {
+      "correct_translation": "ロンボック",
+      "incorrect_translations": [
+        "ロンボク"
+      ]
+    }
+  ],
+  "료칸": [
+    {
+      "correct_translation": "旅館",
+      "incorrect_translations": [
+        "料間"
+      ]
+    }
+  ],
+  "루브르 박물관": [
+    {
+      "correct_translation": "ルーブル美術館",
+      "incorrect_translations": [
+        "ルーブル博物館"
+      ]
+    }
+  ],
+  "링귀스트": [
+    {
+      "correct_translation": "リングギースト",
+      "incorrect_translations": [
+        "リンギスト"
+      ]
+    }
+  ],
+  "링크드인": [
+    {
+      "correct_translation": "LinkedIn",
+      "incorrect_translations": [
+        "リンクトイン"
+      ]
+    }
+  ],
+  "머스크": [
+    {
+      "correct_translation": "ムスク",
+      "incorrect_translations": [
+        "マスク"
+      ]
+    }
+  ],
+  "명소": [
+    {
+      "correct_translation": "スポット",
+      "incorrect_translations": [
+        "名所"
+      ]
+    }
+  ],
+  "명품 회사": [
+    {
+      "correct_translation": "高級ブランド",
+      "incorrect_translations": [
+        "名品会社"
+      ]
+    }
+  ],
+  "무이네 ": [
+    {
+      "correct_translation": "ムイネー",
+      "incorrect_translations": [
+        "ムイネ",
+        "無い家"
+      ]
+    }
+  ],
+  "미국": [
+    {
+      "correct_translation": "アメリカ",
+      "incorrect_translations": [
+        "米国"
+      ]
+    }
+  ],
+  "미드저니": [
+    {
+      "correct_translation": "Midjourney",
+      "incorrect_translations": [
+        "ミッドジャニー"
+      ]
+    }
+  ],
+  "미쉐린 가이드 식당": [
+    {
+      "correct_translation": "ミシュランガイドレストラン",
+      "incorrect_translations": [
+        "ミシュランガイド食堂"
+      ]
+    }
+  ],
+  "바닐라 크림브륄레": [
+    {
+      "correct_translation": "バニラクリムブリュレ",
+      "incorrect_translations": [
+        "バニラクリームブリューリ"
+      ]
+    }
+  ],
+  "반지르": [
+    {
+      "correct_translation": "バンジール",
+      "incorrect_translations": [
+        "半径"
+      ]
+    }
+  ],
+  "백 동": [
+    {
+      "correct_translation": "百ドン",
+      "incorrect_translations": [
+        "百棟"
+      ]
+    }
+  ],
+  "별점": [
+    {
+      "correct_translation": "星評価",
+      "incorrect_translations": [
+        "星点"
+      ]
+    }
+  ],
+  "브루노마스": [
+    {
+      "correct_translation": "ブルーノマス",
+      "incorrect_translations": [
+        "ブルノマス"
+      ]
+    }
+  ],
+  "비비씨": [
+    {
+      "correct_translation": "BBC",
+      "incorrect_translations": [
+        "ビビさん"
+      ]
+    }
+  ],
+  "비행기 체크인": [
+    {
+      "correct_translation": "飛行機チェックイン",
+      "incorrect_translations": [
+        "飛行機のチェックイン"
+      ]
+    }
+  ],
+  "사이공 거리": [
+    {
+      "correct_translation": "サイゴン通り",
+      "incorrect_translations": [
+        "サイゴン街"
+      ]
+    }
+  ],
+  "사파": [
+    {
+      "correct_translation": "サパ",
+      "incorrect_translations": [
+        "サファ"
+      ]
+    }
+  ],
+  "삿포로": [
+    {
+      "correct_translation": "札幌",
+      "incorrect_translations": [
+        "サポロ"
+      ]
+    }
+  ],
+  "설악산": [
+    {
+      "correct_translation": "雪岳山",
+      "incorrect_translations": [
+        "ソルアク山"
+      ]
+    }
+  ],
+  "성능 최적화": [
+    {
+      "correct_translation": "パフォーマンスの最適化",
+      "incorrect_translations": [
+        "性能最適化"
+      ]
+    }
+  ],
+  "숙소": [
+    {
+      "correct_translation": "宿",
+      "incorrect_translations": [
+        "宿舎"
+      ]
+    }
+  ],
+  "스투시": [
+    {
+      "correct_translation": "ストゥーシー",
+      "incorrect_translations": [
+        "シュトゥッシュ"
+      ]
+    }
+  ],
+  "쑤저우": [
+    {
+      "correct_translation": "蘇州",
+      "incorrect_translations": [
+        "おまえの州"
+      ]
+    }
+  ],
+  "쓰촨": [
+    {
+      "correct_translation": "四川",
+      "incorrect_translations": [
+        "四川(サチョン)"
+      ]
+    }
+  ],
+  "씨유": [
+    {
+      "correct_translation": "CU",
+      "incorrect_translations": [
+        "シーユ",
+        "シーユー"
+      ]
+    }
+  ],
+  "아이에스에프제이": [
+    {
+      "correct_translation": "ISFJ",
+      "incorrect_translations": [
+        "アイエスエフジェイ"
+      ]
+    }
+  ],
+  "아이에스티피": [
+    {
+      "correct_translation": "ISTP",
+      "incorrect_translations": [
+        "アイエスティピー"
+      ]
+    }
+  ],
+  "아파트": [
+    {
+      "correct_translation": "マンション",
+      "incorrect_translations": [
+        "アパート"
+      ]
+    }
+  ],
+  "알리": [
+    {
+      "correct_translation": "AliExpress",
+      "incorrect_translations": [
+        "アーリー",
+        "アリ"
+      ]
+    }
+  ],
+  "에이 기업": [
+    {
+      "correct_translation": "A企業",
+      "incorrect_translations": [
+        "エー企業"
+      ]
+    }
+  ],
+  "에이아이": [
+    {
+      "correct_translation": "エイアイ",
+      "incorrect_translations": [
+        "AI"
+      ]
+    }
+  ],
+  "엔잡러": [
+    {
+      "correct_translation": "複数の仕事を掛け持ちしている人",
+      "incorrect_translations": [
+        "円取り",
+        "エンジョブラー"
+      ]
+    }
+  ],
+  "엠비티아이": [
+    {
+      "correct_translation": "MBTI",
+      "incorrect_translations": [
+        "エムビティアイ"
+      ]
+    }
+  ],
+  "엠지": [
+    {
+      "correct_translation": "MZ",
+      "incorrect_translations": [
+        "Mji",
+        "エムジー",
+        "エムジ"
+      ]
+    }
+  ],
+  "영감": [
+    {
+      "correct_translation": "インスピレーション",
+      "incorrect_translations": [
+        "おじいさん"
+      ]
+    }
+  ],
+  "오 점 오구원": [
+    {
+      "correct_translation": "五点五九元",
+      "incorrect_translations": [
+        "来店オグウォン"
+      ]
+    }
+  ],
+  "오티티": [
+    {
+      "correct_translation": "OTT",
+      "incorrect_translations": [
+        "オーティティ"
+      ]
+    }
+  ],
+  "와이파이": [
+    {
+      "correct_translation": "Wi-Fi",
+      "incorrect_translations": [
+        "ワイファイ"
+      ]
+    }
+  ],
+  "외국인 직원": [
+    {
+      "correct_translation": "外国人スタッフ",
+      "incorrect_translations": [
+        "外国人職員"
+      ]
+    }
+  ],
+  "용산": [
+    {
+      "correct_translation": "龍山",
+      "incorrect_translations": [
+        "ヨンサン"
+      ]
+    }
+  ],
+  "원 밀리언 달러": [
+    {
+      "correct_translation": "100万ドル",
+      "incorrect_translations": [
+        "ウォンミリオンドル"
+      ]
+    }
+  ],
+  "위안화 동전": [
+    {
+      "correct_translation": "人民元硬貨",
+      "incorrect_translations": [
+        "元貨コイン"
+      ]
+    }
+  ],
+  "유류 할증료": [
+    {
+      "correct_translation": "油類の追加料金",
+      "incorrect_translations": [
+        "割増料"
+      ]
+    }
+  ],
+  "유튜브": [
+    {
+      "correct_translation": "YouTube",
+      "incorrect_translations": [
+        "ユーチューブ"
+      ]
+    }
+  ],
+  "유후인": [
+    {
+      "correct_translation": "由布院",
+      "incorrect_translations": [
+        "遊後人"
+      ]
+    }
+  ],
+  "이메일": [
+    {
+      "correct_translation": "メール",
+      "incorrect_translations": [
+        "Eメール"
+      ]
+    }
+  ],
+  "이번 연도": [
+    {
+      "correct_translation": "今年",
+      "incorrect_translations": [
+        "今回"
+      ]
+    }
+  ],
+  "이엔에프피": [
+    {
+      "correct_translation": "ENFP",
+      "incorrect_translations": [
+        "イエンエフピ"
+      ]
+    }
+  ],
+  "이젤 ": [
+    {
+      "correct_translation": "イーゼル",
+      "incorrect_translations": [
+        "イゼル"
+      ]
+    }
+  ],
+  "인급동": [
+    {
+      "correct_translation": "人気急上昇動画",
+      "incorrect_translations": [
+        "人級棟"
+      ]
+    }
+  ],
+  "잇프제": [
+    {
+      "correct_translation": "ISFJ",
+      "incorrect_translations": [
+        "イープ剤",
+        "イープゼ"
+      ]
+    }
+  ],
+  "자라": [
+    {
+      "correct_translation": "ZARA",
+      "incorrect_translations": [
+        "スッポン"
+      ]
+    }
+  ],
+  "자바": [
+    {
+      "correct_translation": "Java",
+      "incorrect_translations": [
+        "ジャワ開発者"
+      ]
+    }
+  ],
+  "재미나이": [
+    {
+      "correct_translation": "Gemini",
+      "incorrect_translations": [
+        "楽しい年齢"
+      ]
+    }
+  ],
+  "제미나이": [
+    {
+      "correct_translation": "Gemini",
+      "incorrect_translations": [
+        "ジェミナイ",
+        "ジェミナ"
+      ]
+    }
+  ],
+  "제미니": [
+    {
+      "correct_translation": "Gemini",
+      "incorrect_translations": [
+        "ジェミニ"
+      ]
+    }
+  ],
+  "제주": [
+    {
+      "correct_translation": "済州",
+      "incorrect_translations": [
+        "チェジュ"
+      ]
+    }
+  ],
+  "조말론 ": [
+    {
+      "correct_translation": "Jo Malone",
+      "incorrect_translations": [
+        "シャンプーゾマロン"
+      ]
+    }
+  ],
+  "지마켓": [
+    {
+      "correct_translation": "Gmarket",
+      "incorrect_translations": [
+        "ジマーケット"
+      ]
+    }
+  ],
+  "지에스이십오": [
+    {
+      "correct_translation": "GS25",
+      "incorrect_translations": [
+        "ジエスイシオ",
+        "シーユジーエス・イシップオ"
+      ]
+    }
+  ],
+  "챗 지피티 오원": [
+    {
+      "correct_translation": "ChatGPT-o1",
+      "incorrect_translations": [
+        "チャット、ジーピーティー、オウォン"
+      ]
+    }
+  ],
+  "챗 지피티 포오": [
+    {
+      "correct_translation": "ChatGPT-4o ",
+      "incorrect_translations": [
+        "チャット、ジーピーティー、フォオ"
+      ]
+    }
+  ],
+  "챗지피티": [
+    {
+      "correct_translation": "ChatGPT",
+      "incorrect_translations": [
+        "チャットジーピーティ"
+      ]
+    }
+  ],
+  "처갓집 양념치킨": [
+    {
+      "correct_translation": "チョガッチプ・ヤンニョムチキン",
+      "incorrect_translations": [
+        "妻の実家"
+      ]
+    }
+  ],
+  "촌캉스": [
+    {
+      "correct_translation": "田舎バカンス",
+      "incorrect_translations": [
+        "村カンス",
+        "チョンカンス"
+      ]
+    }
+  ],
+  "케이피아이": [
+    {
+      "correct_translation": "KPI",
+      "incorrect_translations": [
+        "ケイピア"
+      ]
+    }
+  ],
+  "쿠팡": [
+    {
+      "correct_translation": "Coupang",
+      "incorrect_translations": [
+        "クパン"
+      ]
+    }
+  ],
+  "테무": [
+    {
+      "correct_translation": "Temu",
+      "incorrect_translations": [
+        "テム"
+      ]
+    }
+  ],
+  "투머치 토커": [
+    {
+      "correct_translation": "トゥマッチトッカー",
+      "incorrect_translations": [
+        "トゥーマッチ・トーカー"
+      ]
+    }
+  ],
+  "투숙객": [
+    {
+      "correct_translation": "お客様",
+      "incorrect_translations": [
+        "宿泊客"
+      ]
+    }
+  ],
+  "팀 빌딩": [
+    {
+      "correct_translation": "チームビルディング",
+      "incorrect_translations": [
+        "チームビル"
+      ]
+    }
+  ],
+  "팀빌딩": [
+    {
+      "correct_translation": "チームビルディング",
+      "incorrect_translations": [
+        "チームビル"
+      ]
+    }
+  ],
+  "파이썬": [
+    {
+      "correct_translation": "Python",
+      "incorrect_translations": [
+        "パイソン",
+        "パイソンコード"
+      ]
+    }
+  ],
+  "파이썬으로 된 코드": [
+    {
+      "correct_translation": "Pythonのコード",
+      "incorrect_translations": [
+        "パイソンになったコード"
+      ]
+    }
+  ],
+  "퍼플렉시티": [
+    {
+      "correct_translation": "パープレクシティ",
+      "incorrect_translations": [
+        "パプレクシティ"
+      ]
+    }
+  ],
+  "풍경 그림": [
+    {
+      "correct_translation": "風景画",
+      "incorrect_translations": [
+        "風景の絵"
+      ]
+    }
+  ],
+  "프리퀀시": [
+    {
+      "correct_translation": "フリークエンシー",
+      "incorrect_translations": [
+        "フリークエンシー"
+      ]
+    }
+  ],
+  "피엔지": [
+    {
+      "correct_translation": "PNG",
+      "incorrect_translations": [
+        "P&G"
+      ]
+    }
+  ],
+  "피이지": [
+    {
+      "correct_translation": "PEG",
+      "incorrect_translations": [
+        "P.I.G"
+      ]
+    }
+  ],
+  "픽셀 세븐 프로": [
+    {
+      "correct_translation": "Pixel Seven Pro",
+      "incorrect_translations": [
+        "ピクセルセブンプロ"
+      ]
+    }
+  ],
+  "픽셀 에잇 프로": [
+    {
+      "correct_translation": "Pixel Eight Pro",
+      "incorrect_translations": [
+        "ピクセルエイトプロ"
+      ]
+    }
+  ],
+  "픽셀 나인 프로": [
+    {
+      "correct_translation": "Pixel Nine Pro",
+      "incorrect_translations": [
+        "ピクセルナインプロ"
+      ]
+    }
+  ],
+  "픽셀 에이트 프로": [
+    {
+      "correct_translation": "Pixel Eight Pro",
+      "incorrect_translations": [
+        "ピクセルエイトプロ"
+      ]
+    }
+  ],
+  "하롱 베이": [
+    {
+      "correct_translation": "ハロン湾",
+      "incorrect_translations": [
+        "ハロンベイ"
+      ]
+    }
+  ],
+  "항구 도시": [
+    {
+      "correct_translation": "港町",
+      "incorrect_translations": [
+        "港都市"
+      ]
+    }
+  ],
+  "호캉스": [
+    {
+      "correct_translation": "ホテルバカンス",
+      "incorrect_translations": [
+        "ホカンス"
+      ]
+    }
+  ],
+  "확장 프로그램": [
+    {
+      "correct_translation": "拡張機能",
+      "incorrect_translations": [
+        "拡張プログラム"
+      ]
+    }
+  ],
+  "회의록": [
+    {
+      "correct_translation": "議事録",
+      "incorrect_translations": [
+        "会議録"
+      ]
+    }
+  ],
+  "이젤": [
+    {
+      "correct_translation": "easel",
+      "incorrect_translations": [
+        "bazel"
+      ]
+    }
+  ]
+}

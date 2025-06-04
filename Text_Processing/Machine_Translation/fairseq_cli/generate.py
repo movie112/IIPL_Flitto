@@ -24,17 +24,29 @@ from fairseq.dataclass.utils import convert_namespace_to_omegaconf
 from fairseq.logging import progress_bar
 from fairseq.logging.meters import StopwatchMeter, TimeMeter
 import json
-with open('.../Text_Processing/Machine_Translation/fairseq_cli/mt_memory.json', 'r', encoding='utf-8') as f:
-    rules = json.load(f)
+import re
     
-def apply_custom_replacements(text: str, tgt_lang: str):
-    """tgt_lang: 'en' / 'zh' / 'ja'"""
-    for k, v in rules.items():
-        if tgt_lang in v:
-            text = text.replace(k, v[tgt_lang])
-    return text
-def main(cfg: DictConfig):
+def apply_custom_replacements(text: str, lang: str, src: str, memory_path:str) -> str:
+    try:
+        with open(memory_path, 'r', encoding='utf-8') as f:
+            replacement_dict = json.load(f)
+    except Exception as e:
+        raise RuntimeError(f"[ERROR] Failed to load memory file: {e}")
+    src = src.strip()
+    text_n = text.strip()
+    for src_word, contents in sorted(replacement_dict.items(), key=lambda x: len(x[0]), reverse=True):
+        if src_word not in src:
+            continue
+        for content in contents:
+            correct = content["correct_translation"]
+            incorrects = content["incorrect_translations"]
 
+            for error_word in incorrects:
+                if error_word in text_n:
+                    text_n = text_n.replace(error_word, correct)     
+    return text_n
+
+def main(cfg: DictConfig):
     if isinstance(cfg, Namespace):
         cfg = convert_namespace_to_omegaconf(cfg)
 
@@ -255,9 +267,7 @@ def _main(cfg: DictConfig, output_file):
                             generator
                         ),
                     )
-
             src_str = decode_fn(src_str)
-            src_str = apply_custom_replacements(src_str, tgt_lang=cfg.task.target_lang)
             if has_target:
                 target_str = decode_fn(target_str)
 
@@ -279,6 +289,18 @@ def _main(cfg: DictConfig, output_file):
                     extra_symbols_to_ignore=get_symbols_to_strip_from_output(generator),
                 )
                 detok_hypo_str = decode_fn(hypo_str)
+
+                json_path = os.path.normpath(
+                    os.path.join(os.path.dirname(__file__), "..", "..", "..", "Text_Processing", "Machine_Translation", "data", "mt_memory", f"{cfg.task.target_lang}_mt_memory.json")
+                )   
+                corrected_hypo_str = apply_custom_replacements(detok_hypo_str, cfg.task.target_lang, src_str, json_path)
+
+                hypo_str = corrected_hypo_str
+                detok_hypo_str = corrected_hypo_str  
+
+                hypo_tokens = tgt_dict.encode_line(
+                    detok_hypo_str, add_if_not_exist=True
+                )                
                 if not cfg.common_eval.quiet:
                     score = hypo["score"] / math.log(2)  # convert to base 2
                     # original hypothesis (after tokenization and BPE)
