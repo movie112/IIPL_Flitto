@@ -59,7 +59,7 @@ Before running the following script, make sure to configure the following enviro
 
 - **LANG**: Choose one language from KR (Korean), EN (English), CN (Chinese), or JP (Japanes).
 - **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
-- **DIARIZENET_CHECKPOINT**: Set this to the full path of your `DiarizeNet` checkpoint folder (the directory where you downloaded the DiarizeNet checkpoint).
+- **DIARIZENET_CHECKPOINT**: Put the downloaded DiarizeNet checkpoint into the `IIPL_Flitto/checkpoints` directory.
 - **OPENAI_API_KEY**: Provide your OpenAI API key
 
 - **TTA Test Dataset**: Put your TTA Test Dataset files into `TTA_test/wer_cer_llm_based_acc_data` folder.
@@ -77,7 +77,7 @@ bash TTA_test/wer_cer_llm_based_acc.sh
 conda create -n adaptivoice python=3.9
 conda activate adaptivoice
 
-cd AdaptiVoice & pip install -r requirements.txt
+cd IIPL_Flitto/AdaptiVoice & pip install -r requirements.txt
 pip install git+https://github.com/myshell-ai/MeloTTS.git
 python -m unidic download
 conda install -c conda-forge ffmpeg
@@ -102,13 +102,12 @@ python metric/crossview-ap/code/evaluate_all.py
 conda create -n mt python=3.9
 conda activate mt
 
-cd Text_Processing/Machine_Translation
+cd IIPL_Flitto/Text_Processing/Machine_Translation
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install numpy regex sacrebleu tensorboard matplotlib pandas cython setuptools pyarrow sacremoses tensorboardX unbabel-comet
 pip install pip==23.3.1
 conda install -c conda-forge gxx_linux-64
 pip install --editable ./
-conda install -c nvidia cuda-toolkit=11.8 cudatoolkit-dev=11.8
 ```
 
 2. run
@@ -116,7 +115,7 @@ conda install -c nvidia cuda-toolkit=11.8 cudatoolkit-dev=11.8
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **machin_translation_ckpt**: Set this to the full path of your `Machine Translation` checkpoints folder.
+- **machin_translation_ckpt**: Put the downloaded Machine Translation checkpoint into the `IIPL_Flitto/checkpoints` directory.
   
 ```
 bash metric/bleu_comet.sh
