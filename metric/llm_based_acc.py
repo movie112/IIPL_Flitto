@@ -63,15 +63,11 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    # OpenAI 클라이언트 초기화
     client = OpenAI(api_key=args.api_key)
 
-    # 예측 결과 로드
     predictions = load_predictions(args.pred)
-    # Ground truth 로드
     ground_truth = load_ground_truth(args.rttm)
 
-    # 출력 CSV 설정
     is_new = not os.path.exists(args.output)
     fout = open(args.output, mode="a", newline="", encoding="utf-8")
     writer = csv.writer(fout)

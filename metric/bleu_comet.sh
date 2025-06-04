@@ -6,7 +6,6 @@ ckpt_dir="/path/to/your/Machine_Translation_ckpt"
 data_dir="${root}/Text_Processing/Machine_Translation/data"
 result_base="${root}/Text_Processing/Machine_Translation/prediction"
 
-# fairseq-generate + 결과 분리
 for lang in "${langs[@]}"; do
   model_dir="${ckpt_dir}/real_ckp_ko_${lang}"
   data_path="${data_dir}/spm_ko_${lang}"
@@ -30,7 +29,6 @@ for lang in "${langs[@]}"; do
   grep '^S' "${result_path}/generate-test.txt" | cut -f2- > "${result_path}/gen.out.src"
 done
 
-#  평가: Python으로 BLEU/COMET 수행
 python <<EOF
 
 import os, json, subprocess, re
@@ -67,7 +65,6 @@ def evaluate(lang, tokenize_fn=None):
         bleu = bleu13a.corpus_score(hyps, [refs]).score
     else:
         bleu = sacrebleu.corpus_bleu(hyps, [refs]).score
-    # bleu = corpus_bleu(hyps, [refs]).score
     print(f"\n BLEU ({lang}): {bleu:.2f}")
 
     data = [
@@ -75,7 +72,6 @@ def evaluate(lang, tokenize_fn=None):
         for s, m, r in zip(src, hyps, refs)
     ]
 
-    # COMET input 준비
     result_dict = comet_model.predict(
         data,
         batch_size=32
@@ -87,18 +83,15 @@ def evaluate(lang, tokenize_fn=None):
         sys_score = float(sys_score)
     print(f" COMET ({lang}): {sys_score:.4f}")
 
-    # 결과 저장
     results[lang] = {
         "BLEU": round(bleu, 2),
         "COMET": round(sys_score, 4)
     }
 
-# 각 언어별 평가
 evaluate("en")
 evaluate("cn", char_tokenize)
 evaluate("jp", char_tokenize)
 
-# 결과를 JSON으로 저장
 with open(f"{result_base}/scores.json", "w", encoding="utf-8") as f:
     json.dump(results, f, indent=2, ensure_ascii=False)
 

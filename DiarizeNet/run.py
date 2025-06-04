@@ -17,16 +17,16 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('--OMP_NUM_THREADS', type=int, default=1)
     parser.add_argument('--wav_scp', type=str,
-                        default='.../KR_wav.scp',
+                        default='/path/to/your/wav.scp',
                         help="wav.scp 파일 경로 ('utt_id wav_path')")
     parser.add_argument('--configs', type=str,
-                        default='.../SD_infer.yaml',
+                        default='/path/to/your/IIPL_Flitto/DiarizeNet/conf/inference.yaml',
                         help='YAML configuration file path')
     parser.add_argument('--test_from_folder', type=str,
-                        default='.../logs/KR',
+                        default='/path/to/your/DiarizeNet_ckpt',
                         help='Checkpoint directory for averaging')
     parser.add_argument('--output_rttm', type=str,
-                        default='.../KR.rttm',
+                        default='/path/to/your/rttm',
                         help='최종 RTTM 출력 파일 경로')
     args = parser.parse_args()
 

@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
     parser = ArgumentParser()
 
-    parser.add_argument('--configs', default='.../IIPL_Flitto/DiarizeNet/conf/SD_infer.yaml', help='Configuration file path')
+    parser.add_argument('--configs', default='/path/to/your/IIPL_Flitto/DiarizeNet/conf/SD_infer.yaml', help='Configuration file path')
     parser.add_argument('--preds_dir', default=None, help='Hypothesis results dir')
     parser.add_argument("--thredshold", default=0.5, help="Threshold of decision")
     parser.add_argument("--median", default=11, help="Median filter parameter")
@@ -98,7 +98,7 @@ if __name__ == "__main__":
     with open(setup.configs, "r") as f:
         configs = hyperpyyaml.load_hyperpyyaml(f)
         f.close()
-    preds_dir = ".../DiarizeNet/visualize/ver_0/preds_h5"
+    preds_dir = "/path/to/your/DiarizeNet/visualize/ver_0/preds_h5"
 
     metric = DiarizationErrorRate(collar=50)
     gen_ref(configs, preds_dir, metric)

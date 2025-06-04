@@ -13,12 +13,10 @@ import re
 import numpy as np
 from soynlp.hangle import decompose, character_is_korean
 
-# 세그멘터 초기화
 seg = pkuseg.pkuseg()
 mecab = MeCab.Tagger("-Owakati")
 REF_PATTERN = re.compile(r"<NA>\s+<NA>\s*(.*?)\s*\|\|\|")
 
-# 자모 분해 함수
 def sent2phonemes(sent):
     phonemes = []
     for char in sent:
@@ -31,7 +29,6 @@ def sent2phonemes(sent):
             phonemes.append(char)
     return phonemes
 
-# 자모 토크나이저 및 WER 계산기
 class Tokenizer:
     def __init__(self):
         self.special = ['SOS','EOS','PAD']
@@ -69,7 +66,6 @@ class Tokenizer:
                 d[i][j] = min(d[i-1][j] + 1, d[i][j-1] + 1, d[i-1][j-1] + cost)
         return d[len(r_ids)][len(h_ids)] / max(len(r_ids), 1)
 
-# 참조 파일 로더
 def load_ref_file(path):
     data = defaultdict(list)
     with open(path, encoding='utf-8-sig') as f:
@@ -90,7 +86,6 @@ def load_ref_file(path):
             data[fid].append(txt)
     return {k: ' '.join(v) for k, v in data.items()}
 
-# 예측 파일 로더
 def load_pred_file(path):
     data = defaultdict(str)
     with open(path, encoding='utf-8-sig') as f:
@@ -118,7 +113,6 @@ if __name__ == '__main__':
     total_wer, total_cer, total_jamo = 0.0, 0.0, 0.0
     cnt, jamo_cnt = 0, 0
 
-    # CSV를 utf-8-sig로 저장하여 한글 깨짐 방지
     with open(args.output, 'a', newline='', encoding='utf-8-sig') as fout:
         writer = csv.writer(fout)
         if is_new:

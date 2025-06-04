@@ -3,8 +3,8 @@ import numpy as np
 import h5py
 import torch
 
-out_root = ".../DiarizeNet/visualize/ver_0/preds"
-out_h5_root = ".../DiarizeNet/visualize/ver_0/preds_h5"
+out_root = "/path/to/your/IIPL_Flitto/DiarizeNet/visualize/ver_0/preds"
+out_h5_root = "/path/to/your/IIPL_Flitto/DiarizeNet/visualize/ver_0/preds_h5"
 if not os.path.isdir(out_h5_root):
     os.mkdir(out_h5_root)
 bsz = 500
