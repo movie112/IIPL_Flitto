@@ -47,11 +47,13 @@ Download the [TTA Test Dataset(wer/cer/llm-based acc)](https://www.dropbox.com/s
 
 Download the [DiarizeNet Model checkpoint](https://www.dropbox.com/scl/fo/uyer0669wfhpvm055v5mf/ACbFAIbVxQbScEPlhhioL0A?rlkey=0hndtmi059oh2r5bh51i0q1op&st=ix16crxu&dl=0).
 
-Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
+Download the [Crossview-AP Model checkpoint](https://www.dropbox.com/scl/fi/e9ezohfe2oilc6djaz1w1/Crossview_AP_Model_ckpt.zip?rlkey=r043b4bbnqd5pcut6kb7u86p7&st=y6cso3hv&dl=0).
 
 Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/fo/3xle2g3505iydwbw6yqg7/APcyGLXHwL83A2Y3Lu_GaZU?rlkey=i36di9snedlj45vttk6nd0zw9&st=sdhgg06z&dl=0).
 
 Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/rsl0xailbxcoeiz1ebf5g/AOh-MttVZHLOsO8BH7dc7ZA?rlkey=lta539u6qrqovke5ndodtfsmu&st=3xh1n9xr&dl=0).
+
+Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
 
 ## TTA_test: WER/CER/LLM-based acc
 
@@ -63,7 +65,19 @@ Before running the following script, make sure to configure the following enviro
 - **OPENAI_API_KEY**: Provide your OpenAI API key
 
 - **TTA Test Dataset**: Put your TTA Test Dataset files into `TTA_test/wer_cer_llm_based_acc_data` folder.
+  - For example:  
+    - `TTA_test/wer_cer_llm_based_acc_data/KR`  
+    - `TTA_test/wer_cer_llm_based_acc_data/CN`  
+    - `TTA_test/wer_cer_llm_based_acc_data/EN`  
+    - `TTA_test/wer_cer_llm_based_acc_data/JP`
+
 - **{LANG}_wav.scp**: Ensure that the {LANG}_wav.scp file inside TTA_test/wer_cer_llm_based_acc_data/{LANG} contains correct audio paths.
+  - If you need to update or replace the `/path/to/your` prefixes in any `{LANG}_wav.scp` file, you can run the `change_path.py` script located at:
+    ```
+    IIPL_Flitto/TTA_test/wer_cer_llm_based_acc_data/change_path.py
+    ```
+    This script will automatically replace `/path/to/your` with your specified `root` path..
+
 
 ```
 bash TTA_test/wer_cer_llm_based_acc.sh
@@ -71,27 +85,57 @@ bash TTA_test/wer_cer_llm_based_acc.sh
 
 ## TTA_test: crossview-AP
 
-1. Install Package
+1-1. Create `ap_env` environment
 
 ```
-conda create -n adaptivoice python=3.9
-conda activate adaptivoice
+cd /IIPL_Flitto/AdaptiVoice/TTS_engine
+conda create -n ap_env python=3.9
+conda activate ap_env
+```
 
-cd IIPL_Flitto/AdaptiVoice & pip install -r requirements.txt
-pip install git+https://github.com/myshell-ai/MeloTTS.git
-python -m unidic download
+1-2. Install packages
+
+```
+pip install -e .
+cd /IIPL_Flitto/AdaptiVoice/voice_engine
+pip install -e .
+```
+
+1-3. Install additional packages
+
+```
 conda install -c conda-forge ffmpeg
+pip install huggingface_hub==0.14.0
+pip install mecab-python3
+python -m unidic download
+conda install -c conda-forge gxx_linux-64
+pip install pkuseg janome konlpy h5py textgrid tgt opencc librosa
 ```
 
-2. run
+2-1. Create `mfa_env` environment
+
+```
+  conda create -n mfa_env -c conda-forge montreal-forced-aligner
+  conda activate mfa_env
+```
+
+2-2. Install packages
+
+```
+  pip install joblib==1.2.0
+  pip install python-mecab-ko jamo spacy-pkuseg dragonmapper hanziconv textgrid tgt
+  conda install -c conda-forge spacy sudachipy sudachidict-core
+```
+
+3. run
 
 Before running the following script, make sure to configure the following environment variables:
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **Crossview-AP_ckpt**: Put your CrossView-AP checkpoint files into `crossview-ap` folder.
-- **Crossview-AP_datasets**: Put your CrossView-AP datasetse files into `crossview-ap` folder.
-  
+- **Crossview-AP_ckpt**: Put the downloaded DiarizeNet checkpoint into the `IIPL_Flitto/checkpoints` directory.
+- **lang**: Choose one language from kr (Korean), en (English), cn (Chinese), or jp (Japanes).
+
 ```
-python metric/crossview-ap/code/evaluate_all.py
+bash /IIPL_Flitto/TTA_test/crossview_ap.shcrossview_ap.sh
 ```
 
 ## TTA_test: BLEU/COMET
@@ -118,7 +162,7 @@ Before running the following script, make sure to configure the following enviro
 - **machin_translation_ckpt**: Put the downloaded Machine Translation checkpoint into the `IIPL_Flitto/checkpoints` directory.
   
 ```
-bash metric/bleu_comet.sh
+bash TTA_test/bleu_comet.sh
 ```
 
 ### Error Correction
