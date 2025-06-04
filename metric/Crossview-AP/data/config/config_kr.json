@@ -33,8 +33,8 @@
     "subwords_to_ids": "/path/to/your/IIPL_Flitto/metric/Crossview-AP/data/ipa/subwords_to_ids.json",
     "feature_fn": "/path/to/your/IIPL_Flitto/metric/Crossview-AP/data/ipa/xsampa_phonetic_features.json",
     "fine_tune": "false",
-    "ckpt_dir": "/path/to/your/IIPL_Flitto/checkpoints/crossview-ap/kr",
-    "save_dir": "/path/to/your/IIPL_Flitto/checkpoints/crossview-ap/kr",
+    "ckpt_dir": "/path/to/your/IIPL_Flitto/checkpoints/Crossview_AP_ckpt/kr",
+    "save_dir": "/path/to/your/IIPL_Flitto/checkpoints/Crossview_AP_ckpt/kr",
     "train_feats": [
         "/path/to/your/IIPL_Flitto/TTA_test/crossview_ap_data/hdf_train/kr/feats.hdf5"
 

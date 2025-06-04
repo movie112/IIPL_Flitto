@@ -32,6 +32,7 @@ parser.add_argument("--device_num", type=int, default=1)
 parser.add_argument("--morph", type=str, default="False", help="spliting per morph for Korean")
 parser.add_argument("--out_dir", type=str)
 parser.add_argument("--data_dir", type=str)
+parser.add_argument("--ckpt_dir", type=str)
 parser.add_argument("--refspk_path", type=str)
 parser.add_argument("--rttm_path", type=str) 
 args = parser.parse_args()
@@ -82,19 +83,18 @@ torch.cuda.set_device(args.device_num)
 random.seed(42)
 
 # TTS, ToneConverter
-source_se = torch.load(f'{args.data_dir}/tone/base_speakers/ses/{lang}.pth', map_location=device)
-ckpt_converter = f'{args.data_dir}/tone/converter'
+source_se = torch.load(f'{args.ckpt_dir}/AdaptiVoice_ckpt/base_speakers/ses/{lang}.pth', map_location=device)
+ckpt_converter = f'{args.ckpt_dir}/AdaptiVoice_ckpt/converter'
 tone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)
 tone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')
 target_se, _ = se_extractor.get_se(args.refspk_path, tone_color_converter, vad=True)
 if lang == 'cn':
-    lang = 'zh'  # TTS expects 'zh' for Chinese
+    lang = 'zh'
 tts_model = TTS(language=lang.upper(), device=device)
 default_speaker_id = list(tts_model.hps.data.spk2id.values())[0]
 if lang == 'zh':
-    lang = 'cn'  # TTS expects 'cn' for Chinese
-    
-# tmp wav: 데이터 동시 생성 시 겹치지 않게 주의
+    lang = 'cn'
+
 src_path = f"{args.data_dir}/wav/{lang}_{mode}.wav"
 if morph_flag:
     src_path = f"{args.data_dir}/wav/{lang}_{mode}_morph.wav"

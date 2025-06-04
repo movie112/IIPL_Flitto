@@ -36,8 +36,8 @@ def evaluate(lang, result_base, tokenize_fn=None):
         bleu = bleu13a.corpus_score(hyps, [refs]).score
     else:
         bleu = sacrebleu.corpus_bleu(hyps, [refs]).score
-
-    print(f"\n BLEU ({lang}): {bleu:.2f}")
+    bleu = bleu / 100.0
+    print(f"\n BLEU ({lang}): {bleu:.4f}")
 
     data = [{"src": s, "mt": m, "ref": r} for s, m, r in zip(src, hyps, refs)]
     result_dict = comet_model.predict(data, batch_size=32)
@@ -46,7 +46,7 @@ def evaluate(lang, result_base, tokenize_fn=None):
     print(f" COMET ({lang}): {sys_score:.4f}")
 
     results[lang] = {
-        "BLEU": round(bleu, 2),
+        "BLEU": round(bleu, 4),
         "COMET": round(sys_score, 4)
     }
 

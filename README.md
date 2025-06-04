@@ -47,13 +47,13 @@ Download the [TTA Test Dataset(wer/cer/llm-based acc)](https://www.dropbox.com/s
 
 Download the [DiarizeNet Model checkpoint](https://www.dropbox.com/scl/fo/uyer0669wfhpvm055v5mf/ACbFAIbVxQbScEPlhhioL0A?rlkey=0hndtmi059oh2r5bh51i0q1op&st=ix16crxu&dl=0).
 
+Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
+
 Download the [Crossview-AP Model checkpoint](https://www.dropbox.com/scl/fi/e9ezohfe2oilc6djaz1w1/Crossview_AP_Model_ckpt.zip?rlkey=r043b4bbnqd5pcut6kb7u86p7&st=y6cso3hv&dl=0).
 
 Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/fo/3xle2g3505iydwbw6yqg7/APcyGLXHwL83A2Y3Lu_GaZU?rlkey=i36di9snedlj45vttk6nd0zw9&st=sdhgg06z&dl=0).
 
 Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/rsl0xailbxcoeiz1ebf5g/AOh-MttVZHLOsO8BH7dc7ZA?rlkey=lta539u6qrqovke5ndodtfsmu&st=3xh1n9xr&dl=0).
-
-Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
 
 ## TTA_test: WER/CER/LLM-based acc
 
@@ -105,7 +105,6 @@ pip install -e .
 
 ```
 conda install -c conda-forge ffmpeg
-pip install huggingface_hub==0.14.0
 pip install mecab-python3
 python -m unidic download
 conda install -c conda-forge gxx_linux-64
@@ -122,7 +121,6 @@ conda activate mfa_env
 2-2. Install packages
 
 ```
-pip install joblib==1.2.0
 pip install python-mecab-ko jamo spacy-pkuseg dragonmapper hanziconv textgrid tgt
 conda install -c conda-forge spacy sudachipy sudachidict-core
 ```
@@ -131,7 +129,8 @@ conda install -c conda-forge spacy sudachipy sudachidict-core
 
 Before running the following script, make sure to configure the following environment variables:
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **Crossview-AP_ckpt**: Put the downloaded DiarizeNet checkpoint into the `IIPL_Flitto/checkpoints` directory.
+- **AdaptiVoice_ckpt**: Put the downloaded AdaptiVoice model checkpoint into the `IIPL_Flitto/checkpoints` directory.
+- **Crossview-AP_ckpt**: Put the downloaded Crossview-AP model checkpoint into the `IIPL_Flitto/checkpoints` directory.
 - **lang**: Choose one language from kr (Korean), en (English), cn (Chinese), or jp (Japanes).
 
 ```
@@ -159,7 +158,7 @@ pip install --editable ./
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **machin_translation_ckpt**: Put the downloaded Machine Translation checkpoint into the `IIPL_Flitto/checkpoints` directory.
+- **machine_translation_ckpt**: Put the downloaded Machine Translation checkpoint into the `IIPL_Flitto/checkpoints` directory.
   
 ```
 bash TTA_test/bleu_comet.sh
