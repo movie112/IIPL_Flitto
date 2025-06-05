@@ -49,9 +49,9 @@ Download the [DiarizeNet Model checkpoint](https://www.dropbox.com/scl/fo/uyer06
 
 Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
 
-Download the [Crossview-AP Model checkpoint](https://www.dropbox.com/scl/fi/e9ezohfe2oilc6djaz1w1/Crossview_AP_Model_ckpt.zip?rlkey=r043b4bbnqd5pcut6kb7u86p7&st=y6cso3hv&dl=0).
+Download the [Crossview-AP Model checkpoint](https://www.dropbox.com/scl/fi/qy8se8ao8ms6ztb5te37f/Crossview_AP_ckpt.zip?rlkey=pff4l7b5vj2pe3lmebqad3q4h&st=nbqtbbgo&dl=0).
 
-Download the [crossview_ap_data](https://www.dropbox.com/scl/fi/v0ybsctdz1f96yo5nrxdt/crossview_ap_data.zip?rlkey=f63rf5vyqpvivq2ojx0auu5ho&st=u1q245j8&dl=0).
+Download the [crossview_ap_data](https://www.dropbox.com/scl/fi/t15wnvy008ylmnxk0g8gy/crossviewap_data.zip?rlkey=891f5cwz4aecjtj630ef1d9xh&st=h9or20oa&dl=0).
 
 Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/fo/3xle2g3505iydwbw6yqg7/APcyGLXHwL83A2Y3Lu_GaZU?rlkey=i36di9snedlj45vttk6nd0zw9&st=sdhgg06z&dl=0).
 
@@ -61,7 +61,7 @@ Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/
 
 Before running the following script, make sure to configure the following environment variables:
 
-- **LANG**: Choose one language from KR (Korean), EN (English), CN (Chinese), or JP (Japanes).
+- **LANG**: Choose one language from KR (Korean), EN (English), CN (Chinese), or JP (Japanese).
 - **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
 - **DIARIZENET_CHECKPOINT**: Put the downloaded DiarizeNet checkpoint into the `IIPL_Flitto/checkpoints` directory.
 - **OPENAI_API_KEY**: Provide your OpenAI API key
