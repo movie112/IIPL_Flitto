@@ -47,9 +47,9 @@ Download the [TTA Test Dataset(wer/cer/llm-based acc)](https://www.dropbox.com/s
 
 Download the [DiarizeNet Model checkpoint](https://www.dropbox.com/scl/fo/uyer0669wfhpvm055v5mf/ACbFAIbVxQbScEPlhhioL0A?rlkey=0hndtmi059oh2r5bh51i0q1op&st=ix16crxu&dl=0).
 
-Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fi/nta82crgnrzlfohd4tg7y/AdaptiVoice_ckpt.zip?rlkey=5xt26pfjwit5p6unxlxcvuh5t&st=0rrn9nle&dl=0).
+Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fi/90fylcpd5vva1cjsbkxcv/AdaptiVoice_ckpt.zip?rlkey=lg6osh4cf1dbnz7tqv8y733lz&st=rn3gsdxl&dl=0).
 
-Download the [Crossview-AP Model checkpoint](https://www.dropbox.com/scl/fi/qy8se8ao8ms6ztb5te37f/Crossview_AP_ckpt.zip?rlkey=pff4l7b5vj2pe3lmebqad3q4h&st=nbqtbbgo&dl=0).
+Download the [Crossview-AP Model checkpoint](https://www.dropbox.com/scl/fi/nux8aqzrq5db59g8144t3/Crossview_AP_ckpt.zip?rlkey=nink2rrdvssj5p6pbsfijirp2&st=0su6g0a5&dl=0).
 
 Download the [crossview_ap_data](https://www.dropbox.com/scl/fi/t15wnvy008ylmnxk0g8gy/crossviewap_data.zip?rlkey=891f5cwz4aecjtj630ef1d9xh&st=h9or20oa&dl=0).
 
