@@ -61,7 +61,7 @@ Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/
 
 Before running the following script, make sure to configure the following environment variables:
 
-- **LANG**: Choose one language from KR (Korean), EN (English), CN (Chinese), or JP (Japanes).
+- **LANG**: Choose one language from KR (Korean), EN (English), CN (Chinese), or JP (Japanese).
 - **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
 - **DIARIZENET_CHECKPOINT**: Put the downloaded DiarizeNet checkpoint into the `IIPL_Flitto/checkpoints` directory.
 - **OPENAI_API_KEY**: Provide your OpenAI API key
