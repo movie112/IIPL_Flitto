@@ -3,9 +3,11 @@ from tqdm import tqdm
 import hgtk
 from unsloth import FastLanguageModel
 import torch
+from transformers import logging as hf_logging
+hf_logging.set_verbosity_error()
 
 root = "/path/to/your/IIPL_Flitto"
-MODEL_PATH = "/path/to/your/Error_Correction_ckpt"
+MODEL_PATH = f"{root}/checkpoints/Error_Correction_ckpt"
 INPUT_JSON  = f"{root}/Text_Processing/Error_Correction/transcription.json"
 OUTPUT_JSON = f"{root}/Text_Processing/Error_Correction/transcription_correction.json"
 

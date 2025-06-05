@@ -137,11 +137,6 @@ word_to_phones = {
     for w, seqs in word_to_phones.items()
 }
 
-# 9) 매핑 안된 phones 출력 
-if unmapped_phones:
-    print("Unmapped phones detected (phone: count):")
-    for ph, cnt in unmapped_phones.most_common():
-        print(f"{ph}: {cnt}")
 
 def is_valid_word(word, lang):
     if lang == 'cn':  # 중국어

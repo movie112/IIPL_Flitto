@@ -85,6 +85,8 @@ bash TTA_test/wer_cer_llm_based_acc.sh
 
 ## TTA_test: crossview-AP
 
+1. Install Pakages 1
+
 1-1. Create `ap_env` environment
 
 ```
@@ -110,6 +112,7 @@ python -m unidic download
 conda install -c conda-forge gxx_linux-64
 pip install pkuseg janome konlpy h5py textgrid tgt opencc librosa
 ```
+2. Install Packages 2
 
 2-1. Create `mfa_env` environment
 
@@ -125,16 +128,27 @@ pip install python-mecab-ko jamo spacy-pkuseg dragonmapper hanziconv textgrid tg
 conda install -c conda-forge spacy sudachipy sudachidict-core
 ```
 
-3. run
+3. Run
 
 Before running the following script, make sure to configure the following environment variables:
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **AdaptiVoice_ckpt**: Put the downloaded AdaptiVoice model checkpoint into the `IIPL_Flitto/checkpoints` directory.
-- **Crossview-AP_ckpt**: Put the downloaded Crossview-AP model checkpoint into the `IIPL_Flitto/checkpoints` directory.
 - **lang**: Choose one language from kr (Korean), en (English), cn (Chinese), or jp (Japanes).
+- **AdaptiVoice_ckpt**: Put the downloaded AdaptiVoice model checkpoint into the `IIPL_Flitto/checkpoints` directory.
+- **Crossview_AP_ckpt**: Put the downloaded Crossview-AP model checkpoint into the `IIPL_Flitto/checkpoints` directory.
+
+3-1. evaluation only
+- input: align.hdf5, feats.hdf5, vocab
 
 ```
-bash TTA_test/crossview_ap.shcrossview_ap.sh
+bash TTA_test/crossview_ap_eval_only.sh
+```
+
+3-2. evaluation from scratch
+- input: rttm
+- data generation: rttm -> tts -> timestamp -> vocab -> hdf5
+
+```
+bash TTA_test/crossview_ap_from_scratch.sh
 ```
 
 ## TTA_test: BLEU/COMET
@@ -153,12 +167,16 @@ conda install -c conda-forge gxx_linux-64
 pip install --editable ./
 ```
 
-2. run
+2. Run
+
+```
+bleu_comet.sh
+```
 
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **machine_translation_ckpt**: Put the downloaded Machine Translation checkpoint into the `IIPL_Flitto/checkpoints` directory.
+- **Machine_Translation_ckpt**: Put the downloaded Machine Translation checkpoint into the `IIPL_Flitto/checkpoints` directory.
   
 ```
 bash TTA_test/bleu_comet.sh
@@ -175,7 +193,7 @@ conda activate ec
 pip install unsloth hgtk
 ```
 
-2. run
+2. Run
 
 Before running the following script, make sure to configure the following environment variables:
 

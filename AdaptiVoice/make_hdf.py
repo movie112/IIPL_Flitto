@@ -175,7 +175,7 @@ with h5py.File(align_path, 'w') as hf_a, h5py.File(feats_path, 'w') as hf_f:
     for ses_id, wf, dirp in tqdm(total, desc='Processing WAVs'): # ?iKRNAC1I001, ?iKRNAC1I001_1.wav, /nas_homes/yeonghwa/flitto/datasets/ap_data_f/tts/test/kr/KRNAC1I001
         res = process_and_return(mfa_dir, ses_id, wf, dirp, args.mode)
         if not res:
-            if args.mode == 'test':
+            if args.mode != 'test':
                 continue
             else:
                 raise RuntimeError(f"[오류] 세그먼트 정보가 없어 그룹을 생성할 수 없습니다: {ses_id}/{wf}")

@@ -5,8 +5,7 @@
 ##############################
 export CONDA_ENV_NAME="IIPL_Flitto"
 
-# 경로 설정
-LANG="KR"
+LANG="KR"  # 언어 설정 (KR, EN, CN, JP)
 ROOT="/path/to/your/IIPL_Flitto"
 OPENAI_API_KEY="your_openai_api_key"
 DIARIZENET_CHECKPOINT="${ROOT}/checkpoints/DiarizeNet_ckpt_${LANG}"

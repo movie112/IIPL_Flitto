@@ -53,7 +53,6 @@ for lang in "${langs[@]}"; do
   grep '^S' "${result_path}/generate-test.txt" | cut -f2- > "${result_path}/gen.out.src"
 done
 
-echo " Results extracted for ${lang}."
-echo -e "\n[5] Calculating BLEU for ${lang}"
+echo -e "\n[5] Calculating BLEU and COMET scores"
 python ${metric_dir}/bleu_comet.py \
   "${result_base}"
