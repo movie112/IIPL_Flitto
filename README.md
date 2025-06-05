@@ -51,6 +51,8 @@ Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifg
 
 Download the [Crossview-AP Model checkpoint](https://www.dropbox.com/scl/fi/e9ezohfe2oilc6djaz1w1/Crossview_AP_Model_ckpt.zip?rlkey=r043b4bbnqd5pcut6kb7u86p7&st=y6cso3hv&dl=0).
 
+Download the [crossview_ap_data](https://www.dropbox.com/scl/fi/v0ybsctdz1f96yo5nrxdt/crossview_ap_data.zip?rlkey=f63rf5vyqpvivq2ojx0auu5ho&st=u1q245j8&dl=0).
+
 Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/fo/3xle2g3505iydwbw6yqg7/APcyGLXHwL83A2Y3Lu_GaZU?rlkey=i36di9snedlj45vttk6nd0zw9&st=sdhgg06z&dl=0).
 
 Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/rsl0xailbxcoeiz1ebf5g/AOh-MttVZHLOsO8BH7dc7ZA?rlkey=lta539u6qrqovke5ndodtfsmu&st=3xh1n9xr&dl=0).
@@ -136,7 +138,8 @@ Before running the following script, make sure to configure the following enviro
 - **lang**: Choose one language from kr (Korean), en (English), cn (Chinese), or jp (Japanes).
 - **AdaptiVoice_ckpt**: Put the downloaded AdaptiVoice model checkpoint into the `IIPL_Flitto/checkpoints` directory.
 - **Crossview_AP_ckpt**: Put the downloaded Crossview-AP model checkpoint into the `IIPL_Flitto/checkpoints` directory.
-
+- **crossview_ap_data**: Put the downloaded crossview_ap_data into the `IIPL_Flitto/TTA_test/crossview_ap_data` directory.
+  
 3-1. evaluation only
 - input: align.hdf5, feats.hdf5, vocab
 
