@@ -90,7 +90,6 @@ bash TTA_test/wer_cer_llm_based_acc.sh
 1-1. Create `ap_env` environment
 
 ```
-cd IIPL_Flitto/AdaptiVoice/TTS_engine
 conda create -n ap_env python=3.9
 conda activate ap_env
 ```
@@ -98,6 +97,8 @@ conda activate ap_env
 1-2. Install packages
 
 ```
+conda install -c conda-forge gxx_linux-64
+cd IIPL_Flitto/AdaptiVoice/TTS_engine
 pip install -e .
 cd IIPL_Flitto/AdaptiVoice/voice_engine
 pip install -e .
@@ -109,9 +110,9 @@ pip install -e .
 conda install -c conda-forge ffmpeg
 pip install mecab-python3
 python -m unidic download
-conda install -c conda-forge gxx_linux-64
 pip install pkuseg janome konlpy h5py textgrid tgt opencc librosa
 ```
+
 2. Install Packages 2
 
 2-1. Create `mfa_env` environment
@@ -169,10 +170,6 @@ pip install --editable ./
 
 2. Run
 
-```
-bleu_comet.sh
-```
-
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
@@ -197,8 +194,8 @@ pip install unsloth hgtk
 
 Before running the following script, make sure to configure the following environment variables:
 
-- **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **model_path**: Set this to the full path of your `Error Correction` checkpoints folder.
+- **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
+- **MODEL_PATH**: Set this to the full path of your `Error Correction` checkpoints folder.
   
 ```
 python Text_Processing/Error_Correction/LLM_grammer_inference.py
